@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>企业库</title>
+		<link rel="stylesheet" type="text/css" href="css/qyk.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+
+	</head>
+
+	<body>
+
+		<header>
+			<div class="HEAD">
+				<img src="img/huanglong.gif">
+				<div class="H-top">
+					<ul>
+						<li>[请
+							<a href="#">登录</a>/
+							<a href="#">免费注册</a>]
+							<a href="#"><img src="img/qqkf.jpg"></a>
+						</li>
+						<li>
+							<a href="#">美酒招商网手机版</a>
+						</li>
+						<li>
+							<a href="#">官方微信</a>
+						</li>
+						<li>
+							<a href="#">官方微博</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/scico.png"></a>
+							<a href="#">收藏9928</a>
+						</li>
+					</ul>
+
+					<div class="h_bk" style="margin:4px auto 8px auto">
+						<div class="hlogo">
+							<a href="http://www.9928.tv" target="_blank"><img src="img/logo_jms.png"></a>
+						</div>
+						<div class="h_search">
+							<div class="h_sou">
+								<div class="h_sk">
+									
+									
+									<div class="s_xuan">
+										<ul>
+											<li id="y_p" onmouseover="hover()" onmouseout="out()" class="curt"><span id="y_type">
+                                    产品</span><i></i></li>
+											<li style="display: none;" id="y_pro" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_pro','SearPro')">产品</li>
+											<li style="display: none;" id="y_com" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_com','SearCom')">企业</li>
+											<li style="display: none;" id="y_pinpai" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_pinpai','SearPinpai')">品牌</li>
+											<li style="display: none;" id="y_baike" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_baike','SearBK')">百科</li>
+											<li style="display: none;" id="y_tjh" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_tjh','SearTjh')">糖酒会</li>
+											<li style="display: none; border-bottom: 1px solid rgb(251, 208, 212);" id="y_news" onmouseover="hover()" onclick="dianjiXL('y_news','SearNews')" onmouseout="out()">资讯</li>
+										</ul>
+									</div>
+									<input name="Keys3" id="Keys3" autocomplete="off" x-webkit-speech="" type="text" class="sk" onkeyup="OnkSear()">
+									<div style="clear:both;"></div>
+								</div>
+								<div class="h_sbton"><input name="btnSearch" id="btnSearch" onclick="OnUrl2('SearPro')" type="button" value="搜 索" class="s_btn"></div>
+								<input id="hiddenSear" type="hidden" value="SearPro">
+
+								<div style="clear:both;"></div>
+							</div>
+							<div class="s_re"><span><a href="http://www.9928.tv/qiugou/" target="_blank"></a></span>热搜：
+
+								<a onclick="OnUrl3('')" rel="nofollow" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="" style="cursor:pointer;"></a>
+
+								<a onclick="OnUrl3('酒')" rel="nofollow" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="酒" style="cursor:pointer;">酒</a>
+
+								<a onclick="OnUrl3('葡萄酒')" rel="nofollow" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="葡萄酒" style="cursor:pointer;">葡萄酒</a>
+
+							</div>
+						</div>
+						<div class="h_adv">
+							<a href="http://www.9928.tv/vip/xiushuifang/" target="_blank"><img src="http://image.9928.tv/index_pic/xsf.gif" alt="四川秀水坊酒业有限公司"></a>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+
+					<ul class="HT-foot">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">白酒招商</a>
+						</li>
+						<li>
+							<a href="#">啤酒招商</a>
+						</li>
+						<li>
+							<a href="#">葡萄酒招商</a>
+						</li>
+						<li>
+							<a href="#">养生酒招商</a>
+						</li>
+						<li>
+							<a href="#">特色酒招商</a>
+						</li>
+						<li>
+							<a href="#">进口酒招商</a>
+						</li>
+						<li>
+							<a href="#">名酒招商</a>
+						</li>
+						<li>
+							<a href="#">糖酒会</a>
+						</li>
+						<li>
+							<a href="#">美酒微课堂</a>
+						</li>
+						<li>
+							<a href="#">代理意向库</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<header>
+				<div class="header-top">
+					<ul class="nav">
+						<li class="nav-img"><img src="img/qyk.gif"></li>
+						<li>
+							<a href="#">企业库</a>
+						</li>
+						<li>
+							<a href="#">产品库</a>
+						</li>
+						<li>
+							<a href="#">认证企业</a>
+						</li>
+						<li class="nav-img"><img src="img/mjpp.gif"></li>
+						<li>
+							<a href="#">名酒品牌</a>
+						</li>
+						<li>
+							<a href="#">热门专题</a>
+						</li>
+						<li>
+							<a href="#">白酒专区</a>
+						</li>
+						<li class="nav-img"><img src="img/xwzt.gif"></li>
+						<li>
+							<a href="#">新闻专题</a>
+						</li>
+						<li>
+							<a href="#">酒业咨询</a>
+						</li>
+						<li>
+							<a href="#">新酒上市</a>
+						</li>
+						<li class="nav-img"><img src="img/mjwd.gif"></li>
+						<li>
+							<a href="#">美酒问答</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
+						</li>
+						<li>
+							<a href="#">成功案例</a>
+						</li>
+					</ul>
+					<ul class="area">
+						<li class="area-fchild"><img src="img/dqzs.gif"></li>
+						<li>
+							<a href="#">四川</a>
+						</li>
+						<li>
+							<a href="#">安徽</a>
+						</li>
+						<li>
+							<a href="#">江苏</a>
+						</li>
+						<li>
+							<a href="#">贵州</a>
+						</li>
+						<li>
+							<a href="#">山东</a>
+						</li>
+						<li>
+							<a href="#">河南</a>
+						</li>
+						<li>
+							<a href="#">山西</a>
+						</li>
+						<li>
+							<a href="#">湖南</a>
+						</li>
+						<li>
+							<a href="#">湖北</a>
+						</li>
+						<li>
+							<a href="#">河北</a>
+						</li>
+						<li>
+							<a href="#">重庆</a>
+						</li>
+						<li>
+							<a href="#">辽宁</a>
+						</li>
+						<li>
+							<a href="#">黑龙江</a>
+						</li>
+						<li>
+							<a href="#">浙江</a>
+						</li>
+						<li>
+							<a href="#">福建</a>
+						</li>
+						<li>
+							<a href="#">广东</a>
+						</li>
+						<li class="area-lchild">
+							<a href="#">更多地区>></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="nav_">
+					<div class="nav01">专题推荐</div>
+					<div class="nav02">
+						<a href="">婚宴用酒挑选攻略</a>
+						<a href="">低端白酒代理</a>
+						<a href="" style="color: red;">光瓶酒代理</a>
+						<a href="">春节礼品酒</a>
+						<a href="" style="color: red;">更多专题>></a>
+					</div>
+					<div class="nav03">
+						用户名 <input type="text" value="" /> 密码 <input type="text" value="" />
+						<span>
+					<img src="img/lgin.jpg"/>
+					<a href="#">免费注册</a>
+				</span>
+					</div>
+				</div>
+			</header>
+
+		</header>
+
+		<div class="qyk">
+			<div class="qyk_1">
+				<div class="qyk_1001">
+					<img src="img/ku_01.jpg"/>
+				</div>
+				<div class="qyk_1002">
+					<ul>
+						<li>
+							<a href="#" style="color: red;">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<a href="#">全国</a>
+						</li>
+						<li>
+							<!--<a href="#">全国</a>-->
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="qyk_2">
+				<span class="qyk_2-1">
+					您的位置：
+					<a href="#">中国美酒招商网</a>
+					>>
+					<a href="#">企业库</a>
+					>> 全国     
+					<b style="color: red;">总入驻企业数:70256</b>
+				</span>
+				<ul class="qyk_2-2">
+					<li class="qyk_2001">
+						<a href="#">白酒企业</a>
+					</li>
+					<li class="qyk_2002">
+						<a href="#">白酒企业</a>
+					</li>
+					<li class="qyk_2003">
+						<a href="#">白酒企业</a>
+					</li>
+					<li class="qyk_2004">
+						<a href="#">白酒企业</a>
+					</li>
+					<li class="qyk_2005">
+						<a href="#">白酒企业</a>
+					</li>
+					<li class="qyk_2006">
+						<a href="#">白酒企业</a>
+					</li>
+					<li class="qyk_2007">
+						<a href="#">白酒企业</a>
+					</li>
+				</ul>
+				<div class="qyk_2-3">
+
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+					<div class="qyk_2008-1">
+						<img src="img/qyk.01jpg.jpg" />
+						<a href="#">北京京赋酒业有限公司</a>
+						<b>招商类型：<strong style="color: red;">白酒招商</strong> </b>
+						<p>北京京赋酒业是一家集白酒研发、生产、销售为一体的专业酒业公司。多年来企业格守传统酿造工艺，始终坚持“质量，诚信为
+							<a href="#">[查看详情]</a>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="qyk_2-4">
+					<div class="qyk_2009-1">
+						<a href="#"><img src="img/qyk.02.jpg" /></a>
+						<span>青岛世纪英皇酒业有限公司</span>
+					</div>
+					<div class="qyk_2009-1">
+						<a href="#"><img src="img/qyk.02.jpg" /></a>
+						<span>青岛世纪英皇酒业有限公司</span>
+					</div>
+					<div class="qyk_2009-1">
+						<a href="#"><img src="img/qyk.02.jpg" /></a>
+						<span>青岛世纪英皇酒业有限公司</span>
+					</div>
+					<div class="qyk_2009-1">
+						<a href="#"><img src="img/qyk.02.jpg" /></a>
+						<span>青岛世纪英皇酒业有限公司</span>
+					</div>
+					<div class="qyk_2009-1">
+						<a href="#"><img src="img/qyk.02.jpg" /></a>
+						<span>青岛世纪英皇酒业有限公司</span>
+					</div>
+					<div class="qyk_2009-1">
+						<a href="#"><img src="img/qyk.02.jpg" /></a>
+						<span>青岛世纪英皇酒业有限公司</span>
+					</div>
+					<div class="qyk_2009-1">
+						<a href="#"><img src="img/qyk.02.jpg" /></a>
+						<span>青岛世纪英皇酒业有限公司</span>
+					</div>
+					<div class="qyk_2009-1">
+						<a href="#"><img src="img/qyk.02.jpg" /></a>
+						<span>青岛世纪英皇酒业有限公司</span>
+					</div>
+					<div class="qyk_2009-1">
+						<a href="#"><img src="img/qyk.02.jpg" /></a>
+						<span>青岛世纪英皇酒业有限公司</span>
+					</div>
+					<div class="qyk_2009-1">
+						<a href="#"><img src="img/qyk.02.jpg" /></a>
+						<span>青岛世纪英皇酒业有限公司</span>
+					</div>
+				</div>
+				<div class='qyk_2-5'>
+					<ul>
+						<li>
+							<a href="#">第1页</a>
+						</li>
+						<li>
+							<a href="#">共822页</a>
+						</li>
+						<li>
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						<li>
+							<a href="#">6</a>
+						</li>
+						<li>
+							<a href="#">下页</a>
+						</li>
+						<li>
+							<a href="#">尾页</a>
+						</li>
+					</ul>
+					跳转：<input style="width:40px;" value="1">
+					<input type="submit" value=" GO ">
+				</div>
+			</div>
+		</div>
+		<div class="qyk01">
+			<h3 class="qyk01_1">
+				<span >认证企业</span>
+				<a href="#">更多认证企业>></a>
+			</h3>
+			<div class="qyk01_2">
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+				<div class="qyk01_2-1">
+					<a href=""><img src="img/qyk.03.jpg" /></a>
+					<span><a href="#">贵宾级酒品全国运营中心</a></span>
+					<p>历经人生风雨，尊享贵宾礼遇，贵宾级酒品，五粮液股份有限公司特别定制。</p>
+				</div>
+			</div>
+		</div>
+		<div class="qyk02">
+			<div class="qyk02-1">
+				<h3>友情链接</h3>
+				<span>【欢迎交换链接与美酒网共赢天下！ QQ：2234426535·1151952746】| <a href="#">更多>></a></span>
+			</div>
+			<div class="qyk02-2">
+				<a href="#">中国美酒网</a>
+				<a href="#">杜康老酒</a>
+				<a href="#">圣祖酒</a>
+				<a href="#">实诚人家酒</a>
+			</div>
+		</div>
+		<div class="qyk03">
+			<div class="qyk03-1">
+				<ul>
+					<li>招商分类：</li>
+					<li>招商分类：</li>
+					<li>招商分类：</li>
+					<li>招商分类：</li>
+					<li>招商分类：</li>
+					<li>招商分类：</li>
+				</ul>
+			</div>
+			<div class="qyk03-2">
+				<ul>
+					<li>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">白酒招商</a>
+					</li>
+					<li>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">白酒招商</a>
+					</li>
+					<li>
+						<a href="#" style="color: red">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">白酒招商</a>
+					</li>
+					<li>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">白酒招商</a>
+					</li>
+					<li>
+						<a href="#" style="color: red">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">名酒招商</a>
+						<a href="#">白酒招商</a>
+						<a href="#">名酒招商</a>
+						<a href="#" style="color: red">白酒招商</a>
+						<a href="#">白酒招商</a>
+					</li>
+				</ul>
+				<span>
+					<a href="#">地区首页</a>
+					<a href=" #">北京</a>
+					<a href=" #">天津</a>
+					<a href=" #">山东</a>
+					<a href=" #">河南</a>
+					<a href=" #">河北</a>
+					<a href=" #">内蒙</a>
+					<a href=" #">山西</a>
+					<a href=" #">江西</a>
+					<a href=" #">四川</a>
+					<a href=" #">重庆</a>
+					<a href=" #">贵州</a>
+					<a href=" #">上海</a>
+					<a href=" #">江苏</a>
+					<a h<a href="#">海南</a>
+				</span>
+			</div>
+		</div>
+		<div class="qyk04">
+			<div class="qyk04_">
+				<div class="qyk04-1">
+					<div class="qyk04-1-1">我们的服务</div>
+					<div class="qyk04-12" style="margin: 15px 0 10px 0">
+						<img src=""></div>
+					<ul class="qyk04-1-2">
+						<li>找产品 招代理<br> 有效才是硬道理
+						</li>
+						<li style="background: #00c4d4; padding: 14px 0">因为专一 所以更专业</li>
+						<li style="background: #b16ef9; padding: 14px 0">让招商变得更简单</li>
+					</ul>
+				</div>
+				<div class="qyk04-2">
+					<div class="qyk04-2-1" style="padding: 0 20px">
+						招商合作中心（0371-63359928）</div>
+
+					<div class="qyk04-2-2">
+						<ul>
+						<li>
+							<p> 张经理 手机：17719809928</p>
+							<div class="ywma">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv"> 
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+							</li>
+						<li>
+							<p> 张经理 手机：17719809928</p>
+							<div class="ywma">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv">
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+							</li>
+						<li>
+							<p> 张经理 手机：17719809928</p>
+							<div class="ywma">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv">
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+							</li>
+						<li>
+							<p> 张经理 手机：17719809928</p>
+							<div class="ywma">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv">
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+							</li>
+						<li>
+							<p> 张经理 手机：17719809928</p>
+							<div class="ywma">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv">
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+							</li>
+							<li>
+							<p> 张经理 手机：17719809928</p>
+							<div class="ywma">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv">
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="qyk04-3">
+					<div class="qyk04-3-1">代理商咨询中心</div>
+					<div style="font-size: 14px; color: #b30000; line-height: 32px;">代理商咨询电话：0371-63379928</div>
+					<ul>
+						<li>
+							<p> 咨询顾问一</p>
+							<span>手机/微信号：15537189928</span>
+							<div class="ewm">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv">
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+						</li>
+						<li>
+							<p> 咨询顾问一</p>
+							<span>手机/微信号：15537189928</span>
+							<div class="ewm">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv">
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+						</li>
+						<li>
+							<p> 咨询顾问一</p>
+							<span>手机/微信号：15537189928</span>
+							<div class="ewm">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv">
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+						</li>
+						<li>
+							<p> 咨询顾问一</p>
+							<span>手机/微信号：15537189928</span>
+							<div class="ewm">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv">
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+						</li>
+						<li>
+							<p> 咨询顾问一</p>
+							<span>手机/微信号：15537189928</span>
+							<div class="ewm">
+								<img  src="img/ywma.png" />		
+								<div class="mdiv">
+                                    <img src="img/xiaofu.jpg">
+							</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="bottom">
+				<div class="footer">
+					<div class="footer-lt">
+						<ul class="footer-nav">
+							<li>
+								<a href="#">关于我们</a>
+							</li>
+							<li>
+								<a href="#">好酒招商</a>
+							</li>
+							<li>
+								<a href="#">代理加盟</a>
+							</li>
+							<li>
+								<a href="#">精品推荐</a>
+							</li>
+							<li>
+								<a href="#">行业资讯</a>
+							</li>
+							<li>
+								<a href="#">企业库</a>
+							</li>
+							<li>
+								<a href="#">产品库</a>
+							</li>
+						</ul>
+						<p>版权所有：酒代理网 Copyright©
+							<a style="color: #FFFFFF;">2013-2019 豫公网安备 41010502002748号</a>备案:
+							<a style="color: #FFFFFF;">豫ICP备14027272号-2</a> 服务热线：400-659-1991</p>
+						<p>本站是专业提供白酒代理、好酒代理、名酒代理、酒水代理、酒水价格、酒水百科、酒水资讯等网络信息平台，本网站只起到信息平台作用，不为交易经过负任何责任，请双方谨慎交易，以确保您的权益</p>
+						<div class="footer-lt-b">
+							<a href="#"><img src="img/footer1.jpg" /></a>
+							<a href="#"><img src="img/footer1.jpg" /></a>
+							<a href="#"><img src="img/footer1.jpg" /></a>
+							<a href="#"><img src="img/footer1.jpg" /></a>
+						</div>
+					</div>
+					<div class="footer-rt">
+						<p>
+							<img src="img/erweima.jpg" />
+							<span>官方微信</span>
+						</p>
+						<p>
+							<img src="img/erweima.jpg" />
+							<span>酒代理移动版</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>
