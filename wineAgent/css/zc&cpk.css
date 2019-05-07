@@ -1,0 +1,69 @@
+/* CSS Document */
+body{ margin:0; padding:0; font-size:12px; background:#eaeff2;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0; font-size:14px;}
+ul,li,p{margin:0;padding:0; font-size:12px;}
+font{ font-size:12px;}
+img,input{border:0;}
+ul,li{list-style-type:none;}
+a{ text-decoration:none;color:#2d4c75;}
+a:hover{ text-decoration:underline;cursor: pointer;}
+/*注册界面css样式*/
+.zc_top{width: 100%;height: 25px;background: #f5f5f5;}
+.usertopnei{width: 1000px;margin:0 auto;line-height: 25px;}
+.usertopnei p{float:left;}
+.usertopnei ul{float:right;}
+.usertopnei li{float: left;padding-left:18px;}
+.userbody{width: 1114px;margin: 10px auto;}
+.usertopnei{width: 1000px;height: 109px;}
+.usertopnei img{height: 109px;}
+.zc_body{width: 1000px;margin:20px auto;}
+.zc_xiang{margin-top:30px;clear: both;height: 30px;}
+.tishi{display: block;width:240px;float: right;padding-top: 3px;}
+.lbltxt{font-size: 14px;width:100px;height:36px;text-align: right;display: block;float: left;line-height: 36px;}
+.zctxt{width: 250px;height: 28px;border:1px solid #cecece;border-radius: 2px;float: left;}
+.zc_right{float:left;width: 300px;height:450px;background:#f9f9f9;text-align: center;}
+.zc_right img{width: 250px;margin:25px auto;display: block;}
+.zc_left{float: left;width:600px;}
+.zc_bottom{margin-top:100px;}
+.userfoot{width:1114px;margin:10px auto;text-align: center;margin-top:10px;border-top:1px solid #cecece;padding:10px;}
+.userfoot a{color: #000;}
+.userfoot p{margin: 10px auto;}
+.onLoad{background:url(../img/onShow.png) no-repeat ;padding-left: 30px;vertical-align:middle;line-height:22px;font-size: 12px;}
+.onFocus{background:#E9F0FF url(../img/onShow.png) no-repeat ;padding-left: 30px;vertical-align:middle;line-height:22px;font-size: 12px;}
+.onCorrect{background:#E9FFEB url(../img/onCorrect.gif) no-repeat ;padding-left: 30px;vertical-align:middle;line-height:22px;}
+.onError{background:#FFF2E9 url(../img/onError.gif) no-repeat ;padding-left: 30px;vertical-align:middle;line-height:22px;}
+
+/*产品库css样式*/
+.cpk_top{width:100%;height:30px;background:#f1f1f1;}
+.cpk_topcenter{width: 1000px;margin: 0 auto;line-height: 30px;}
+.cpk_topleft{float: left;}
+.cpk_topright{float: right;}
+.cpk_topright li{float:left;padding:0 5px;}
+.cpk_center{width: 1000px;margin:20px auto;height:75px;}
+.cpk_logo{float: left;width: 200px;height:75px;}
+.cpk_search{float: left;width:500px;height:75px;}
+.search_body{height:41px;border:2px solid red;}
+.search_left{float:left;width:85px;height:100%;line-height:41px;text-align:center;position: relative;}
+.search_left p{font-size:14px;cursor: pointer;border-right:1px solid #ccc;}
+.typelist{background:#fff;position: absolute;width:85px;display: none;}
+.search_left:hover .typelist{display: block;}
+.search_left ul{background:#fff;cursor: pointer;}
+.search_txt{float:left;width:350px;height:39px;outline:0;font-size:14px;padding-left: 3px;}
+.search_btn{float:left;width:58px;height:100%;background: url(../img/sbt.jpg) no-repeat;background-size: cover;cursor: pointer;}
+.resou{line-height:30px;height: 30px;}
+.cpk_guanggao{float: left;}
+.cpkbody{width: 1190px;margin: 0 auto;    border: #e5e5e5 1px solid;background:#f9f9f9;}
+.cpkbody h3{display: block;width: 100%;height: 40px;line-height: 40px;border-bottom: #e5e5e5 1px solid;}
+.pro_l{font-size:15px;border-bottom: #e5e5e5 1px solid;
+    border-top: #fff 1px solid;line-height: 42px;}
+.sl-key{float: left;width: 100px;text-align: right;padding-right:10px;}
+.sl-value{float: left;width: 1000px;display: inline;border-left: #e5e5e5 1px solid;padding-left:20px;}
+.sl-value li{float: left;font-size:15px;padding-right: 28px;}
+.cpk_prolist{width: 1190px;margin:20px auto 0 auto;}
+.cpk_prolist li{float: left;margin-right:10px;}
+.cpk_prolist img{width:226px;height:257px;display: block;}
+.cpk_prolist h5{display:block;width:226px;height:30px;line-height:30px;border:1px solid #cecece;text-align: center;}
+.cpk_prolist span{display:block;width:226px;height:30px;line-height:30px;border:1px solid #cecece;border-top: none;text-align: center;}
+.cpk_fenye{width:1190px;height:40px;background:#f9f9f9;margin:20px auto;border:1px solid #ccc;}
+.cpk_paihang{width:1190px;height:40px;background:#c40202;margin:20px auto;line-height:40px;color:#fff;}
+.cpk_paihang h1{font-size:18px;padding-left:10px ;}

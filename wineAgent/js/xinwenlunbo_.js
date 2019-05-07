@@ -1,0 +1,1 @@
+ var oGg_lunbo = document.getElementById("gg_lunbo")
