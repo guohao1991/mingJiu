@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>认证企业</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/rzqy.css"/>
+		<link rel="stylesheet" type="text/css" href="css/top.css"/>
+	</head>
+	<body>
+	<header>
+		<div class="HEAD">
+			<img src="img/huanglong.gif">
+			<div class="H-top">					
+			    <ul>
+				    <li>[请<a href="#">登录</a>/<a href="#">免费注册</a>]<a href="#"><img src="img/qqkf.jpg"></a></li>
+				    <li><a href="#">美酒招商网手机版</a></li>
+				    <li><a href="#">官方微信</a></li>
+				    <li><a href="#">官方微博</a></li>
+				    <li><a href="#"><img src="img/scico.png"></a><a href="#">收藏9928</a></li>
+			    </ul>
+			    
+			    
+			    
+			    <div class="h_bk" style="margin:4px auto 8px auto">
+	     <div class="hlogo"><a href="http://www.9928.tv" target="_blank"><img src="img/index-logo.png"></a></div> 
+		 <div class="h_search">
+		      <div class="h_sou">       
+			       <div class="h_sk">
+				        <div class="s_xuan">
+						     <ul>
+							     <li id="y_p" onmouseover="hover()" onmouseout="out()" class="curt"><span id="y_type">产品</span><i></i></li>
+                                 <li style="display: none;" id="y_pro" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_pro','SearPro')">产品</li>
+								 <li style="display: none;" id="y_com" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_com','SearCom')">企业</li>
+								 <li style="display: none;" id="y_pinpai" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_pinpai','SearPinpai')">品牌</li>
+								 <li style="display: none;" id="y_baike" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_baike','SearBK')">百科</li>
+								 <li style="display: none;" id="y_tjh" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_tjh','SearTjh')">糖酒会</li>
+								 <li style="display: none; border-bottom: 1px solid rgb(251, 208, 212);" id="y_news" onmouseover="hover()" onclick="dianjiXL('y_news','SearNews')" onmouseout="out()">资讯</li>
+							 </ul>
+						</div>
+                        <input name="Keys3" id="Keys3" autocomplete="off" x-webkit-speech="" type="text" class="sk" onkeyup="OnkSear()">
+                        <div style="clear:both;"></div>
+				   </div>
+                   <div class="h_sbton"><input name="btnSearch" id="btnSearch" onclick="OnUrl2('SearPro')" type="button" value="搜 索" class="s_btn"></div>
+                   <input id="hiddenSear" type="hidden" value="SearPro">
+                    
+                   <div style="clear:both;"></div>
+			  </div>
+			  <div class="s_re"><span><a href="http://www.9928.tv/qiugou/" target="_blank"></a></span>热搜：
+	                
+	                <a onclick="OnUrl3('')" rel="nofollow" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="" style="cursor:pointer;"></a>
+	                
+	                <a onclick="OnUrl3('酒')" rel="nofollow" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="酒" style="cursor:pointer;">酒</a>
+	                
+	                <a onclick="OnUrl3('葡萄酒')" rel="nofollow" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="葡萄酒" style="cursor:pointer;">葡萄酒</a>
+	                
+              </div>
+		 </div> 
+		 <div class="h_adv"><a href="http://www.9928.tv/vip/xiushuifang/" target="_blank"><img src="http://image.9928.tv/index_pic/xsf.gif" alt="四川秀水坊酒业有限公司"></a></div>  
+		 <div style="clear:both;"></div>   
+	</div>
+			    
+				<ul class="HT-foot">
+					<li><a href="#">首页</a></li>
+				    <li><a href="#">白酒招商</a></li>
+				    <li><a href="#">啤酒招商</a></li>
+				    <li><a href="#">葡萄酒招商</a></li>
+				    <li><a href="#">养生酒招商</a></li>
+				    <li><a href="#">特色酒招商</a></li>
+				    <li><a href="#">进口酒招商</a></li>
+				    <li><a href="#">名酒招商</a></li>
+				    <li><a href="#">糖酒会</a></li>
+				    <li><a href="#">美酒微课堂</a></li>
+				    <li><a href="#">代理意向库</a></li>
+				</ul>		    
+			</div>
+		</div>
+		
+			<header>
+				<div class="header-top">
+					<ul class="nav">
+						<li class="nav-img"><img src="img/qyk.gif"></li>
+						<li><a href="#">企业库</a></li>
+						<li><a href="#">产品库</a></li>
+						<li><a href="#">认证企业</a></li>
+						<li class="nav-img"><img src="img/mjpp.gif"></li>
+						<li><a href="#">名酒品牌</a></li>
+						<li><a href="#">热门专题</a></li>
+						<li><a href="#">白酒专区</a></li>
+						<li class="nav-img"><img src="img/xwzt.gif"></li>
+						<li><a href="#">新闻专题</a></li>
+						<li><a href="#">酒业咨询</a></li>
+						<li><a href="#">新酒上市</a></li>
+						<li class="nav-img"><img src="img/mjwd.gif"></li>
+						<li><a href="#">美酒问答</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">成功案例</a></li>
+					</ul>
+					<ul class="area">
+						<li class="area-fchild"><img src="img/dqzs.gif"></li>
+						<li><a href="#">四川</a></li>
+						<li><a href="#">安徽</a></li>
+						<li><a href="#">江苏</a></li>
+						<li><a href="#">贵州</a></li>
+						<li><a href="#">山东</a></li>
+						<li><a href="#">河南</a></li>
+						<li><a href="#">山西</a></li>
+						<li><a href="#">湖南</a></li>
+						<li><a href="#">湖北</a></li>
+						<li><a href="#">河北</a></li>
+						<li><a href="#">重庆</a></li>
+						<li><a href="#">辽宁</a></li>
+						<li><a href="#">黑龙江</a></li>
+						<li><a href="#">浙江</a></li>
+						<li><a href="#">福建</a></li>
+						<li><a href="#">广东</a></li>
+						<li class="area-lchild"><a href="#">更多地区>></a></li>
+					</ul>
+				</div>
+		
+				<div class="nav_">
+				<div class="nav01">专题推荐</div>			
+				<div class="nav02">
+					<a href="">婚宴用酒挑选攻略</a>
+					<a href="">低端白酒代理</a>
+					<a href="" style="color: red;">光瓶酒代理</a>
+					<a href="">春节礼品酒</a>
+					<a href="" style="color: red;">更多专题>></a>
+				</div>
+				<div class="nav03">
+				用户名 <input type="text"  value="" />
+				密码 <input type="text"  value="" />
+				<span >
+					<img src="img/lgin.jpg"/>
+					<a href="#">免费注册</a>
+				</span>
+				</div>
+			</div>
+			</header>
+
+		</header>
+		
+		
+		<div class="rzqy">
+			<a href=""><img src=""/></a>
+		</div>
+		<div class="rzqy01">
+			<h3>
+				<span>认证企业</span>
+			</h3>
+			<ul>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+				<li>
+					<a href="#"><img src="" /></a>
+					<span><a href="#">郑州鲜啤鲜喝商贸有限公司</a></span>
+					<p>郑州鲜啤鲜喝商贸有限公司产品火热招商中。。。。</p>
+				</li>
+			</ul>
+			<div class="rzqy01-1">
+				<a href="#">首页</a>
+				<a href="#">上一页</a>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">10</a>
+				<a href="#">...</a>
+				<a href="#">下一页</a>
+				<a href="#">尾页</a>&nbsp;&nbsp;
+				<input type="text"  value="1" />
+				<input type="button"  value="go" />
+			</div>
+		</div>
+		<div class="rzqy02">
+			<h3>
+				<a href="#">推荐企业</a>
+				<span><a href="#">更多企业>></a></span>
+			</h3>
+			<ul>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">·</a>
+					<a href="#" target="_blank">通化万通葡萄酒股份有限公司</a>
+				</li>
+			</ul>
+		</div>
+		<footer class="footer">
+			<h3 class="footer01">
+				<a href="#">关于我们</a>┆
+				<a href="#">友情链接</a>┆
+				<a href="#">招贤下士</a>┆
+				<a href="#">联系我们</a>┆
+				<a href="#">意见投诉</a>┆
+				<a href="#">法律声明</a>┆
+				<a href="#">网站地图</a>┆
+			</h3>
+
+				<div class="footer_beian">
+					<p>版权所有 中国美酒招商网-WWW.9928.TV Copy Right 2010-2020</p>
+					<p>备案：豫ICP备10209129号 增值电信业务经营许可证：豫B2-20160332
+						<a href="#">豫公网安备 41010502003153号</a>
+					</p>
+					<p>免责声明：本站只起到信息平台作用，不为交易经过负任何责任,请双方谨慎交易,以确保您的权益。</p>
+					<p>内容的真实性、准确性和合法性由发布企业或个人负责。如有信息、图片侵权，请及时联系我们处理。
+					</p>
+
+					<div class="footer_tb">
+						<p>
+							<img src="img/footer1.jpg" class="tp_lt" />
+							<img src="img/footer1.jpg" class="tp_rg" />
+						</p>
+
+					</div>
+
+				</div>
+
+		</footer>
+		
+	</body>
+</html>
