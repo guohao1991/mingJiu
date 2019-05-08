@@ -220,7 +220,7 @@
 				if(reg2.test(this.value)){
 					$(this).next().children().children().removeClass().addClass("onCorrect").html("新密码合法");
 				}else{
-					$(this).next().children().children().removeClass().addClass("onError").html("新密码由6-16个字符组成，请确认");
+					$(this).next().children().children().removeClass().addClass("onError").html("新密码由6-16个字符(数字加字母)组成，请确认");
 				}
 			})
 			$("#txtpwd2").blur(function(){
@@ -237,7 +237,7 @@
 				var reg3=/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
 				console.log(this.value)
 				if(reg3.test(this.value)){
-					$(this).next().children().children().removeClass().addClass("onCorrect").html("手机号输入正确");
+					$(this).next().children().children().removeClass().addClass("onCorrect").html("手机号格式正确");
 				}else{
 					$(this).next().children().children().removeClass().addClass("onError").html("你输入的手机格式不正确");
 				}
@@ -246,7 +246,7 @@
 				var reg4=/[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/;
 				console.log(this.value)
 				if(reg4.test(this.value)){
-					$(this).next().children().children().removeClass().addClass("onCorrect").html("电子邮箱输入正确");
+					$(this).next().children().children().removeClass().addClass("onCorrect").html("电子邮箱格式正确");
 				}else{
 					$(this).next().children().children().removeClass().addClass("onError").html("你输入的邮箱格式不正确");
 				}

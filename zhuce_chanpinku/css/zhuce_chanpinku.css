@@ -46,7 +46,7 @@ a:hover{ text-decoration:underline;cursor: pointer;}
 .search_left{float:left;width:85px;height:100%;line-height:41px;text-align:center;position: relative;}
 .search_left p{font-size:14px;cursor: pointer;border-right:1px solid #ccc;}
 .typelist{background:#fff;position: absolute;width:85px;display: none;}
-.search_left:hover .typelist{display: block;}
+/*.search_left:hover .typelist{display: block !important;}*/
 .search_left ul{background:#fff;cursor: pointer;}
 .search_txt{float:left;width:350px;height:39px;outline:0;font-size:14px;padding-left: 3px;}
 .search_btn{float:left;width:58px;height:100%;background: url(../img/sbt_cpk.jpg) no-repeat;background-size: cover;cursor: pointer;}

@@ -50,9 +50,28 @@
 			<div class="cpk_guanggao"></div>
 		</div>
 		<script type="text/javascript">
+//			$('.search_left').mouseleave(()=>{
+//				$('.typelist').css({display:'none'})
+//			})
+//			$('.type').mouseover(()=>{
+//				$('.typelist').css({display:'block'})
+//			})
+//			$(".typelist").children().mousedown(function(){
+//				$(".typelist").children().mouseup(()=>{
+//					$('.typelist').css({display:'none'})
+//					console.log(this)
+//					$('.type').html($(this).html())
+//				})
+//			})
+			$('.search_left').mouseleave(function(){
+				$('.typelist').css({display:'none'})
+			})
+			$('.type').mouseover(function(){
+				$('.typelist').css({display:'block'})
+			})
 			$(".typelist").children().click(function(){
+				$('.typelist').css({display:'none'})
 				$('.type').html($(this).html())
-//				.next().css({display:"none"})
 			})
 		</script>
 		<div class="cpkbody">
