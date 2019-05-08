@@ -62,6 +62,10 @@ body{
 	color:#FC5300;
 	cursor: pointer;
 }
+.upper-lf .upper-lf-noe:hover{
+	color:#FC5300;
+	cursor: pointer;
+}
 .upper-nav{
 	background: #F9F9F9;
 	width: 475px;
