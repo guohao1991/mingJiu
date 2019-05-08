@@ -94,7 +94,7 @@
 .nav-special{
 	width: 170px;
 }
-.nav-first li:hover{
+.nav-first>li:hover{
 	background:#FC5300;
 	color:#F9F9F9;
 }
@@ -110,7 +110,6 @@
 	display: block;
 	background:#656665;
 	height:400px;
-	
 }
 .nav-special .nav-second-lf{
 	color:#cecece
@@ -121,8 +120,16 @@
 .nav-second-one a{
 	color:#434343
 }
+.hover{
+	background:#FC5300;
+}
 .nav-second-lf{
 	display: block;
+	
+	font-size: 14px;
+}
+.nav-second-lf li{
+	height:45px;
 }
 .nav-second-one{
 	position: absolute;
@@ -139,6 +146,9 @@
 .nav-second-one a{
 	color: #fff;
 	font-size: 14px;
+}
+.nav-second-lf li:hover,.nav-second-one li:hover {
+	background:#BB0000
 }
 
 /*导航样式完成*/
