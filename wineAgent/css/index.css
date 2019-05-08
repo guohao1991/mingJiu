@@ -42,21 +42,24 @@
 }
 .phone{
 	float:left;
-	width:200px;
+	width:250px;
 	margin-top: 30px;	
 }
 .phone-lt{
 	display: block;
-	height:40px;
-	width:50px;
 	float: left;
 }
 .phone-rt{
 	display: block;
 	height:40px;
-	width:132px;
+	width:120px;
 	font-size: 12px;
 	float: left;
+	padding-top: 10px;
+}
+.phone-lt img{
+	display: block;
+	height: 60px;
 }
 
 
