@@ -129,14 +129,17 @@
 	z-index: 10;
 	width: 127px;
 	display: none;
+	background:#656665;	
 }
 .nav-second-one li{
 	width: 127px;
 	height: 35px;
-	line-height: 35px;
-	background: ##656665;
+	line-height: 35px;	
 }
-
+.nav-second-one a{
+	color: #fff;
+	font-size: 14px;
+}
 
 /*导航样式完成*/
 
