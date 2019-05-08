@@ -1,0 +1,239 @@
+body{ margin:0; padding:0; font-size:12px; background:#eaeff2;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0; font-size:14px;}
+ul,li,p{margin:0;padding:0; font-size:12px;}
+font{ font-size:12px;}
+img,input{border:0;}
+ul,li{list-style-type:none;}
+a{ text-decoration:none;color:#2d4c75;}
+a:hover{ text-decoration:underline;cursor: pointer;}
+body{
+	background: #fff;
+}
+.zc_top{
+	width: 100%;
+	height: 25px;
+	background: #f5f5f5;
+	}
+.usertopnei{
+	width: 1000px;
+	margin:0 auto;
+	line-height: 25px;
+	}
+.usertopnei p{
+	float:left;
+	}
+.usertopnei ul{
+	float:right;
+	}
+.usertopnei li{
+	float: left;
+	padding-left:18px;
+	}
+#userbody{
+		width:1114px;
+		height:628px;
+		margin: 0 auto;
+		background: #fff;
+		margin: 10px  117.5px;
+	}
+#me{
+	width:1000px;
+	height:109px;
+	margin: 0 57px;
+}
+#me1{
+	width:240px;
+	height:109px;
+	float: left;
+}
+#pin{
+	width:1000px;
+	height:378px;
+	margin: 0 57px;
+	margin: 0 auto;
+}
+#pin_left{
+	width:600px;
+	height:362px;
+	float:left ;
+}
+#pai{
+	width:340px;
+	height:322px;
+	margin: 30px 0 0 30px;
+}
+#pin_right{
+	width:360px;
+	height:378px;
+	padding-right:10px ;
+	float: right;
+}
+#yong{
+	width:358px;
+	height:366px;
+	border: 1px solid #d1eafa;
+	margin-top:10px ;
+	background: #f5fafa;
+}
+#yong h3{
+	width:348px;
+	height:30px;
+	padding: 10px 0 0 10px;
+	font-size: 14px;
+	color: #000;
+	line-height: 30px;
+}
+#hu{
+	width:358px;
+	height:234px;
+	
+}
+#hu1{
+	width:300px;
+	height: 234px;
+	margin: 0 29px;
+}
+#hu2{
+	width:300px;
+	height:12px;
+	
+}
+#hu2 td{
+	padding-top:12px;
+}
+#hu3{
+	width:300px;
+	height:42px;
+}
+#hu3 td{
+	padding-top:12px ;
+	
+}
+#yh{
+	width:260px;
+	height:28px;
+	padding: 0 5px 0 24px;
+	border: 1px solid #b2d3e9;
+	line-height: 28px;
+	background: url(../img/1_fbsj.png)no-repeat 4px 5px;
+}
+#hu4{
+	width:300px;
+	height:68px;
+}
+#yh1{
+	width:260px;
+	height:28px;
+	padding: 0 5px 0 24px;
+	border: 1px solid #b2d3e9;
+	line-height: 28px;
+	background:url(../img/2_fbsj.png) no-repeat  4px 5px;
+}
+#yh2{
+	width:290px;
+	height:26px;
+	font-size:12px ;
+	float: right;
+	text-align: right;
+	line-height: 26px;
+}
+#yh2 a{
+	color: #2d4c75;
+}
+#yzm{
+	width:300px;
+	height:28px;
+}
+#yzm1{
+	width:100px;
+	height:26px;
+	border:1px solid #b2d3e9;
+	padding: 0 5px ;
+	
+	font-size: 12px;
+}
+#sj{
+	width:60px;
+	height:25px;
+	float: right;
+}
+#deng{
+	width:300px;
+	height:72px;
+	display: block;
+}
+#deng td{
+	width:148px;
+	height:60px;
+	padding-top:12px;
+	float: left;
+	line-height: 60px;
+	display: block;
+}
+#deng2{
+	width:116px;
+	height:33px;
+	padding: 0 6px;
+	background:url(../img/lgbt_fbsj.jpg)no-repeat;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+#zhu{
+	width:148px;
+	height:60px;
+	padding-top:12px;
+	float:right;
+	display: block;
+}
+#zhu img{
+	width:128px;
+	height:35px;
+	padding-top:12px;
+	line-height: 60px;
+	text-align: center;
+}
+#san{
+	width:358px;
+	height:52px;
+	padding-top:40px ;
+}
+#gao{
+	width:1000px;
+	height:20px;
+	margin:0 auto;
+	margin: 50px 57px 0 57px;
+	font-size: 12px;
+	color:#333;
+}
+#gao a{
+	color: red;
+	font-weight: bold;
+}
+#guan{
+	width:1100px;
+	height:60px;
+	border-top: 1px solid #d1d7dc;
+	margin-top:10px ;
+}
+#guan1{
+	width:1100px;
+	height:24px;
+	padding:8px 0;
+	text-align: center;
+	line-height: 24px;
+}
+#guan1 a{
+	font-size: 12px;
+	padding: 0 10px;
+	color: #333;
+}
+#ban{
+	width:1100px;
+	height:20px;
+	text-align: center;
+	line-height: 20px;
+}
+#ban p{
+	color: #000;
+}

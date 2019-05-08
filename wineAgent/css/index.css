@@ -89,6 +89,7 @@
 	float: left;
 	text-align: center;
 	line-height: 50px;	
+	position: relative;
 }
 .nav-special{
 	width: 170px;
@@ -103,7 +104,6 @@
 .nav a {
 	color:#Fff;
 }
-
 .nav-special .nav-second-lf{
 	background:#F9F9F9;
 	color:#434343;
@@ -115,16 +115,26 @@
 .nav-special .nav-second-lf{
 	color:#cecece
 }
-.nav-second li{
+.nav-second-one li{
 	height:30px;
 }
-.nav-second a{
+.nav-second-one a{
 	color:#434343
 }
 .nav-second-lf{
 	display: block;
 }
-
+.nav-second-one{
+	position: absolute;
+	z-index: 10;
+	width: 127px;
+}
+.nav-second-one li{
+	width: 127px;
+	height: 35px;
+	line-height: 35px;
+	background: ##656665;
+}
 
 
 /*导航样式完成*/

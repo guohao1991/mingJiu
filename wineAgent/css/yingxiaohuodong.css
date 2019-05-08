@@ -1,0 +1,299 @@
+#dh ul li:first-child {
+	border-bottom:none;
+}
+
+#dh ul li:nth-child(4){
+	border-bottom: 1px solid #0099ff;
+}
+#dh ul li:first-child:hover{
+	border-bottom: 1px solid #0099ff;
+}
+
+h2{
+	margin: 10px 0;
+	height: 35px;
+	line-height: 35px;
+	font-size: 20px;
+	border-left: 5px solid #0099FF;
+	padding-left: 10px;
+}
+h2 a{
+	float: right;
+	font-size: 16px;
+	line-height: 35px;
+	margin-right:10px ;
+	color: #0099FF;
+}
+h2 a:hover{
+	color: red;
+}
+
+.weizhi{
+	height: 24px;
+	width: 1190px;
+	border-bottom:1px solid #CECECE ;
+	margin: 0 auto;	
+	
+}
+.weizhi p{
+	font-size: 12px;
+	line-height: 24px;
+}
+.weizhi p a{
+	color: #000000;
+}
+.weizhi p a:hover{
+	color: #0099FF;
+}
+
+.weiketang{
+	width: 1190px;
+	margin: 0 auto;
+}
+.weiketang_left{
+	
+	width: 830px;
+	float: left;
+
+}
+.weiketang_right{
+	width: 360px;
+	float: left;
+	
+	
+}
+.zuanti{
+	margin-top: 10px;
+	border: 1px solid #cecece;
+}
+
+.ketang{
+	width: 830px;
+	height: 170px;
+	border-bottom:1px solid #CECECE ;
+	padding: 20px 0;
+}
+
+.ke_img{
+	float: left;
+}
+.ke_img img{
+	width: 255px;
+	height: 150px;
+}
+.ke_right{
+	height: 150px;
+	float: left;
+	margin-left: 20px;	
+}
+.ke_right p:nth-child(1){
+	font-size: 20px;
+	font-weight: bolder;
+	
+}
+.ke_right p:nth-child(1) a{
+	color: #000;
+}
+.ke_right p:nth-child(1) a:hover{
+	color: #0099FF;
+}
+
+.ke_right P:nth-child(2){
+	width: 500px;
+	
+	margin-left: 30px;
+	color: #666666;	
+}
+.ke_right p:nth-child(2) a:hover{
+	color:red;
+}
+
+.ke_right p:nth-child(3){
+	margin-top: 20px;
+	color: #666666;
+	font-size: 12px;
+}
+.ke_right p:nth-child(1) a:nth-child(2){
+	float: right;
+	margin-right: 10px;
+	display: block;
+	width: 60px;
+	height: 20px;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	background: #0099FF;
+	color: #fff;
+}
+.ke_right p:nth-child(1) a:nth-child(2):hover{
+	color: yellow;
+}
+.huodong{
+	border-bottom:1px solid #cecece ;
+}
+.huodongtupian h3, .huodong h3{
+	margin: 10px 0;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding-left: 10px;
+}
+.huodong h3 a{
+	font-size: 12px;
+	color: #000000;
+	line-height: 25px;
+	margin-left: 650px;
+}
+.huodong h3 a:hover{
+	color: red;
+}
+.huodong li a{
+	color: #000000;
+	font-size: 16px;
+	line-height: 20px;
+	
+}
+.huodong li a:hover{
+	color: red;
+}
+.huodongtupian{
+	width: 850px;
+	height: 350px;
+}
+.huodongtupian img{
+	width: 190px;
+	float: left;
+	margin-left: 10px;
+
+}
+.huodongtupian h3 a{
+	font-size: 12px;
+	color: #000000;
+	line-height: 25px;
+	margin-left: 650px;
+}
+.huodongtupian h3 a:hover{
+	color: red;
+}
+
+/*以上为左侧内容列表*/
+.yongge li a{
+	display: block;
+	height: 28px;
+	width: 320px;
+	overflow: hidden;
+	margin-left: 15px;
+	font-size: 16px;
+	line-height: 28px;
+	color: #000000;
+}
+.yongge li a:hover{
+	color: #0099FF;
+}
+.caini p{
+	width: 350px;
+	height: 160px;
+	display: block;
+	
+}
+
+.zhaoshang{
+	margin: 20px;
+	width: 270px;
+	height: 450px;
+	background: #ABABAB;
+	padding: 15px;
+}
+.zhaoshang p:nth-child(1){
+	width: 270px;
+	height: 50px;
+	background: red;
+	color: #fff;
+	line-height: 50px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bolder;
+}
+.zhaoshang p:nth-child(2),.zhaoshang p:nth-child(3){
+	margin:10px 0;
+	width: 270px;
+	height: 20px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 20px;
+	font-weight: bold;
+	}
+.zhaoshang p:nth-child(4){
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	font-weight: 800;
+	color: red;
+}	
+	
+	
+.zhaoshang img{
+	margin-top: 20px;
+	width: 270px;
+}
+
+
+/*以上为右侧内容列表*/
+.bottom{
+	height:220px;
+	width:100%;
+	background:#434343;	
+	float: left;
+}
+
+.footer{
+	height:220px;
+	width:1190px;
+	margin: 0 auto;
+	font-size:12px;
+	color:#F6F6F6;
+}
+.footer p a:hover {
+	text-decoration: underline;
+	
+}
+.footer-nav{
+	height:15px;
+	width:1190px;	
+	line-height: 15px;
+	padding: 10px 0;
+	margin-right: 25px;
+}
+.footer-nav a {
+	color:#F6F6F6;
+}
+.footer-nav li{
+	float: left;
+	width:70px;	
+}
+.footer-lt{
+	float: left;
+	width:62%;
+	margin: 15px 0;
+}
+.footer-rt{
+	float: right;
+	height:220px;
+	margin-left: 50px;
+}
+.footer-lt-b a{
+	float: left;
+	margin:36px 20px 0 0;
+}
+.footer-rt p{
+	float: left;
+	width:150px;	
+	margin-top: 30px;	
+	text-align: center;
+	margin-left: 50px;
+}
+.footer-rt img{
+	height: 150px;
+	width: 150px;
+	margin-bottom: 8px;
+}
