@@ -1,1495 +1,2162 @@
-﻿
-<!DOCTYPE html >
+﻿<!DOCTYPE html >
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-   		<link rel="stylesheet" type="text/css" href="css/baijiuzhaoshang.css"/>
-</head>
-<body>
+		<link rel="stylesheet" type="text/css" href="css/baijiuzhaoshang.css" />
+	</head>
 
-   
-<div class="mjw_bar">
-    <div class="mjw_barcenter">
-        <div id="loginBarContent" class="h_b2">
-            <font>欢迎访问中国美酒招商网！[请<a href="javascript:void(0);" onclick="Login()">登录</a>/<a href="http://user.9928.tv/Register.aspx"
-                target="_blank">免费注册</a>]</font><i><img src="images/qqkf.jpg" alt="QQ登录" onclick="window.location.href='http://user.9928.tv/Oauth/LoginToQQ.aspx'"
+	<body>
+
+		<div class="mjw_bar">
+			<div class="mjw_barcenter">
+				<div id="loginBarContent" class="h_b2">
+					<font>欢迎访问中国美酒招商网！[请
+						<a href="javascript:void(0);" onclick="Login()">登录</a>/
+						<a href="http://user.9928.tv/Register.aspx" target="_blank">免费注册</a>]</font><i><img src="images/qqkf.jpg" alt="QQ登录" onclick="window.location.href='http://user.9928.tv/Oauth/LoginToQQ.aspx'"
                     style="cursor: pointer;" /></i></div>
-        <div class="fx">
-            <div class="bdsharebuttonbox">
-                <a href="#" class="bds_more" data-cmd="more">分享</a></div>
-           
-        </div>
-		 <div class="h_b4">
-            <a href="http://www.9928.tv/" target="_blank" style="color:#d30a2c">中国美酒招商网首页</a><a href="http://weibo.com/9928tv" target="_blank" rel="nofollow">官方微博</a><a href="http://www.9928.tv/zthz/weixin/"
-                target="_blank">微信</a></div>
-        <div style="clear: both">
-        </div>
-    </div>
-</div>
-<div class="mjw_barcenter" style="padding: 10px 0">
-    <div class="hlogo">
-        <a href="http://www.9928.tv" target="_blank" class="mjw_logo">
-            <img src="images/index-logo.png" /></a>
-        <div class="sd_logo">
-            <b><a href="http://baijiu.9928.tv/" target="_blank">白酒招商代理</a></b><strong><a href="http://baijiu.9928.tv/" target="_blank">baijiu.9928.tv</a></strong></div>
-    </div>
-    <div class="h_search">
-        <div class="h_sou">
-            <div class="h_sk">
-                
-                <input name="Keys3" id="Keys3" autocomplete="off" x-webkit-speech="" type="text"
-                    class="sk" onkeyup="OnkSear()" />
-                <div class="s_xuan">
-                    <ul>
-                        <li id="y_p" onmouseover="hover()" onmouseout="out()" style="cursor: pointer;" class="curt">
-                            <span id="y_type">产品</span><i></i></li>
-                        <li style="display: none; cursor: pointer;" id="y_pro" onmouseover="hover()" onmouseout="out()"
-                            onclick="dianjiXL('y_pro','SearPro')">产品</li>
-                        <li style="display: none; cursor: pointer;" id="y_com" onmouseover="hover()" onmouseout="out()"
-                            onclick="dianjiXL('y_com','SearCom')">企业</li>
-                        <li style="display: none; cursor: pointer;" id="y_pinpai" onmouseover="hover()" onmouseout="out()"
-                            onclick="dianjiXL('y_pinpai','SearPinpai')">品牌</li>
-                        <li style="display: none; cursor: pointer;" id="y_baike" onmouseover="hover()" onmouseout="out()"
-                            onclick="dianjiXL('y_baike','SearBK')">百科</li>
-                        <li style="display: none; cursor: pointer;" id="y_tjh" onmouseover="hover()" onmouseout="out()"
-                            onclick="dianjiXL('y_tjh','SearTjh')">糖酒会</li>
-                        <li style="display: none; border-bottom: #fbd0d4 1px solid; cursor: pointer;" id="y_news"
-                            onmouseover="hover()" onclick="dianjiXL('y_news','SearNews')" onmouseout="out()">
-                            资讯</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="h_sbton">
-                <input name="btnSearch" id="btnSearch"
-                    onclick="OnUrl2('SearPro')" type="button" class="s_btn" /></div>
-            <div style="clear: both;">
-            </div>
-            <input id="hiddenSear" type="hidden" value="SearPro" />
-        </div>
-        <div class="s_re">
-            <span><a href="http://www.9928.tv/qiugou/" target="_blank">
+				<div class="fx">
+					<div class="bdsharebuttonbox">
+						<a href="#" class="bds_more" data-cmd="more">分享</a>
+					</div>
+
+				</div>
+				<div class="h_b4">
+					<a href="http://www.9928.tv/" target="_blank" style="color:#d30a2c">中国美酒招商网首页</a>
+					<a href="http://weibo.com/9928tv" target="_blank" rel="nofollow">官方微博</a>
+					<a href="http://www.9928.tv/zthz/weixin/" target="_blank">微信</a>
+				</div>
+				<div style="clear: both">
+				</div>
+			</div>
+		</div>
+		<div class="mjw_barcenter" style="padding: 10px 0">
+			<div class="hlogo">
+				<a href="http://www.9928.tv" target="_blank" class="mjw_logo">
+					<img src="images/index-logo.png" /></a>
+				<div class="sd_logo">
+					<b><a href="http://baijiu.9928.tv/" target="_blank">白酒招商代理</a></b><strong><a href="http://baijiu.9928.tv/" target="_blank">baijiu.9928.tv</a></strong></div>
+			</div>
+			<div class="h_search">
+				<div class="h_sou">
+					<div class="h_sk">
+
+						<input name="Keys3" id="Keys3" autocomplete="off" x-webkit-speech="" type="text" class="sk" onkeyup="OnkSear()" />
+						<div class="s_xuan">
+							<ul>
+								<li id="y_p" onmouseover="hover()" onmouseout="out()" style="cursor: pointer;" class="curt">
+									<span id="y_type">产品</span><i></i></li>
+								<li style="display: none; cursor: pointer;" id="y_pro" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_pro','SearPro')">产品</li>
+								<li style="display: none; cursor: pointer;" id="y_com" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_com','SearCom')">企业</li>
+								<li style="display: none; cursor: pointer;" id="y_pinpai" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_pinpai','SearPinpai')">品牌</li>
+								<li style="display: none; cursor: pointer;" id="y_baike" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_baike','SearBK')">百科</li>
+								<li style="display: none; cursor: pointer;" id="y_tjh" onmouseover="hover()" onmouseout="out()" onclick="dianjiXL('y_tjh','SearTjh')">糖酒会</li>
+								<li style="display: none; border-bottom: #fbd0d4 1px solid; cursor: pointer;" id="y_news" onmouseover="hover()" onclick="dianjiXL('y_news','SearNews')" onmouseout="out()">
+									资讯</li>
+							</ul>
+						</div>
+					</div>
+					<div class="h_sbton">
+						<input name="btnSearch" id="btnSearch" onclick="OnUrl2('SearPro')" type="button" class="s_btn" /></div>
+					<div style="clear: both;">
+					</div>
+					<input id="hiddenSear" type="hidden" value="SearPro" />
+				</div>
+				<div class="s_re">
+					<span><a href="http://www.9928.tv/qiugou/" target="_blank">
                 <img src="images/sj.jpg" /></a></span>
-               <label id="flag1">热搜：<a onclick="OnUrl3('')" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="" style="cursor:pointer;"></a><a onclick="OnUrl3('酒')" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="酒" style="cursor:pointer;">酒</a><a onclick="OnUrl3('葡萄酒')" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="葡萄酒" style="cursor: pointer; color: rgb(0, 0, 0);">葡萄酒</a><a onclick="OnUrl3('红酒')" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="红酒" style="cursor: pointer; color: rgb(0, 0, 0);">红酒</a><a onclick="OnUrl3('啤酒')" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="啤酒" style="cursor: pointer; color: rgb(0, 0, 0);">啤酒</a></label>
-    </div>
-    <div class="h_adv">
-        </div>
-    <div style="clear: both;">
-    </div>
-</div>
+					<label id="flag1">热搜：<a onclick="OnUrl3('')" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="" style="cursor:pointer;"></a><a onclick="OnUrl3('酒')" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="酒" style="cursor:pointer;">酒</a><a onclick="OnUrl3('葡萄酒')" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="葡萄酒" style="cursor: pointer; color: rgb(0, 0, 0);">葡萄酒</a><a onclick="OnUrl3('红酒')" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="红酒" style="cursor: pointer; color: rgb(0, 0, 0);">红酒</a><a onclick="OnUrl3('啤酒')" onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'" title="啤酒" style="cursor: pointer; color: rgb(0, 0, 0);">啤酒</a></label>
+				</div>
+				<div class="h_adv">
+				</div>
+				<div style="clear: both;">
+				</div>
+			</div>
 
-    <div class="topmenu">
-        <div class="menu2">
-            <div class="topbk">
-                <div class="fl_title fl">
-                    白酒招商代理分类</div>
-                <div class="menu fl">
-                    <ul>
-                        <li><a href="http://baijiu.9928.tv">首页</a></li>
-                        <li><a href="http://baijiu.9928.tv/agents/" target="_blank">白酒经销商</a></li>
-                        <li><a href="#hrpp">热门白酒品牌</a></li>
-                        <li><a href="#hrzd">中低端白酒招商</a></li>
-                        <li><a href="#hrxx">白酒香型</a></li>
-                    </ul>
-                    <div style="clear: both">
-                    </div>
-                </div>
-                <div style="clear: both">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bj_bk">
-        <div class="fl_bk fl">
-            <ul id="nav">
-                <li id="mainCate-1" class="mainCate">
-                    <h3>
+			<div class="topmenu">
+				<div class="menu2">
+					<div class="topbk">
+						<div class="fl_title fl">
+							白酒招商代理分类</div>
+						<div class="menu fl">
+							<ul>
+								<li>
+									<a href="http://baijiu.9928.tv">首页</a>
+								</li>
+								<li>
+									<a href="http://baijiu.9928.tv/agents/" target="_blank">白酒经销商</a>
+								</li>
+								<li>
+									<a href="#hrpp">热门白酒品牌</a>
+								</li>
+								<li>
+									<a href="#hrzd">中低端白酒招商</a>
+								</li>
+								<li>
+									<a href="#hrxx">白酒香型</a>
+								</li>
+							</ul>
+							<div style="clear: both">
+							</div>
+						</div>
+						<div style="clear: both">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bj_bk">
+				<div class="fl_bk fl">
+					<ul id="nav">
+						<li id="mainCate-1" class="mainCate">
+							<h3>
                         <span>&gt;</span><a href="http://baijiu.9928.tv/p_p_all/" target="_blank">品牌招商</a></h3>
-                    <p><a href="/p_p_1386/"   target="_blank">五粮液</a><a href="/p_p_1/"   target="_blank">洋河</a><a href="/p_p_10/"   target="_blank">西凤酒</a><a href="/p_p_12/"   target="_blank">泸州老窖</a></p><p><a href="/p_p_2432/"   target="_blank">黔小驴</a><a href="/p_p_1899/"   target="_blank">江小白</a><a href="/p_p_1900/"   target="_blank">酒中仙</a><a href="/p_p_1901/"   target="_blank">一担粮二锅头</a></p><p><a href="/p_p_1902/"   target="_blank">梦井坊</a><a href="/p_p_1903/"   target="_blank">青瓷兰花酒</a></p>
+							<p>
+								<a href="/p_p_1386/" target="_blank">五粮液</a>
+								<a href="/p_p_1/" target="_blank">洋河</a>
+								<a href="/p_p_10/" target="_blank">西凤酒</a>
+								<a href="/p_p_12/" target="_blank">泸州老窖</a>
+							</p>
+							<p>
+								<a href="/p_p_2432/" target="_blank">黔小驴</a>
+								<a href="/p_p_1899/" target="_blank">江小白</a>
+								<a href="/p_p_1900/" target="_blank">酒中仙</a>
+								<a href="/p_p_1901/" target="_blank">一担粮二锅头</a>
+							</p>
+							<p>
+								<a href="/p_p_1902/" target="_blank">梦井坊</a>
+								<a href="/p_p_1903/" target="_blank">青瓷兰花酒</a>
+							</p>
 
-                    <div class="subCate" style="display: none;">
-                        <ul id="sub-ul-1">
-                            <h4>
+							<div class="subCate" style="display: none;">
+								<ul id="sub-ul-1">
+									<h4>
                                 品牌</h4>
-                            <li>
-                                <a href="/p_p_1386/"  target="_blank">五粮液</a><a href="/p_p_1/"  target="_blank">洋河</a><a href="/p_p_10/"  target="_blank">西凤酒</a><a href="/p_p_12/"  target="_blank">泸州老窖</a><a href="/p_p_2432/"  target="_blank">黔小驴</a><a href="/p_p_1899/"  target="_blank">江小白</a><a href="/p_p_1900/"  target="_blank">酒中仙</a><a href="/p_p_1901/"  target="_blank">一担粮二锅头</a><a href="/p_p_1902/"  target="_blank">梦井坊</a><a href="/p_p_1903/"  target="_blank">青瓷兰花酒</a><a href="/p_p_1904/"  target="_blank">水酒坊</a><a href="/p_p_1905/"  target="_blank">金井福</a><a href="/p_p_1908/"  target="_blank">古池贡酒</a><a href="/p_p_1913/"  target="_blank">复兴梦</a><a href="/p_p_1917/"  target="_blank">白金上匠</a><a href="/p_p_1921/"  target="_blank">赖窖</a><a href="/p_p_1922/"  target="_blank">新花瓷</a><a href="/p_p_1924/"  target="_blank">富锦老窖酒</a><a href="/p_p_1926/"  target="_blank">大荒缘</a><a href="/p_p_1927/"  target="_blank">鹤兰春</a><a href="/p_p_1928/"  target="_blank">金马杆</a><a href="/p_p_1929/"  target="_blank">福喜满堂酒</a><a href="/p_p_1930/"  target="_blank">王祖烧坊</a><a href="/p_p_1933/"  target="_blank">怀庄酒</a><a href="/p_p_1935/"  target="_blank">长冈</a><a href="/p_p_1937/"  target="_blank">婺泉</a><a href="/p_p_1938/"  target="_blank">莫茅酒</a><a href="/p_p_1939/"  target="_blank">婺源红</a><a href="/p_p_1940/"  target="_blank">樟树老窖</a><a href="/p_p_1941/"  target="_blank">玉特</a><a href="/p_p_1942/"  target="_blank">金祖</a><a href="/p_p_1943/"  target="_blank">双强</a><a href="/p_p_1944/"  target="_blank">兰花御</a><a href="/p_p_1945/"  target="_blank">库布其</a><a href="/p_p_1946/"  target="_blank">金庐陵</a><a href="/p_p_1947/"  target="_blank">谷养康</a><a href="/p_p_1948/"  target="_blank">兰花山</a><a href="/p_p_1949/"  target="_blank">财如水</a><a href="/p_p_1950/"  target="_blank">陶藏原浆</a><a href="/p_p_1951/"  target="_blank">九气台</a><a href="/p_p_1952/"  target="_blank">争荣</a><a href="/p_p_1953/"  target="_blank">金凤</a><a href="/p_p_1954/"  target="_blank">楚乡王酒</a><a href="/p_p_1955/"  target="_blank">昭君故里酒</a><a href="/p_p_1956/"  target="_blank">铁道兵</a><a href="/p_p_1957/"  target="_blank">莫勒红</a><a href="/p_p_1958/"  target="_blank">泉阳龙</a><a href="/p_p_1959/"  target="_blank">还阳参酒</a><a href="/p_p_1961/"  target="_blank">东北丰酒</a><a href="/p_p_1962/"  target="_blank">老馋虫</a><a href="/p_p_1963/"  target="_blank">陈年峰</a><a href="/p_p_1964/"  target="_blank">村井坊</a><a href="/p_p_1965/"  target="_blank">孙府酒</a><a href="/p_p_1966/"  target="_blank">潞仙酒</a><a href="/p_p_1967/"  target="_blank">老景州酒</a><a href="/p_p_1968/"  target="_blank">卧龙泉</a><a href="/p_p_1969/"  target="_blank">黑老大酒</a><a href="/p_p_1970/"  target="_blank">鸾凤</a><a href="/p_p_1971/"  target="_blank">贵镇王子酒</a><a href="/p_p_1972/"  target="_blank">腾龙梦</a><a href="/p_p_1973/"  target="_blank">东北乡</a><a href="/p_p_1974/"  target="_blank">天香</a><a href="/p_p_1975/"  target="_blank">崆山</a><a href="/p_p_1976/"  target="_blank">德兴隆</a><a href="/p_p_1977/"  target="_blank">剑邑王</a><a href="/p_p_1978/"  target="_blank">禹醉坊</a><a href="/p_p_1979/"  target="_blank">辽河烧公酒</a><a href="/p_p_1980/"  target="_blank">飞熊酒</a><a href="/p_p_1981/"  target="_blank">忆中品故事酒</a><a href="/p_p_1982/"  target="_blank">玉水坊酒</a><a href="/p_p_1983/"  target="_blank">天地辉煌酒</a><a href="/p_p_1984/"  target="_blank">柯尼达</a><a href="/p_p_1985/"  target="_blank">怀赖</a><a href="/p_p_1986/"  target="_blank">文春</a><a href="/p_p_1987/"  target="_blank">帝侯酒</a><a href="/p_p_1988/"  target="_blank">金陵十二钗</a><a href="/p_p_1989/"  target="_blank">芦清王酒</a><a href="/p_p_1990/"  target="_blank">窖行天下</a><a href="/p_p_1991/"  target="_blank">夜郎古酒</a><a href="/p_p_1992/"  target="_blank">云五液</a>
-                                
-                            </li>
-                            <p class="ppmore">
-                                <a href="http://baijiu.9928.tv/p_p_all/" target="_blank" style="font-size: 16px;
-                                    color: #dd0b2e; font-weight: bold;">更多白酒品牌>></a></p>
-                        </ul>
-                    </div>
-                </li>
-                <li id="mainCate-2" class="mainCate evenLeval">
-                    <h3>
+									<li>
+										<a href="/p_p_1386/" target="_blank">五粮液</a>
+										<a href="/p_p_1/" target="_blank">洋河</a>
+										<a href="/p_p_10/" target="_blank">西凤酒</a>
+										<a href="/p_p_12/" target="_blank">泸州老窖</a>
+										<a href="/p_p_2432/" target="_blank">黔小驴</a>
+										<a href="/p_p_1899/" target="_blank">江小白</a>
+										<a href="/p_p_1900/" target="_blank">酒中仙</a>
+										<a href="/p_p_1901/" target="_blank">一担粮二锅头</a>
+										<a href="/p_p_1902/" target="_blank">梦井坊</a>
+										<a href="/p_p_1903/" target="_blank">青瓷兰花酒</a>
+										<a href="/p_p_1904/" target="_blank">水酒坊</a>
+										<a href="/p_p_1905/" target="_blank">金井福</a>
+										<a href="/p_p_1908/" target="_blank">古池贡酒</a>
+										<a href="/p_p_1913/" target="_blank">复兴梦</a>
+										<a href="/p_p_1917/" target="_blank">白金上匠</a>
+										<a href="/p_p_1921/" target="_blank">赖窖</a>
+										<a href="/p_p_1922/" target="_blank">新花瓷</a>
+										<a href="/p_p_1924/" target="_blank">富锦老窖酒</a>
+										<a href="/p_p_1926/" target="_blank">大荒缘</a>
+										<a href="/p_p_1927/" target="_blank">鹤兰春</a>
+										<a href="/p_p_1928/" target="_blank">金马杆</a>
+										<a href="/p_p_1929/" target="_blank">福喜满堂酒</a>
+										<a href="/p_p_1930/" target="_blank">王祖烧坊</a>
+										<a href="/p_p_1933/" target="_blank">怀庄酒</a>
+										<a href="/p_p_1935/" target="_blank">长冈</a>
+										<a href="/p_p_1937/" target="_blank">婺泉</a>
+										<a href="/p_p_1938/" target="_blank">莫茅酒</a>
+										<a href="/p_p_1939/" target="_blank">婺源红</a>
+										<a href="/p_p_1940/" target="_blank">樟树老窖</a>
+										<a href="/p_p_1941/" target="_blank">玉特</a>
+										<a href="/p_p_1942/" target="_blank">金祖</a>
+										<a href="/p_p_1943/" target="_blank">双强</a>
+										<a href="/p_p_1944/" target="_blank">兰花御</a>
+										<a href="/p_p_1945/" target="_blank">库布其</a>
+										<a href="/p_p_1946/" target="_blank">金庐陵</a>
+										<a href="/p_p_1947/" target="_blank">谷养康</a>
+										<a href="/p_p_1948/" target="_blank">兰花山</a>
+										<a href="/p_p_1949/" target="_blank">财如水</a>
+										<a href="/p_p_1950/" target="_blank">陶藏原浆</a>
+										<a href="/p_p_1951/" target="_blank">九气台</a>
+										<a href="/p_p_1952/" target="_blank">争荣</a>
+										<a href="/p_p_1953/" target="_blank">金凤</a>
+										<a href="/p_p_1954/" target="_blank">楚乡王酒</a>
+										<a href="/p_p_1955/" target="_blank">昭君故里酒</a>
+										<a href="/p_p_1956/" target="_blank">铁道兵</a>
+										<a href="/p_p_1957/" target="_blank">莫勒红</a>
+										<a href="/p_p_1958/" target="_blank">泉阳龙</a>
+										<a href="/p_p_1959/" target="_blank">还阳参酒</a>
+										<a href="/p_p_1961/" target="_blank">东北丰酒</a>
+										<a href="/p_p_1962/" target="_blank">老馋虫</a>
+										<a href="/p_p_1963/" target="_blank">陈年峰</a>
+										<a href="/p_p_1964/" target="_blank">村井坊</a>
+										<a href="/p_p_1965/" target="_blank">孙府酒</a>
+										<a href="/p_p_1966/" target="_blank">潞仙酒</a>
+										<a href="/p_p_1967/" target="_blank">老景州酒</a>
+										<a href="/p_p_1968/" target="_blank">卧龙泉</a>
+										<a href="/p_p_1969/" target="_blank">黑老大酒</a>
+										<a href="/p_p_1970/" target="_blank">鸾凤</a>
+										<a href="/p_p_1971/" target="_blank">贵镇王子酒</a>
+										<a href="/p_p_1972/" target="_blank">腾龙梦</a>
+										<a href="/p_p_1973/" target="_blank">东北乡</a>
+										<a href="/p_p_1974/" target="_blank">天香</a>
+										<a href="/p_p_1975/" target="_blank">崆山</a>
+										<a href="/p_p_1976/" target="_blank">德兴隆</a>
+										<a href="/p_p_1977/" target="_blank">剑邑王</a>
+										<a href="/p_p_1978/" target="_blank">禹醉坊</a>
+										<a href="/p_p_1979/" target="_blank">辽河烧公酒</a>
+										<a href="/p_p_1980/" target="_blank">飞熊酒</a>
+										<a href="/p_p_1981/" target="_blank">忆中品故事酒</a>
+										<a href="/p_p_1982/" target="_blank">玉水坊酒</a>
+										<a href="/p_p_1983/" target="_blank">天地辉煌酒</a>
+										<a href="/p_p_1984/" target="_blank">柯尼达</a>
+										<a href="/p_p_1985/" target="_blank">怀赖</a>
+										<a href="/p_p_1986/" target="_blank">文春</a>
+										<a href="/p_p_1987/" target="_blank">帝侯酒</a>
+										<a href="/p_p_1988/" target="_blank">金陵十二钗</a>
+										<a href="/p_p_1989/" target="_blank">芦清王酒</a>
+										<a href="/p_p_1990/" target="_blank">窖行天下</a>
+										<a href="/p_p_1991/" target="_blank">夜郎古酒</a>
+										<a href="/p_p_1992/" target="_blank">云五液</a>
+
+									</li>
+									<p class="ppmore">
+										<a href="http://baijiu.9928.tv/p_p_all/" target="_blank" style="font-size: 16px;
+                                    color: #dd0b2e; font-weight: bold;">更多白酒品牌>></a>
+									</p>
+								</ul>
+							</div>
+						</li>
+						<li id="mainCate-2" class="mainCate evenLeval">
+							<h3>
                         <span>&gt;</span><a href="http://baijiu.9928.tv/x_x_all/" target="_blank">白酒香型</a></h3>
-                    <p>
-                        <a href="/x_x_jiang/" target="_blank">酱香型</a><a href="/x_x_nong/" style="color: #dd0b2e"
-                            target="_blank">浓香型</a><a href="/x_x_qing/" target="_blank">清香型</a><a href="/x_x_jian/"
-                                target="_blank">兼香型</a></p>
-                    <p>
-                        <a href="/x_x_te/" target="_blank">特香型</a><a href="/x_x_chi/" target="_blank">豉香型</a><a
-                            href="/x_x_feng/" style="color: #dd0b2e">凤香型</a><a href="/x_x_mi/" target="_blank">蜜香型</a></p>
-                    <p>
-                        <a href="/x_x_fuyu/" target="_blank">馥郁香型</a><a href="/x_x_zhima/" target="_blank">芝麻香型</a><a
-                            href="/x_x_baigan/" target="_blank">白干香型</a></p>
-                    <p>
-                        <a href="/x_x_fuhe/" target="_blank">復合香</a><a href="/x_x_qi/" target="_blank">杞香型</a><a
-                            href="/x_x_ge/" target="_blank">葛香型</a><a href="/x_x_other/" target="_blank">其它</a></p>
-                </li>
-                <li id="mainCate-3" class="mainCate">
-                    <h3>
+							<p>
+								<a href="/x_x_jiang/" target="_blank">酱香型</a>
+								<a href="/x_x_nong/" style="color: #dd0b2e" target="_blank">浓香型</a>
+								<a href="/x_x_qing/" target="_blank">清香型</a>
+								<a href="/x_x_jian/" target="_blank">兼香型</a>
+							</p>
+							<p>
+								<a href="/x_x_te/" target="_blank">特香型</a>
+								<a href="/x_x_chi/" target="_blank">豉香型</a>
+								<a href="/x_x_feng/" style="color: #dd0b2e">凤香型</a>
+								<a href="/x_x_mi/" target="_blank">蜜香型</a>
+							</p>
+							<p>
+								<a href="/x_x_fuyu/" target="_blank">馥郁香型</a>
+								<a href="/x_x_zhima/" target="_blank">芝麻香型</a>
+								<a href="/x_x_baigan/" target="_blank">白干香型</a>
+							</p>
+							<p>
+								<a href="/x_x_fuhe/" target="_blank">復合香</a>
+								<a href="/x_x_qi/" target="_blank">杞香型</a>
+								<a href="/x_x_ge/" target="_blank">葛香型</a>
+								<a href="/x_x_other/" target="_blank">其它</a>
+							</p>
+						</li>
+						<li id="mainCate-3" class="mainCate">
+							<h3>
                         <a href="http://baijiu.9928.tv/q_q_all/" target="_blank">销售渠道</a></h3>
-                    <p>
-                        <a href="/q_q_ltqd/" target="_blank">流通渠道</a><a href="/q_q_scmc/" target="_blank">商超卖场</a><a
-                            href="/q_q_jdcy/" target="_blank">酒店餐饮</a></p>
-                    <p>
-                        <a href="/q_q_tuangou/" target="_blank">团购加盟卖场</a><a href="/q_q_teshu/" target="_blank">特殊渠道</a></p>
-                    <p>
-                        <a href="/q_q_ktv/" target="_blank">夜场KTV</a></p>
-                </li>
-                <li id="mainCate-4" class="mainCate evenLeval">
-                    <h3>
+							<p>
+								<a href="/q_q_ltqd/" target="_blank">流通渠道</a>
+								<a href="/q_q_scmc/" target="_blank">商超卖场</a>
+								<a href="/q_q_jdcy/" target="_blank">酒店餐饮</a>
+							</p>
+							<p>
+								<a href="/q_q_tuangou/" target="_blank">团购加盟卖场</a>
+								<a href="/q_q_teshu/" target="_blank">特殊渠道</a>
+							</p>
+							<p>
+								<a href="/q_q_ktv/" target="_blank">夜场KTV</a>
+							</p>
+						</li>
+						<li id="mainCate-4" class="mainCate evenLeval">
+							<h3>
                         <a href="http://baijiu.9928.tv/j_j_all/" target="_blank">市场价位</a></h3>
-                    <p>
-                        <a href="/j_j_dd/" target="_blank">低端</a><a href="/j_j_zd/" target="_blank">中端</a><a
-                            href="/j_j_gd/" target="_blank">高端</a></p>
-                </li>
-                <li id="mainCate-5" class="mainCate">
-                    <h3>
+							<p>
+								<a href="/j_j_dd/" target="_blank">低端</a>
+								<a href="/j_j_zd/" target="_blank">中端</a>
+								<a href="/j_j_gd/" target="_blank">高端</a>
+							</p>
+						</li>
+						<li id="mainCate-5" class="mainCate">
+							<h3>
                         <a href="http://baijiu.9928.tv/t_t_all/" target="_blank">投资金额</a></h3>
-                    <p>
-                        <a href="/t_t_5w/" target="_blank">5万以下</a><a href="/t_t_520w/" target="_blank">5-20万</a><a
-                            href="/t_t_2050w/" target="_blank">20-50万</a></p>
-                    <p>
-                        <a href="/t_t_50w/" target="_blank">面议</a><a href="/t_t_other/" target="_blank">其它</a></p>
-                </li>
-            </ul>
-        </div>
-        <script type="text/javascript">
-            jQuery("#nav").slide({ type: "menu", titCell: ".mainCate", targetCell: ".subCate", delayTime: 0, triggerTime: 0, defaultPlay: false, returnDefault: true });
-        </script>
-        <div class="bk_mid fl">
-            <div class="ban_cter">
-                <div id="full-screen-slider">
-                    <ul id="slides">
-                        
-                                <li style="background: url('images/17111280.jpg') no-repeat center top">
-                                    <a href="http://www.9928.tv/vip/hbc/" target="_blank" rel="nofollow">
-                                        五粮液股份公司聖酒品牌全国运营中心</a></li>
-                            
-                                <li style="background: url('images/14452817.jpg') no-repeat center top">
-                                    <a href="http://www.9928.tv/vip/pyrjj/" target="_blank" rel="nofollow">
-                                        北京平原人家酒业有限公司</a></li>
-                            
-                                <li style="background: url('images/17451714.jpg') no-repeat center top">
-                                    <a href="http://www.9928.tv/company/xiushuifang/" target="_blank" rel="nofollow">
-                                        四川秀水坊酒业有限公司</a></li>
-                            
-                                <li style="background: url('images/09335059.jpg') no-repeat center top">
-                                    <a href="http://www.9928.tv/company/scrjj/" target="_blank" rel="nofollow">
-                                        山东实诚人酒业有限公司</a></li>
-                            
-                                <li style="background: url('images/15430838.jpg') no-repeat center top">
-                                    <a href="http://www.9928.tv/company/jgcjy/" target="_blank" rel="nofollow">
-                                        金谷春酒营销中心</a></li>
-                            
-                        
-                    </ul>
-                </div>
-            </div>
-            <div class="bk_adv">
-                
-                        <a href="http://www.9928.tv/company/tqlj/" target="_blank">
-                            <img src="images/09042865.jpg" alt="江苏梦一酒业股份有限公司" /></a>
-                    
-                        <a href="http://www.9928.tv/vip/syjy/" target="_blank">
-                          <img src="images/09042865.jpg" alt="江苏梦一酒业股份有限公司" /></a>
-                    
-                        <a href="http://www.9928.tv/vip/xsnj/" target="_blank">
-                            <img src="images/09042865.jpg" alt="江苏梦一酒业股份有限公司" /></a>
-                    
-            </div>
-        </div>
-        <div class="bk_right fl">
-            <div class="bk_rk">
-                <div class="rkcss fl" style="border-right: #aea48f 1px solid">
-                    <a href="http://user.9928.tv" target="_blank">
-                        <img src="images/t1.jpg" alt="登录后找项目" /><span>我要找项目</span></a></div>
-                <div class="rkcss fl">
-                    <a href="http://user.9928.tv" target="_blank">
-                        <img src="images/t2.jpg" alt="登录后即可发布" /><span>发布招商信息</span></a></div>
-                <div style="clear: both;">
-                </div>
-            </div>
-            <div class="dzcss">
-                <a href="http://user.9928.tv/Register.aspx" target="_blank">免费注册</a>|<a href="http://user.9928.tv"
-                    target="_blank">会员登录</a></div>
-            <div class="xxbk">
-                目前正有<strong>370</strong>白酒经销商在线找产品，<br />
-                本日新增意向加盟者<strong>3740</strong>人。</div>
-            <div class="albk">
-                
-                <h3><a href="http://mingjiu.9928.tv/news/case/6047.html" target="_blank">古井金红缘酒，邀您共享财富盛</a></h3><p><a href="http://mingjiu.9928.tv/news/case/6027.html" target="_blank">诺威原酿啤酒，纯正德国风味，</a></p><p><a href="http://mingjiu.9928.tv/news/case/5936.html" target="_blank">秀水坊酒，四大优势助你成功创</a></p><p><a href="http://mingjiu.9928.tv/news/case/5918.html" target="_blank">醉浮祥二锅头出货忙，好产品，</a></p>
-            </div>
-            <div class="gbbk">
-                <h3 class="zc">
+							<p>
+								<a href="/t_t_5w/" target="_blank">5万以下</a>
+								<a href="/t_t_520w/" target="_blank">5-20万</a>
+								<a href="/t_t_2050w/" target="_blank">20-50万</a>
+							</p>
+							<p>
+								<a href="/t_t_50w/" target="_blank">面议</a>
+								<a href="/t_t_other/" target="_blank">其它</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+					jQuery("#nav").slide({
+						type: "menu",
+						titCell: ".mainCate",
+						targetCell: ".subCate",
+						delayTime: 0,
+						triggerTime: 0,
+						defaultPlay: false,
+						returnDefault: true
+					});
+				</script>
+				<div class="bk_mid fl">
+					<div class="ban_cter">
+						<div id="full-screen-slider">
+							<ul id="slides">
+
+								<li style="background: url('images/17111280.jpg') no-repeat center top">
+									<a href="http://www.9928.tv/vip/hbc/" target="_blank" rel="nofollow">
+										五粮液股份公司聖酒品牌全国运营中心</a>
+								</li>
+
+								<li style="background: url('images/14452817.jpg') no-repeat center top">
+									<a href="http://www.9928.tv/vip/pyrjj/" target="_blank" rel="nofollow">
+										北京平原人家酒业有限公司</a>
+								</li>
+
+								<li style="background: url('images/17451714.jpg') no-repeat center top">
+									<a href="http://www.9928.tv/company/xiushuifang/" target="_blank" rel="nofollow">
+										四川秀水坊酒业有限公司</a>
+								</li>
+
+								<li style="background: url('images/09335059.jpg') no-repeat center top">
+									<a href="http://www.9928.tv/company/scrjj/" target="_blank" rel="nofollow">
+										山东实诚人酒业有限公司</a>
+								</li>
+
+								<li style="background: url('images/15430838.jpg') no-repeat center top">
+									<a href="http://www.9928.tv/company/jgcjy/" target="_blank" rel="nofollow">
+										金谷春酒营销中心</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="bk_adv">
+
+						<a href="http://www.9928.tv/company/tqlj/" target="_blank">
+							<img src="images/09042865.jpg" alt="江苏梦一酒业股份有限公司" /></a>
+
+						<a href="http://www.9928.tv/vip/syjy/" target="_blank">
+							<img src="images/09042865.jpg" alt="江苏梦一酒业股份有限公司" /></a>
+
+						<a href="http://www.9928.tv/vip/xsnj/" target="_blank">
+							<img src="images/09042865.jpg" alt="江苏梦一酒业股份有限公司" /></a>
+
+					</div>
+				</div>
+				<div class="bk_right fl">
+					<div class="bk_rk">
+						<div class="rkcss fl" style="border-right: #aea48f 1px solid">
+							<a href="http://user.9928.tv" target="_blank">
+								<img src="images/t1.jpg" alt="登录后找项目" /><span>我要找项目</span></a>
+						</div>
+						<div class="rkcss fl">
+							<a href="http://user.9928.tv" target="_blank">
+								<img src="images/t2.jpg" alt="登录后即可发布" /><span>发布招商信息</span></a>
+						</div>
+						<div style="clear: both;">
+						</div>
+					</div>
+					<div class="dzcss">
+						<a href="http://user.9928.tv/Register.aspx" target="_blank">免费注册</a>|
+						<a href="http://user.9928.tv" target="_blank">会员登录</a>
+					</div>
+					<div class="xxbk">
+						目前正有<strong>370</strong>白酒经销商在线找产品，<br /> 本日新增意向加盟者
+						<strong>3740</strong>人。</div>
+					<div class="albk">
+
+						<h3><a href="http://mingjiu.9928.tv/news/case/6047.html" target="_blank">古井金红缘酒，邀您共享财富盛</a></h3>
+						<p>
+							<a href="http://mingjiu.9928.tv/news/case/6027.html" target="_blank">诺威原酿啤酒，纯正德国风味，</a>
+						</p>
+						<p>
+							<a href="http://mingjiu.9928.tv/news/case/5936.html" target="_blank">秀水坊酒，四大优势助你成功创</a>
+						</p>
+						<p>
+							<a href="http://mingjiu.9928.tv/news/case/5918.html" target="_blank">醉浮祥二锅头出货忙，好产品，</a>
+						</p>
+					</div>
+					<div class="gbbk">
+						<h3 class="zc">
                     公告<img src="images/t3.gif" style="top: 2px; position: relative;" /></h3>
-                
-                        <p>
-                            ·<a href="http://www.9928.tv/news/dongtai-baijiudongtai/288190.html"
-                                target="_blank" title='关于调整河南省酒业协会豫酒振兴发展战略委 员会成员的通知'>关于调整河南省酒业协会豫酒振兴发</a></p>
-                    
-                        <p>
-                            ·<a href="http://www.9928.tv/news/dongtai-baijiudongtai/287643.html"
-                                target="_blank" title='关于编撰出版《中国豫酒文化史》的通知'>关于编撰出版《中国豫酒文化史》的</a></p>
-                    
-                        <p>
-                            ·<a href="http://www.9928.tv/news/dongtai-baijiudongtai/287604.html"
-                                target="_blank" title='关于举办河南省酒业新闻舆情监测暨第二届河南省酒业新闻宣传研讨班的通知'>关于举办河南省酒业新闻舆情监测暨</a></p>
-                    
-            </div>
-        </div>
-        <div style="clear: both;">
-        </div>
-    </div>
-    <div class="bj_bk">
-        <div class="bkcss">
-            <h3 style="border: none;">
+
+						<p>
+							·
+							<a href="http://www.9928.tv/news/dongtai-baijiudongtai/288190.html" target="_blank" title='关于调整河南省酒业协会豫酒振兴发展战略委 员会成员的通知'>关于调整河南省酒业协会豫酒振兴发</a>
+						</p>
+
+						<p>
+							·
+							<a href="http://www.9928.tv/news/dongtai-baijiudongtai/287643.html" target="_blank" title='关于编撰出版《中国豫酒文化史》的通知'>关于编撰出版《中国豫酒文化史》的</a>
+						</p>
+
+						<p>
+							·
+							<a href="http://www.9928.tv/news/dongtai-baijiudongtai/287604.html" target="_blank" title='关于举办河南省酒业新闻舆情监测暨第二届河南省酒业新闻宣传研讨班的通知'>关于举办河南省酒业新闻舆情监测暨</a>
+						</p>
+
+					</div>
+				</div>
+				<div style="clear: both;">
+				</div>
+			</div>
+			<div class="bj_bk">
+				<div class="bkcss">
+					<h3 style="border: none;">
                 <span class="bkmore"><a href="http://www.9928.tv/baijiuzhaoshang/" target="_blank">更多火爆酒水代理>></a></span><img
                     src="images/t4.jpg" style="top: 4px; position: relative;" />热门白酒代理<font>精选白酒招商代理项目</font></h3>
-            <div class="hot_bk">
-                
-                <a href="http://www.9928.tv/vip/bnegt/" target="_blank"><img src="images/11221380.jpg" alt="北京二锅头酒业股份有限公司百年二锅头" /></a><a href="http://www.9928.tv/company/mgf/" target="_blank"><img src="images/11221380.jpg" alt="江苏两心同酒业股份有限公司" /></a><a href="http://www.9928.tv/company/fuxiyingmen/" target="_blank"><img src="images/11221380.jpg" alt="江苏两心同酒业股份有限公司" /></a><a href="http://www.9928.tv/company/yongshengshaofang9/" target="_blank"><img src="images/11221380.jpg" alt="江苏两心同酒业股份有限公司" /></a><a href="http://www.9928.tv/company/bainianchaofeng/" style='margin-right:0' target="_blank"><img src="images/11221380.jpg" alt="江苏两心同酒业股份有限公司" /></a>
-            </div>
-        </div>
-        <div class="rezt">
-            <strong>·热门白酒代理专题：</strong><a href="http://www.9928.tv/subject/zuiremen/mtjdl/" target="_blank">茅台系列酒代理</a>
-			<a href="http://www.9928.tv/subject/zuiremen/qkjdl/" target="_blank">青稞酒代理</a>
-			<a href="http://www.9928.tv/subject/zuiremen/xjdljm/" target="_blank">小酒代理加盟</a>
-			<a href="http://www.9928.tv/subjecthree/zuiremen/rmbjzs/" target="_blank">热门白酒招商</a>
-			<a href="http://www.9928.tv/subjecttwo/zuiremen/xfjzs/" target="_blank">西凤酒招商</a>
-			<a href="http://www.9928.tv/subjecttwo/zuiremen/hslbg/" target="_blank">衡水老白干代理</a>
-			<a href="http://www.9928.tv/subject/zuiremen/gpjdl/" target="_blank">光瓶酒代理</a>
-			<a href="http://www.9928.tv/subjecttwo/zuiremen/jsbjdl/" target="_blank">江苏白酒代理</a>
-			<a href="http://www.9928.tv/subjecttwo/zuiremen/wfrjj/" target="_blank">五福人家酒</a></div>
-        <!--品牌白酒代理板块开始 -->
-        <div class="bkcss" id="hrpp">
-            <h3>
+					<div class="hot_bk">
+
+						<a href="http://www.9928.tv/vip/bnegt/" target="_blank"><img src="images/11221380.jpg" alt="北京二锅头酒业股份有限公司百年二锅头" /></a>
+						<a href="http://www.9928.tv/company/mgf/" target="_blank"><img src="images/11221380.jpg" alt="江苏两心同酒业股份有限公司" /></a>
+						<a href="http://www.9928.tv/company/fuxiyingmen/" target="_blank"><img src="images/11221380.jpg" alt="江苏两心同酒业股份有限公司" /></a>
+						<a href="http://www.9928.tv/company/yongshengshaofang9/" target="_blank"><img src="images/11221380.jpg" alt="江苏两心同酒业股份有限公司" /></a>
+						<a href="http://www.9928.tv/company/bainianchaofeng/" style='margin-right:0' target="_blank"><img src="images/11221380.jpg" alt="江苏两心同酒业股份有限公司" /></a>
+					</div>
+				</div>
+				<div class="rezt">
+					<strong>·热门白酒代理专题：</strong>
+					<a href="http://www.9928.tv/subject/zuiremen/mtjdl/" target="_blank">茅台系列酒代理</a>
+					<a href="http://www.9928.tv/subject/zuiremen/qkjdl/" target="_blank">青稞酒代理</a>
+					<a href="http://www.9928.tv/subject/zuiremen/xjdljm/" target="_blank">小酒代理加盟</a>
+					<a href="http://www.9928.tv/subjecthree/zuiremen/rmbjzs/" target="_blank">热门白酒招商</a>
+					<a href="http://www.9928.tv/subjecttwo/zuiremen/xfjzs/" target="_blank">西凤酒招商</a>
+					<a href="http://www.9928.tv/subjecttwo/zuiremen/hslbg/" target="_blank">衡水老白干代理</a>
+					<a href="http://www.9928.tv/subject/zuiremen/gpjdl/" target="_blank">光瓶酒代理</a>
+					<a href="http://www.9928.tv/subjecttwo/zuiremen/jsbjdl/" target="_blank">江苏白酒代理</a>
+					<a href="http://www.9928.tv/subjecttwo/zuiremen/wfrjj/" target="_blank">五福人家酒</a>
+				</div>
+				<!--品牌白酒代理板块开始 -->
+				<div class="bkcss" id="hrpp">
+					<h3>
                 <span class="bkmore"><a href="/p_p_all/" target="_blank">更多热门品牌白酒代理>></a></span><img
                     src="picture/t6.jpg" style="top: 6px; position: relative;" />品牌白酒代理<font>汇聚全国热门白酒品牌代理项目</font></h3>
-            <div class="dl_bk">
-                <div class="left_bk fl">
-                    <div class="adv">
-                        <a href="http://www.9928.tv/vip/lydk/" target="_blank"><img src="images/15215891.jpg" alt="洛阳杜康控股有限公司" /></a>
-                        </div>
-                    <div class="pp_tj" style="padding: 9px 15px">
-                        <ul>
-                            <li><a href="http://www.9928.tv/company/fnjy/" target="_blank">汾酒集团老味道酒</a></li><li><a href="http://www.9928.tv/company/xgfzj/" target="_blank">新贵妃醉酒西凤酒</a></li><li><a href="http://www.9928.tv/company/syjy/" target="_blank">今世缘酒</a></li><li><a href="http://www.9928.tv/company/fuxiyingmen/" target="_blank">福喜迎门酒</a></li><li><a href="http://www.9928.tv/company/hubeidaohuaxiang/" target="_blank">稻花香酒</a></li><li><a href="http://www.9928.tv/company/xiaocai/" target="_blank">太白特曲</a></li><li><a href="http://www.9928.tv/company/jkyy/" target="_blank">金口玉言酒</a></li><li><a href="http://www.9928.tv/company/guangmingjiuye/" target="_blank">浏阳河绵柔窖酒</a></li><li><a href="http://www.9928.tv/vip/dkjdxs/" target="_blank">西凤凤仙醇酒</a></li><li><a href="http://www.9928.tv/company/erguotoujiuye/" target="_blank">北京二锅头</a></li><li><a href="http://www.9928.tv/company/luoyangdukangkonggu/" target="_blank">国花杜康</a></li><li><a href="http://www.9928.tv/company/xljpj/" target="_blank">兴隆佳品酒</a></li><li><a href="http://www.9928.tv/company/fuyutianxiang/" target="_blank">酒鬼酒</a></li>
-                        </ul>
-                        <div style="clear: both">
-                        </div>
-                    </div>
-                </div>
-                <div class="middle_bk fl">
-                    <ul>
-                        
-                                <li><a href="http://www.9928.tv/company/yxbj/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/yxbj/" target="_blank">
+					<div class="dl_bk">
+						<div class="left_bk fl">
+							<div class="adv">
+								<a href="http://www.9928.tv/vip/lydk/" target="_blank"><img src="images/15215891.jpg" alt="洛阳杜康控股有限公司" /></a>
+							</div>
+							<div class="pp_tj" style="padding: 9px 15px">
+								<ul>
+									<li>
+										<a href="http://www.9928.tv/company/fnjy/" target="_blank">汾酒集团老味道酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/xgfzj/" target="_blank">新贵妃醉酒西凤酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/syjy/" target="_blank">今世缘酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/fuxiyingmen/" target="_blank">福喜迎门酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/hubeidaohuaxiang/" target="_blank">稻花香酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/xiaocai/" target="_blank">太白特曲</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/jkyy/" target="_blank">金口玉言酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/guangmingjiuye/" target="_blank">浏阳河绵柔窖酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/vip/dkjdxs/" target="_blank">西凤凤仙醇酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/erguotoujiuye/" target="_blank">北京二锅头</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/luoyangdukangkonggu/" target="_blank">国花杜康</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/xljpj/" target="_blank">兴隆佳品酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/fuyutianxiang/" target="_blank">酒鬼酒</a>
+									</li>
+								</ul>
+								<div style="clear: both">
+								</div>
+							</div>
+						</div>
+						<div class="middle_bk fl">
+							<ul>
+
+								<li>
+									<a href="http://www.9928.tv/company/yxbj/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/yxbj/" target="_blank">
                                             山东云小白酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>133917</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>133917</strong>人</p>
+										<p>
+											<span>
                                                 中端,低端</span>老白干香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/jnxj/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/jnxj/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/jnxj/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/jnxj/" target="_blank">
                                             江苏越众商贸有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>36597</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>36597</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/hantaijiuye/" target="_blank">
-                                     <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/hantaijiuye/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/hantaijiuye/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/hantaijiuye/" target="_blank">
                                             贵州汉台酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>136781</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>136781</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/yhgy/" target="_blank">
-                                     <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/yhgy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/yhgy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/yhgy/" target="_blank">
                                             江苏洋河国御酒业有限公</a></b>
-                                        <p>
-                                            意向代理:<strong>197770</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>197770</strong>人</p>
+										<p>
+											<span>
                                                 中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/ybmj/" target="_blank">
-                                     <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/ybmj/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/ybmj/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/ybmj/" target="_blank">
                                             河南壹佰名酒实业有限公</a></b>
-                                        <p>
-                                            意向代理:<strong>845</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>845</strong>人</p>
+										<p>
+											<span>
                                                 高端 中端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/huanghejiuye/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/huanghejiuye/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/huanghejiuye/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/huanghejiuye/" target="_blank">
                                             贵州省仁怀市茅台镇黄河</a></b>
-                                        <p>
-                                            意向代理:<strong>133728</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>133728</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/zscjy/" target="_blank">
-                                     <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/zscjy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/zscjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/zscjy/" target="_blank">
                                             安徽詹仕纯酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>18553</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>18553</strong>人</p>
+										<p>
+											<span>
                                                 中端 低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/yipinfang/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/yipinfang/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/yipinfang/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/yipinfang/" target="_blank">
                                             泸州一品坊窖藏</a></b>
-                                        <p>
-                                            意向代理:<strong>222740</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>222740</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                    </ul>
-                    <div style="clear: both;">
-                    </div>
-                </div>
-                <div class="right_bk fl">
-                    <div class="rg_bk1">
-                        <h4>
+									</div>
+								</li>
+
+							</ul>
+							<div style="clear: both;">
+							</div>
+						</div>
+						<div class="right_bk fl">
+							<div class="rg_bk1">
+								<h4>
                             品牌白酒加盟动态</h4>
-                        <div id="CW_dong" style="overflow: hidden; width: 190px; height: 260px; position: relative;">
-                            <div id="CW_dong1">
-                                <ul>
-                                	<li></li>
-                                </ul>
-                            </div>
-                            <div id="CW_dong2">
-                            </div>
-                        </div>
-                        <script src="js/scrolltop.js" type="text/javascript" language="javascript"></script>
-                    </div>
-                    <div class="rg_bk1">
-                        <h4>
+								<div id="CW_dong" style="overflow: hidden; width: 190px; height: 260px; position: relative;">
+									<div id="CW_dong1">
+										<ul>
+											<li></li>
+										</ul>
+									</div>
+									<div id="CW_dong2">
+									</div>
+								</div>
+								<script src="js/scrolltop.js" type="text/javascript" language="javascript"></script>
+							</div>
+							<div class="rg_bk1">
+								<h4>
                             热门地区品牌白酒</h4>
-                        <p><a href="http://www.9928.tv/henan/" target="_blank">河南白酒品牌</a></p><p><a href="http://www.9928.tv/shandong/" target="_blank">山东白酒品牌</a></p><p><a href="http://www.9928.tv/guizhou/" target="_blank">贵州白酒品牌</a></p><p><a href="http://www.9928.tv/anhui/" target="_blank">安徽白酒品牌</a></p>
-                        
-                    </div>
-                </div>
-                <div style="clear: both;">
-                </div>
-            </div>
-            <div class="rezt" style="margin-top: 20px">
-                <strong>·品牌白酒代理专题推荐：</strong>
-				<a href="http://www.9928.tv/subject/zuiremen/ljdl/" target="_blank">郎酒代理</a>
-				<a href="http://www.9928.tv/subjecthree/zuiremen/lzljjm/" target="_blank">泸州老窖代理加盟</a>
-				<a href="http://www.9928.tv/subject/zuiremen/ahmj/" target="_blank">安徽名酒</a>
-				<a href="http://www.9928.tv/subject/zuiremen/sxbjdl/" target="_blank">山西白酒代理</a>
-				<a href="http://www.9928.tv/subject/zuiremen/dkjdl/" target="_blank">杜康酒代理</a>
-				<a href="http://www.9928.tv/subject/shengyijing/yhdq/" target="_blank">洋河大曲</a>
-				<a href="http://www.9928.tv/subjecttwo/zuiremen/zgbjpp/" target="_blank">中国白酒品牌大全</a>
-				<a href="http://www.9928.tv/subject/zuiremen/xjdl/" target="_blank">习酒代理</a>
-            </div>
-        </div>
-        <!--中低端白酒代理板块开始 -->
-        <div class="bkcss" id="hrzd">
-            <h3>
+								<p>
+									<a href="http://www.9928.tv/henan/" target="_blank">河南白酒品牌</a>
+								</p>
+								<p>
+									<a href="http://www.9928.tv/shandong/" target="_blank">山东白酒品牌</a>
+								</p>
+								<p>
+									<a href="http://www.9928.tv/guizhou/" target="_blank">贵州白酒品牌</a>
+								</p>
+								<p>
+									<a href="http://www.9928.tv/anhui/" target="_blank">安徽白酒品牌</a>
+								</p>
+
+							</div>
+						</div>
+						<div style="clear: both;">
+						</div>
+					</div>
+					<div class="rezt" style="margin-top: 20px">
+						<strong>·品牌白酒代理专题推荐：</strong>
+						<a href="http://www.9928.tv/subject/zuiremen/ljdl/" target="_blank">郎酒代理</a>
+						<a href="http://www.9928.tv/subjecthree/zuiremen/lzljjm/" target="_blank">泸州老窖代理加盟</a>
+						<a href="http://www.9928.tv/subject/zuiremen/ahmj/" target="_blank">安徽名酒</a>
+						<a href="http://www.9928.tv/subject/zuiremen/sxbjdl/" target="_blank">山西白酒代理</a>
+						<a href="http://www.9928.tv/subject/zuiremen/dkjdl/" target="_blank">杜康酒代理</a>
+						<a href="http://www.9928.tv/subject/shengyijing/yhdq/" target="_blank">洋河大曲</a>
+						<a href="http://www.9928.tv/subjecttwo/zuiremen/zgbjpp/" target="_blank">中国白酒品牌大全</a>
+						<a href="http://www.9928.tv/subject/zuiremen/xjdl/" target="_blank">习酒代理</a>
+					</div>
+				</div>
+				<!--中低端白酒代理板块开始 -->
+				<div class="bkcss" id="hrzd">
+					<h3>
                 <span class="bkmore"><a href="/j_j_all/" target="_blank">更多中低端白酒代理>></a></span><img
                     src="images/t6.jpg" style="top: 6px; position: relative;" />中低端白酒代理<font>汇聚全国热门中低端白酒代理项目</font></h3>
-            <div class="dl_bk">
-                <div class="left_bk fl">
-                    <div class="adv">
-                        <a href="http://www.9928.tv/vip/dxmj/" target="_blank"><img src="images/15215891.jpg" alt="郑州刁小妹酒业有限公司" /></a>
-                        </div>
-                    <div class="pp_tj" style="background: #1dad93; height: 150px">
-                        <ul>
-                            <li><a href="http://www.9928.tv/company/wdgj/" target="_blank">魏帝贡酒</a></li><li><a href="http://www.9928.tv/company/jinrongt/" target="_blank">小纯良酒</a></li><li><a href="http://www.9928.tv/company/dkjc/" target="_blank">杜康窖藏</a></li><li><a href="http://www.9928.tv/company/mtxjj/" target="_blank">茅台集团心俊酒</a></li><li><a href="http://www.9928.tv/company/qcxj/" target="_blank">80后青春小酒</a></li><li><a href="http://www.9928.tv/company/hgsj/" target="_blank">韩国小烧</a></li><li><a href="http://www.9928.tv/company/geliahao/" target="_blank">哥俩好酒</a></li><li><a href="http://www.9928.tv/company/zhanggongjiuye/" target="_blank">张弓酒</a></li><li><a href="http://www.9928.tv/company/jubaichuan/" target="_blank">老白干酒</a></li><li><a href="http://www.9928.tv/company/hshyjy/" target="_blank">衡御老白干</a></li><li><a href="http://www.9928.tv/company/haotuo/" target="_blank">贵州迎宾酒</a></li><li><a href="http://www.9928.tv/company/heyishaofang/" target="_blank">和义烧坊酒</a></li>
-                        </ul>
-                        <div style="clear: both">
-                        </div>
-                    </div>
-                </div>
-                <div class="middle_bk fl">
-                    <ul>
-                        
-                                <li><a href="http://www.9928.tv/company/yxyjy/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/yxyjy/" target="_blank">
+					<div class="dl_bk">
+						<div class="left_bk fl">
+							<div class="adv">
+								<a href="http://www.9928.tv/vip/dxmj/" target="_blank"><img src="images/15215891.jpg" alt="郑州刁小妹酒业有限公司" /></a>
+							</div>
+							<div class="pp_tj" style="background: #1dad93; height: 150px">
+								<ul>
+									<li>
+										<a href="http://www.9928.tv/company/wdgj/" target="_blank">魏帝贡酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/jinrongt/" target="_blank">小纯良酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/dkjc/" target="_blank">杜康窖藏</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/mtxjj/" target="_blank">茅台集团心俊酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/qcxj/" target="_blank">80后青春小酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/hgsj/" target="_blank">韩国小烧</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/geliahao/" target="_blank">哥俩好酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/zhanggongjiuye/" target="_blank">张弓酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/jubaichuan/" target="_blank">老白干酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/hshyjy/" target="_blank">衡御老白干</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/haotuo/" target="_blank">贵州迎宾酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/heyishaofang/" target="_blank">和义烧坊酒</a>
+									</li>
+								</ul>
+								<div style="clear: both">
+								</div>
+							</div>
+						</div>
+						<div class="middle_bk fl">
+							<ul>
+
+								<li>
+									<a href="http://www.9928.tv/company/yxyjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/yxyjy/" target="_blank">
                                             山东亿小云酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>11589</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>11589</strong>人</p>
+										<p>
+											<span>
                                                 中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/hxb/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/hxb/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/hxb/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/hxb/" target="_blank">
                                             衡水衡小白酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>82816</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>82816</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/jdwjy/" target="_blank">
-                                   <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/jdwjy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/jdwjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/jdwjy/" target="_blank">
                                             北京京德旺酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>24512</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>24512</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/jiaduofu/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/jiaduofu/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/jiaduofu/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/jiaduofu/" target="_blank">
                                             贵州加多福酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>178090</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>178090</strong>人</p>
+										<p>
+											<span>
                                                 中端,低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/bjhljy/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/bjhljy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/bjhljy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/bjhljy/" target="_blank">
                                             北京皇龙酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>4255</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>4255</strong>人</p>
+										<p>
+											<span>
                                                 </span></p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/luoyangdukangkonggu/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/luoyangdukangkonggu/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/luoyangdukangkonggu/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/luoyangdukangkonggu/" target="_blank">
                                             杜康老酒全国营销中心</a></b>
-                                        <p>
-                                            意向代理:<strong>34007</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>34007</strong>人</p>
+										<p>
+											<span>
                                                 中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/xjf/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/xjf/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/xjf/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/xjf/" target="_blank">
                                             安徽亳州复兴梦酒业有限</a></b>
-                                        <p>
-                                            意向代理:<strong>288565</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>288565</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/jqc/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/jqc/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/jqc/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/jqc/" target="_blank">
                                             陕西紫阳金荞实业有限公</a></b>
-                                        <p>
-                                            意向代理:<strong>12385</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>12385</strong>人</p>
+										<p>
+											<span>
                                                 中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                    </ul>
-                    <div style="clear: both;">
-                    </div>
-                </div>
-                <div class="right_bk fl">
-                    <div class="rg_bk1">
-                        <h4>
+									</div>
+								</li>
+
+							</ul>
+							<div style="clear: both;">
+							</div>
+						</div>
+						<div class="right_bk fl">
+							<div class="rg_bk1">
+								<h4>
                             中低端白酒关注排行榜</h4>
-                        <ul>
-                            <li><strong>1</strong><a href="http://www.9928.tv/company/xiushuifang/" target="_blank">四川秀水坊酒</a></li><li><strong>2</strong><a href="http://www.9928.tv/vip/xfjjy/" target="_blank">革命小酒</a></li><li><strong>3</strong><a href="http://www.9928.tv/company/jjjjy/" target="_blank">京今记二锅头</a></li><li><strong>4</strong><a href="http://www.9928.tv/company/wulinfengjiu/" target="_blank">安徽武林风酒</a></li><li><strong>5</strong><a href="http://www.9928.tv/vip/alsjiuc/" target="_blank">宝岛阿里山台湾高粱酒</a></li><li><strong>6</strong><a href="http://www.9928.tv/vip/pyrjj/" target="_blank">纯爷们二锅头</a></li><li><strong>7</strong><a href="http://www.9928.tv/company/luoyangdukangkonggu/" target="_blank">杜康老酒</a></li><li><strong>8</strong><a href="http://www.9928.tv/company/gusongjiu/" target="_blank">古宋粮液</a></li>
-                        </ul>
-                    </div>
-                    <div class="rg_bk2">
-                        <h4>
+								<ul>
+									<li><strong>1</strong>
+										<a href="http://www.9928.tv/company/xiushuifang/" target="_blank">四川秀水坊酒</a>
+									</li>
+									<li><strong>2</strong>
+										<a href="http://www.9928.tv/vip/xfjjy/" target="_blank">革命小酒</a>
+									</li>
+									<li><strong>3</strong>
+										<a href="http://www.9928.tv/company/jjjjy/" target="_blank">京今记二锅头</a>
+									</li>
+									<li><strong>4</strong>
+										<a href="http://www.9928.tv/company/wulinfengjiu/" target="_blank">安徽武林风酒</a>
+									</li>
+									<li><strong>5</strong>
+										<a href="http://www.9928.tv/vip/alsjiuc/" target="_blank">宝岛阿里山台湾高粱酒</a>
+									</li>
+									<li><strong>6</strong>
+										<a href="http://www.9928.tv/vip/pyrjj/" target="_blank">纯爷们二锅头</a>
+									</li>
+									<li><strong>7</strong>
+										<a href="http://www.9928.tv/company/luoyangdukangkonggu/" target="_blank">杜康老酒</a>
+									</li>
+									<li><strong>8</strong>
+										<a href="http://www.9928.tv/company/gusongjiu/" target="_blank">古宋粮液</a>
+									</li>
+								</ul>
+							</div>
+							<div class="rg_bk2">
+								<h4>
                             <span><a href="http://mingjiu.9928.tv/news/jmshangji/" target="_blank">更多>></a></span>加盟商机</h4>
-                        
-                        <b><a href="http://mingjiu.9928.tv/news/jmshangji/6184.html" target="_blank"  title="藏佳纯青稞酒雪域娇子代理怎么样？">藏佳纯青稞酒雪域娇子代</a></b><font class="jshu">藏佳纯青稞酒雪域娇子 藏佳纯青稞酒所选青稞，...</font><p>·<a href="http://mingjiu.9928.tv/news/jmshangji/6182.html" target="_blank" title="老白汾酒代理好做吗？怎么做老白汾酒代理？">老白汾酒代理好做吗？怎</a></p><p>·<a href="http://mingjiu.9928.tv/news/jmshangji/6180.html" target="_blank" title="名酿系列酒怎么做代理？">名酿系列酒怎么做代理？</a></p><p>·<a href="http://mingjiu.9928.tv/news/jmshangji/6177.html" target="_blank" title="雪熊原浆啤酒，纯正麦芽发酵，诚招代理商！">雪熊原浆啤酒，纯正麦芽</a></p><p>·<a href="http://mingjiu.9928.tv/news/jmshangji/6176.html" target="_blank" title="百思丽香槟酒火热招商中！">百思丽香槟酒火热招商中</a></p><p>·<a href="http://mingjiu.9928.tv/news/jmshangji/6174.html" target="_blank" title="古井盛世人家酒代理怎么做？">古井盛世人家酒代理怎么</a></p>
-                    </div>
-                </div>
-                <div style="clear: both;">
-                </div>
-            </div>
-            <div class="rezt" style="margin-top: 20px">
-                <strong>·中低端白酒代理专题推荐：</strong><a href="http://www.9928.tv/subject/zuiremen/gpjdl/"
-                    target="_blank">光瓶酒代理</a><a href="http://www.9928.tv/subjecthree/shengyijing/sichuandiduan/"
-                    target="_blank">四川低端酒水</a><a href="http://www.9928.tv/subjecttwo/shengyijing/diduanjiu/"
-                        target="_blank">低端白酒代理</a><a href="http://www.9928.tv/subjecthree/zuiremen/zddbj/"
-                            target="_blank">中低端白酒有哪些</a><a href="http://www.9928.tv/subject/zuiremen/lczj/"
-                                target="_blank">老村长酒代理</a><a href="http://www.9928.tv/subjecttwo/zuiremen/zddbjpp/"
-                                    target="_blank">中低端白酒品牌</a>
-									<a href="http://www.9928.tv/subjecttwo/zuiremen/zddbjpp/" target="_blank">低端白酒品牌代理</a>
-									<a href="http://www.9928.tv/subject/zuiremen/mtbj/" target="_blank">茅台镇白酒代理</a>
-            </div>
-        </div>
-        <div class="bkcss">
-            
-        </div>
-        <!--酱香型板块开始 -->
-        <div class="bkcss" id="hrxx">
-            <h3>
+
+								<b><a href="http://mingjiu.9928.tv/news/jmshangji/6184.html" target="_blank"  title="藏佳纯青稞酒雪域娇子代理怎么样？">藏佳纯青稞酒雪域娇子代</a></b>
+								<font class="jshu">藏佳纯青稞酒雪域娇子 藏佳纯青稞酒所选青稞，...</font>
+								<p>·
+									<a href="http://mingjiu.9928.tv/news/jmshangji/6182.html" target="_blank" title="老白汾酒代理好做吗？怎么做老白汾酒代理？">老白汾酒代理好做吗？怎</a>
+								</p>
+								<p>·
+									<a href="http://mingjiu.9928.tv/news/jmshangji/6180.html" target="_blank" title="名酿系列酒怎么做代理？">名酿系列酒怎么做代理？</a>
+								</p>
+								<p>·
+									<a href="http://mingjiu.9928.tv/news/jmshangji/6177.html" target="_blank" title="雪熊原浆啤酒，纯正麦芽发酵，诚招代理商！">雪熊原浆啤酒，纯正麦芽</a>
+								</p>
+								<p>·
+									<a href="http://mingjiu.9928.tv/news/jmshangji/6176.html" target="_blank" title="百思丽香槟酒火热招商中！">百思丽香槟酒火热招商中</a>
+								</p>
+								<p>·
+									<a href="http://mingjiu.9928.tv/news/jmshangji/6174.html" target="_blank" title="古井盛世人家酒代理怎么做？">古井盛世人家酒代理怎么</a>
+								</p>
+							</div>
+						</div>
+						<div style="clear: both;">
+						</div>
+					</div>
+					<div class="rezt" style="margin-top: 20px">
+						<strong>·中低端白酒代理专题推荐：</strong>
+						<a href="http://www.9928.tv/subject/zuiremen/gpjdl/" target="_blank">光瓶酒代理</a>
+						<a href="http://www.9928.tv/subjecthree/shengyijing/sichuandiduan/" target="_blank">四川低端酒水</a>
+						<a href="http://www.9928.tv/subjecttwo/shengyijing/diduanjiu/" target="_blank">低端白酒代理</a>
+						<a href="http://www.9928.tv/subjecthree/zuiremen/zddbj/" target="_blank">中低端白酒有哪些</a>
+						<a href="http://www.9928.tv/subject/zuiremen/lczj/" target="_blank">老村长酒代理</a>
+						<a href="http://www.9928.tv/subjecttwo/zuiremen/zddbjpp/" target="_blank">中低端白酒品牌</a>
+						<a href="http://www.9928.tv/subjecttwo/zuiremen/zddbjpp/" target="_blank">低端白酒品牌代理</a>
+						<a href="http://www.9928.tv/subject/zuiremen/mtbj/" target="_blank">茅台镇白酒代理</a>
+					</div>
+				</div>
+				<div class="bkcss">
+
+				</div>
+				<!--酱香型板块开始 -->
+				<div class="bkcss" id="hrxx">
+					<h3>
                 <span class="bkmore"><a href="/x_x_jiang/" target="_blank">更多酱香型白酒代理>></a></span><img
                     src="images/t6.jpg" style="top: 6px; position: relative;" />酱香型白酒代理<font>汇聚全国热门酱香型白酒代理项目</font></h3>
-            <div class="dl_bk">
-                <div class="left_bk fl">
-                    <div class="adv">
-                        <a href="http://www.9928.tv/vip/hnajsm/" target="_blank"><img src="images/15215891.jpg" alt="河南澳景贸易有限公司" /></a></div>
-                    <div class="pp_tj" style="background: #b36e1c; height: 150px">
-                        <ul>
-                            <li><a href="http://www.9928.tv/vip/bainianchaofeng/" target="_blank">习名酱酒</a></li><li><a href="http://www.9928.tv/company/ssjx/" target="_blank">白金原酿酒</a></li><li><a href="http://www.9928.tv/vip/jscsjj/" target="_blank">金沙酱酒</a></li><li><a href="http://www.9928.tv/company/hzjxsj/" target="_blank">潭酒</a></li><li><a href="http://www.9928.tv/company/hxlaj/" target="_blank">海峡两岸酒</a></li><li><a href="http://www.9928.tv/company/gzmjh/" target="_blank">茅台镇台源酒</a></li><li><a href="http://www.9928.tv/company/mqjcj/" target="_blank">茅泉窖藏酒</a></li><li><a href="http://www.9928.tv/company/guozangjiang/" target="_blank">国藏酱酒</a></li><li><a href="http://www.9928.tv/company/pingba/" target="_blank">平坝窖酒</a></li><li><a href="http://www.9928.tv/company/guizhoulaiyusheng/" target="_blank">赖雨生酒</a></li><li><a href="http://www.9928.tv/company/gaocanjiuye/" target="_blank">赖驾贡酒</a></li>
-                        </ul>
-                        <div style="clear: both;">
-                        </div>
-                    </div>
-                </div>
-                <div class="middle_bk fl">
-                    <ul>
-                        
-                                <li><a href="http://www.9928.tv/company/gzjmjy/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/gzjmjy/" target="_blank">
+					<div class="dl_bk">
+						<div class="left_bk fl">
+							<div class="adv">
+								<a href="http://www.9928.tv/vip/hnajsm/" target="_blank"><img src="images/15215891.jpg" alt="河南澳景贸易有限公司" /></a>
+							</div>
+							<div class="pp_tj" style="background: #b36e1c; height: 150px">
+								<ul>
+									<li>
+										<a href="http://www.9928.tv/vip/bainianchaofeng/" target="_blank">习名酱酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/ssjx/" target="_blank">白金原酿酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/vip/jscsjj/" target="_blank">金沙酱酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/hzjxsj/" target="_blank">潭酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/hxlaj/" target="_blank">海峡两岸酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/gzmjh/" target="_blank">茅台镇台源酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/mqjcj/" target="_blank">茅泉窖藏酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/guozangjiang/" target="_blank">国藏酱酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/pingba/" target="_blank">平坝窖酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/guizhoulaiyusheng/" target="_blank">赖雨生酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/gaocanjiuye/" target="_blank">赖驾贡酒</a>
+									</li>
+								</ul>
+								<div style="clear: both;">
+								</div>
+							</div>
+						</div>
+						<div class="middle_bk fl">
+							<ul>
+
+								<li>
+									<a href="http://www.9928.tv/company/gzjmjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/gzjmjy/" target="_blank">
                                             贵州君盟酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>4834</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>4834</strong>人</p>
+										<p>
+											<span>
                                                 中端 低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/mtbjj/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/mtbjj/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/mtbjj/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/mtbjj/" target="_blank">
                                             贵州茅台(集团)保健酒</a></b>
-                                        <p>
-                                            意向代理:<strong>4088</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>4088</strong>人</p>
+										<p>
+											<span>
                                                 中端,低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/gzstjy/" target="_blank">
-                                   <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/gzstjy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/gzstjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/gzstjy/" target="_blank">
                                             贵州省双坛酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>21064</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>21064</strong>人</p>
+										<p>
+											<span>
                                                 </span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/jjbnjy/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/jjbnjy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/jjbnjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/jjbnjy/" target="_blank">
                                             贵州金酱百年酒业股份有</a></b>
-                                        <p>
-                                            意向代理:<strong>146621</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>146621</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/maotaizhenpinchang/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/maotaizhenpinchang/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/maotaizhenpinchang/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/maotaizhenpinchang/" target="_blank">
                                             贵州省仁怀市茅台镇珍品</a></b>
-                                        <p>
-                                            意向代理:<strong>36635</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>36635</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/hnajsm/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/hnajsm/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/hnajsm/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/hnajsm/" target="_blank">
                                             河南澳景贸易有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>5648</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>5648</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/pwhzj/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/pwhzj/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/pwhzj/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/pwhzj/" target="_blank">
                                             贵州怀庄酒业(集团)有</a></b>
-                                        <p>
-                                            意向代理:<strong>8554</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>8554</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/ftbl/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/ftbl/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/ftbl/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/ftbl/" target="_blank">
                                             贵州特将不老酒业股份有</a></b>
-                                        <p>
-                                            意向代理:<strong>160601</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>160601</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                    </ul>
-                    <div style="clear: both;">
-                    </div>
-                </div>
-                <div class="right_bk fl">
-                    <div class="rg_bk1">
-                        <h4>
+									</div>
+								</li>
+
+							</ul>
+							<div style="clear: both;">
+							</div>
+						</div>
+						<div class="right_bk fl">
+							<div class="rg_bk1">
+								<h4>
                             酱香型白酒关注排行榜</h4>
-                        <ul>
-                            <li><strong>1</strong><a href="http://www.9928.tv/company/hantaijiuye/" target="_blank">百金御酒</a></li><li><strong>2</strong><a href="http://www.9928.tv/vip/ybmj/" target="_blank">习酱酒</a></li><li><strong>3</strong><a href="http://www.9928.tv/company/spf/" target="_blank">白金原浆酒</a></li><li><strong>4</strong><a href="http://www.9928.tv/vip/xnj/" target="_blank">习酿酱酒</a></li><li><strong>5</strong><a href="http://www.9928.tv/company/zmtxjy/" target="_blank">习窖酒</a></li><li><strong>6</strong><a href="http://www.9928.tv/vip/huidu/" target="_blank">茅台醇浆酒</a></li><li><strong>7</strong><a href="http://www.9928.tv/vip/gzxdjy/" target="_blank">习德酱酒</a></li><li><strong>8</strong><a href="http://www.9928.tv/company/sjhz/" target="_blank">白金老酱酒</a></li>
-                        </ul>
-                    </div>
-                    <div class="rg_bk2">
-                        <h4>
+								<ul>
+									<li><strong>1</strong>
+										<a href="http://www.9928.tv/company/hantaijiuye/" target="_blank">百金御酒</a>
+									</li>
+									<li><strong>2</strong>
+										<a href="http://www.9928.tv/vip/ybmj/" target="_blank">习酱酒</a>
+									</li>
+									<li><strong>3</strong>
+										<a href="http://www.9928.tv/company/spf/" target="_blank">白金原浆酒</a>
+									</li>
+									<li><strong>4</strong>
+										<a href="http://www.9928.tv/vip/xnj/" target="_blank">习酿酱酒</a>
+									</li>
+									<li><strong>5</strong>
+										<a href="http://www.9928.tv/company/zmtxjy/" target="_blank">习窖酒</a>
+									</li>
+									<li><strong>6</strong>
+										<a href="http://www.9928.tv/vip/huidu/" target="_blank">茅台醇浆酒</a>
+									</li>
+									<li><strong>7</strong>
+										<a href="http://www.9928.tv/vip/gzxdjy/" target="_blank">习德酱酒</a>
+									</li>
+									<li><strong>8</strong>
+										<a href="http://www.9928.tv/company/sjhz/" target="_blank">白金老酱酒</a>
+									</li>
+								</ul>
+							</div>
+							<div class="rg_bk2">
+								<h4>
                             <span><a href="http://www.9928.tv/subject/" target="_blank">更多>></a></span>热门专题</h4>
-                        <p>·<a href="http://www.9928.tv/subject/zuiremen/2019xinpin/" target="_blank" title="2019成都糖酒会新品">2019成都糖酒会新品</a></p><p>·<a href="http://www.9928.tv/subject/zuiremen/gjzbjtp/" target="_blank" title="古井镇白酒贴牌">古井镇白酒贴牌</a></p><p>·<a href="http://www.9928.tv/subject/shengyijing/xjpjdl/" target="_blank" title="县级啤酒代理">县级啤酒代理</a></p><p>·<a href="http://www.9928.tv/subject/zuiremen/xdptj/" target="_blank" title="乡都葡萄酒">乡都葡萄酒</a></p><p>·<a href="http://www.9928.tv/subject/zuiremen/chagangjiu/" target="_blank" title="茶缸酒">茶缸酒</a></p><p>·<a href="http://www.9928.tv/subject/zuiremen/cjlpj/" target="_blank" title="春节礼品酒">春节礼品酒</a></p><p>·<a href="http://www.9928.tv/subject/shengyijing/bjdljm/" target="_blank" title="白酒代理加盟">白酒代理加盟</a></p><p>·<a href="http://www.9928.tv/subject/shengyijing/sjsy/" target="_blank" title="散酒生意">散酒生意</a></p>
-                    </div>
-                </div>
-                <div style="clear: both;">
-                </div>
-            </div>
-            <div class="rezt" style="margin-top: 20px">
-                <strong>·酱香型白酒代理相关专题：</strong>
-				<a href="http://www.9928.tv/subject/zuiremen/jxxbjjm/" target="_blank">酱香型白酒代理加盟</a>
-				<a href="http://www.9928.tv/subjecttwo/zuiremen/jxbjynx/"
-                    target="_blank">酱香型白酒有哪些</a><a href="http://www.9928.tv/subjecthree/shengyijing/mtzbj/"
-                    target="_blank">贵州茅台镇白酒招商</a><a href="http://www.9928.tv/subject/shengyijing/laimaojiu/"
-                        target="_blank">赖茅酒</a><a href="http://www.9928.tv/subject/zuiremen/lmjjgb/"
-                        target="_blank">赖茅酒价格</a><a href="http://www.9928.tv/subject/shengyijing/jiangxiang/"
-                            target="_blank">酱香型白酒</a><a href="http://www.9928.tv/subjecthree/zuiremen/jxxbjpm/"
-                                target="_blank">酱香型白酒排名</a><a href="http://www.9928.tv/subjecttwo/shengyijing/jxxbjpp/"
-                                        target="_blank">酱香型白酒品牌</a>
-            </div>
-        </div>
-        <div class="bkcss">
-            
-                    <a href="http://www.9928.tv/company/qqmjy/" target="_blank">
-                        <img src="images/16175294.jpg" alt="江苏全球梦酒业股份有限公司" style="width: 297px;
+								<p>·
+									<a href="http://www.9928.tv/subject/zuiremen/2019xinpin/" target="_blank" title="2019成都糖酒会新品">2019成都糖酒会新品</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/subject/zuiremen/gjzbjtp/" target="_blank" title="古井镇白酒贴牌">古井镇白酒贴牌</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/subject/shengyijing/xjpjdl/" target="_blank" title="县级啤酒代理">县级啤酒代理</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/subject/zuiremen/xdptj/" target="_blank" title="乡都葡萄酒">乡都葡萄酒</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/subject/zuiremen/chagangjiu/" target="_blank" title="茶缸酒">茶缸酒</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/subject/zuiremen/cjlpj/" target="_blank" title="春节礼品酒">春节礼品酒</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/subject/shengyijing/bjdljm/" target="_blank" title="白酒代理加盟">白酒代理加盟</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/subject/shengyijing/sjsy/" target="_blank" title="散酒生意">散酒生意</a>
+								</p>
+							</div>
+						</div>
+						<div style="clear: both;">
+						</div>
+					</div>
+					<div class="rezt" style="margin-top: 20px">
+						<strong>·酱香型白酒代理相关专题：</strong>
+						<a href="http://www.9928.tv/subject/zuiremen/jxxbjjm/" target="_blank">酱香型白酒代理加盟</a>
+						<a href="http://www.9928.tv/subjecttwo/zuiremen/jxbjynx/" target="_blank">酱香型白酒有哪些</a>
+						<a href="http://www.9928.tv/subjecthree/shengyijing/mtzbj/" target="_blank">贵州茅台镇白酒招商</a>
+						<a href="http://www.9928.tv/subject/shengyijing/laimaojiu/" target="_blank">赖茅酒</a>
+						<a href="http://www.9928.tv/subject/zuiremen/lmjjgb/" target="_blank">赖茅酒价格</a>
+						<a href="http://www.9928.tv/subject/shengyijing/jiangxiang/" target="_blank">酱香型白酒</a>
+						<a href="http://www.9928.tv/subjecthree/zuiremen/jxxbjpm/" target="_blank">酱香型白酒排名</a>
+						<a href="http://www.9928.tv/subjecttwo/shengyijing/jxxbjpp/" target="_blank">酱香型白酒品牌</a>
+					</div>
+				</div>
+				<div class="bkcss">
+
+					<a href="http://www.9928.tv/company/qqmjy/" target="_blank">
+						<img src="images/16175294.jpg" alt="江苏全球梦酒业股份有限公司" style="width: 297px;
                             float: left" /></a>
-                
-                    <a href="http://www.9928.tv/company/zuixianju/" target="_blank">
-                        <img src="images/16175294.jpg" alt="杏花村汾酒集团珍品原系列 (山西醉仙居酒业有限公司)" style="width: 297px;
+
+					<a href="http://www.9928.tv/company/zuixianju/" target="_blank">
+						<img src="images/16175294.jpg" alt="杏花村汾酒集团珍品原系列 (山西醉仙居酒业有限公司)" style="width: 297px;
                             float: left" /></a>
-                
-                    <a href="http://www.9928.tv/vip/rhjy/" target="_blank">
-                        <img src="images/16175294.jpg" alt="四川仁华酒业有限公司" style="width: 297px;
+
+					<a href="http://www.9928.tv/vip/rhjy/" target="_blank">
+						<img src="images/16175294.jpg" alt="四川仁华酒业有限公司" style="width: 297px;
                             float: left" /></a>
-                
-                    <a href="http://www.9928.tv/company/hsyd/" target="_blank">
-                        <img src="images/16175294.jpg" alt="衡水禹德酒业有限公司" style="width: 297px;
+
+					<a href="http://www.9928.tv/company/hsyd/" target="_blank">
+						<img src="images/16175294.jpg" alt="衡水禹德酒业有限公司" style="width: 297px;
                             float: left" /></a>
-                
-			<div style="clear:both"></div>
-        </div>
-        <!--浓香型板块开始 -->
-        <div class="bkcss">
-            <h3>
+
+					<div style="clear:both"></div>
+				</div>
+				<!--浓香型板块开始 -->
+				<div class="bkcss">
+					<h3>
                 <span class="bkmore"><a href="/x_x_nong/" target="_blank">更多浓香型白酒代理>></a></span><img
                     src="images/t6.jpg" style="top: 6px; position: relative;" />浓香型白酒代理<font>汇聚全国热门浓香型白酒代理项目</font></h3>
-            <div class="dl_bk">
-                <div class="left_bk fl">
-                    <div class="adv">
-                        <a href="http://www.9928.tv/company/wlyganyibei/" target="_blank"><img src="images/15215891.jpg" alt="五粮液股份公司干一杯全国平台运营中心" /></a></div>
-                    <div class="pp_tj" style="background: #f65555; height: 150px">
-                        <ul>
-                            <li><a href="http://www.9928.tv/vip/shuanglun/" target="_blank">金六福酒</a></li><li><a href="http://www.9928.tv/company/hfmj/" target="_blank">华福名酒</a></li><li><a href="http://www.9928.tv/company/styjj/" target="_blank">人民小酒</a></li><li><a href="http://www.9928.tv/company/jnxj/" target="_blank">剑南醇香酒</a></li><li><a href="http://www.9928.tv/vip/yhjjg/" target="_blank">洋河节节高酒</a></li><li><a href="http://www.9928.tv/vip/scjtyx/" target="_blank">五味人生酒</a></li><li><a href="http://www.9928.tv/company/xingfuxiaojiu/product_20222/" target="_blank">古井特曲酒</a></li><li><a href="http://www.9928.tv/company/ahjwzz/" target="_blank">徽九坊酒</a></li><li><a href="http://www.9928.tv/vip/lzj/" target="_blank">老庄家酒</a></li><li><a href="http://www.9928.tv/vip/yjxj/" target="_blank">遇见小酒</a></li><li><a href="http://www.9928.tv/company/txjy/" target="_blank">五粮液股份感恩酒</a></li><li><a href="http://www.9928.tv/vip/milu/" target="_blank">浓香老窖酒</a></li>
-                        </ul>
-                        <div style="clear: both;">
-                        </div>
-                    </div>
-                </div>
-                <div class="middle_bk fl">
-                    <ul>
-                        
-                                <li><a href="http://www.9928.tv/company/xfjjy/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/xfjjy/" target="_blank">
+					<div class="dl_bk">
+						<div class="left_bk fl">
+							<div class="adv">
+								<a href="http://www.9928.tv/company/wlyganyibei/" target="_blank"><img src="images/15215891.jpg" alt="五粮液股份公司干一杯全国平台运营中心" /></a>
+							</div>
+							<div class="pp_tj" style="background: #f65555; height: 150px">
+								<ul>
+									<li>
+										<a href="http://www.9928.tv/vip/shuanglun/" target="_blank">金六福酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/hfmj/" target="_blank">华福名酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/styjj/" target="_blank">人民小酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/jnxj/" target="_blank">剑南醇香酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/vip/yhjjg/" target="_blank">洋河节节高酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/vip/scjtyx/" target="_blank">五味人生酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/xingfuxiaojiu/product_20222/" target="_blank">古井特曲酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/ahjwzz/" target="_blank">徽九坊酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/vip/lzj/" target="_blank">老庄家酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/vip/yjxj/" target="_blank">遇见小酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/txjy/" target="_blank">五粮液股份感恩酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/vip/milu/" target="_blank">浓香老窖酒</a>
+									</li>
+								</ul>
+								<div style="clear: both;">
+								</div>
+							</div>
+						</div>
+						<div class="middle_bk fl">
+							<ul>
+
+								<li>
+									<a href="http://www.9928.tv/company/xfjjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/xfjjy/" target="_blank">
                                             徐福记酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>6354</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>6354</strong>人</p>
+										<p>
+											<span>
                                                 中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/gjybj/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/gjybj/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/gjybj/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/gjybj/" target="_blank">
                                             古井迎宾酒营销中心</a></b>
-                                        <p>
-                                            意向代理:<strong>1846</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>1846</strong>人</p>
+										<p>
+											<span>
                                                 高端 中端 低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/ljfj/" target="_blank">
-                                   <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/ljfj/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/ljfj/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/ljfj/" target="_blank">
                                             江苏国坊酒业股份有限公</a></b>
-                                        <p>
-                                            意向代理:<strong>124132</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>124132</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/yangheqhc/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/yangheqhc/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/yangheqhc/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/yangheqhc/" target="_blank">
                                             江苏青花瓷酒业股份有限</a></b>
-                                        <p>
-                                            意向代理:<strong>106901</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>106901</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/rhjy/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/rhjy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/rhjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/rhjy/" target="_blank">
                                             四川仁华酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>50856</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>50856</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/chuangwangjiu/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/chuangwangjiu/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/chuangwangjiu/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/chuangwangjiu/" target="_blank">
                                             安徽古井镇闯王酒业有限</a></b>
-                                        <p>
-                                            意向代理:<strong>157721</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>157721</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/scjtyx/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/scjtyx/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/scjtyx/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/scjtyx/" target="_blank">
                                             五粮液生态酿酒有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>19858</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>19858</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/jgcjy/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/jgcjy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/jgcjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/jgcjy/" target="_blank">
                                             金谷春酒营销中心</a></b>
-                                        <p>
-                                            意向代理:<strong>62930</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>62930</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                    </ul>
-                    <div style="clear: both;">
-                    </div>
-                </div>
-                <div class="right_bk fl">
-                    <div class="rg_bk1">
-                        <h4>
+									</div>
+								</li>
+
+							</ul>
+							<div style="clear: both;">
+							</div>
+						</div>
+						<div class="right_bk fl">
+							<div class="rg_bk1">
+								<h4>
                             浓香型白酒关注排行榜</h4>
-                        <ul>
-                            <li><strong>1</strong><a href="http://www.9928.tv/vip/lydk/" target="_blank">酒祖杜康</a></li><li><strong>2</strong><a href="http://www.9928.tv/vip/sctdjy/" target="_blank">五湖液</a></li><li><strong>3</strong><a href="http://www.9928.tv/vip/mgf/" target="_blank">中国梦酒</a></li><li><strong>4</strong><a href="http://www.9928.tv/company/qqmjy/" target="_blank">五粮液股份经典人生酒</a></li><li><strong>5</strong><a href="http://www.9928.tv/vip/rhjy/" target="_blank">剑南金樽酒</a></li><li><strong>6</strong><a href="http://www.9928.tv/vip/hbc/" target="_blank">五粮液股份圣酒</a></li><li><strong>7</strong><a href="http://www.9928.tv/company/wgfjy/" target="_blank">五谷烧坊酒</a></li>
-                        </ul>
-                    </div>
-                    <div class="rg_bk2">
-                        <h4>
+								<ul>
+									<li><strong>1</strong>
+										<a href="http://www.9928.tv/vip/lydk/" target="_blank">酒祖杜康</a>
+									</li>
+									<li><strong>2</strong>
+										<a href="http://www.9928.tv/vip/sctdjy/" target="_blank">五湖液</a>
+									</li>
+									<li><strong>3</strong>
+										<a href="http://www.9928.tv/vip/mgf/" target="_blank">中国梦酒</a>
+									</li>
+									<li><strong>4</strong>
+										<a href="http://www.9928.tv/company/qqmjy/" target="_blank">五粮液股份经典人生酒</a>
+									</li>
+									<li><strong>5</strong>
+										<a href="http://www.9928.tv/vip/rhjy/" target="_blank">剑南金樽酒</a>
+									</li>
+									<li><strong>6</strong>
+										<a href="http://www.9928.tv/vip/hbc/" target="_blank">五粮液股份圣酒</a>
+									</li>
+									<li><strong>7</strong>
+										<a href="http://www.9928.tv/company/wgfjy/" target="_blank">五谷烧坊酒</a>
+									</li>
+								</ul>
+							</div>
+							<div class="rg_bk2">
+								<h4>
                             <span><a href="http://www.9928.tv/newsjuhe/baijiu/" target="_blank">更多>></a></span>白酒新闻专题</h4>
-                        <p>·<a href="http://www.9928.tv/newsjuhe/hgxsj.html" target="_blank" title="韩国小烧酒">韩国小烧酒</a></p><p>·<a href="http://www.9928.tv/newsjuhe/xczjdl.html" target="_blank" title="小村外酒代理">小村外酒代理</a></p><p>·<a href="http://www.9928.tv/newsjuhe/dpqmj.html" target="_blank" title="东坡荞麦酒">东坡荞麦酒</a></p><p>·<a href="http://www.9928.tv/newsjuhe/gplj.html" target="_blank" title="贵宾郎酒">贵宾郎酒</a></p><p>·<a href="http://www.9928.tv/newsjuhe/jzjdl.html" target="_blank" title="景芝酒代理">景芝酒代理</a></p><p>·<a href="http://www.9928.tv/newsjuhe/qingzuojiu.html" target="_blank" title="青稞酒">青稞酒</a></p><p>·<a href="http://www.9928.tv/newsjuhe/yuzhenjiu.html" target="_blank" title="御珍酒">御珍酒</a></p><p>·<a href="http://www.9928.tv/newsjuhe/dclj.html" target="_blank" title="洞藏老酒">洞藏老酒</a></p>
-                    </div>
-                </div>
-                <div style="clear: both;">
-                </div>
-            </div>
-            <div class="rezt" style="margin-top: 20px">
-                <strong>·浓香型白酒代理相关专题：</strong><a href="http://www.9928.tv/subject/zuiremen/wly/"
-                    target="_blank">五粮液代理加盟</a>
-				<a href="http://www.9928.tv/subject/zuiremen/nxxbj/"
-                    target="_blank">浓香型白酒有哪些?</a><a href="http://www.9928.tv/subjecthree/zuiremen/xsfzs/"
-                    target="_blank">秀水坊酒招商</a><a href="http://www.9928.tv/subject/shengyijing/lzlj/"
-                        target="_blank">泸州老窖</a><a href="http://www.9928.tv/subjecthree/shengyijing/yhjdl/"
-                            target="_blank">洋河酒代理</a><a href="http://www.9928.tv/subject/zuiremen/nxjdl/"
-                                target="_blank">浓香型白酒代理</a><a href="http://www.9928.tv/subjecttwo/shengyijing/ahbjzscj/" target="_blank">安徽白酒招商厂家</a><a
-                                    href="http://www.9928.tv/subjecttwo/zuiremen/nxxbjpm/" target="_blank">浓香型白酒排名</a></div>
-        </div>
-        <div class="bkcss">
-            </div>
-        <!--清香型板块开始 -->
-        <div class="bkcss">
-            <h3>
+								<p>·
+									<a href="http://www.9928.tv/newsjuhe/hgxsj.html" target="_blank" title="韩国小烧酒">韩国小烧酒</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/newsjuhe/xczjdl.html" target="_blank" title="小村外酒代理">小村外酒代理</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/newsjuhe/dpqmj.html" target="_blank" title="东坡荞麦酒">东坡荞麦酒</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/newsjuhe/gplj.html" target="_blank" title="贵宾郎酒">贵宾郎酒</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/newsjuhe/jzjdl.html" target="_blank" title="景芝酒代理">景芝酒代理</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/newsjuhe/qingzuojiu.html" target="_blank" title="青稞酒">青稞酒</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/newsjuhe/yuzhenjiu.html" target="_blank" title="御珍酒">御珍酒</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/newsjuhe/dclj.html" target="_blank" title="洞藏老酒">洞藏老酒</a>
+								</p>
+							</div>
+						</div>
+						<div style="clear: both;">
+						</div>
+					</div>
+					<div class="rezt" style="margin-top: 20px">
+						<strong>·浓香型白酒代理相关专题：</strong>
+						<a href="http://www.9928.tv/subject/zuiremen/wly/" target="_blank">五粮液代理加盟</a>
+						<a href="http://www.9928.tv/subject/zuiremen/nxxbj/" target="_blank">浓香型白酒有哪些?</a>
+						<a href="http://www.9928.tv/subjecthree/zuiremen/xsfzs/" target="_blank">秀水坊酒招商</a>
+						<a href="http://www.9928.tv/subject/shengyijing/lzlj/" target="_blank">泸州老窖</a>
+						<a href="http://www.9928.tv/subjecthree/shengyijing/yhjdl/" target="_blank">洋河酒代理</a>
+						<a href="http://www.9928.tv/subject/zuiremen/nxjdl/" target="_blank">浓香型白酒代理</a>
+						<a href="http://www.9928.tv/subjecttwo/shengyijing/ahbjzscj/" target="_blank">安徽白酒招商厂家</a>
+						<a href="http://www.9928.tv/subjecttwo/zuiremen/nxxbjpm/" target="_blank">浓香型白酒排名</a>
+					</div>
+				</div>
+				<div class="bkcss">
+				</div>
+				<!--清香型板块开始 -->
+				<div class="bkcss">
+					<h3>
                 <span class="bkmore"><a href="/x_x_qing/" target="_blank">更多清香型白酒代理</a></span><img
                     src="images/t6.jpg" style="top: 6px; position: relative;" />清香型白酒代理<font>汇聚全国热门清香型白酒代理项目</font></h3>
-            <div class="dl_bk">
-                <div class="left_bk fl">
-                    <div class="adv">
-                        <a href="http://www.9928.tv/company/fnjy/" target="_blank"><img src="images/15215891.jpg" ="山西丰年酒业有限公司" /></a></div>
-                    <div class="pp_tj" style="background: #ff7317; height: 150px">
-                        <ul>
-                            <li><a href="http://www.9928.tv/company/fnjy/" target="_blank">汾酒集团老味道酒</a></li><li><a href="http://www.9928.tv/company/erguotoujiuye/" target="_blank">北京二锅头</a></li><li><a href="http://www.9928.tv/company/qihaoyuanjiu/" target="_blank">柒号原酒</a></li><li><a href="http://www.9928.tv/company/yanzhaojiuye/" target="_blank">衡水老白干</a></li><li><a href="http://www.9928.tv/company/jqc/" target="_blank">荞鄉传奇苦荞酒</a></li>
-                        </ul>
-                        <div style="clear: both;">
-                        </div>
-                    </div>
-                </div>
-                <div class="middle_bk fl">
-                    <ul>
-                        
-                                <li><a href="http://www.9928.tv/company/zbjy/" target="_blank">
-                                   <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/zbjy/" target="_blank">
+					<div class="dl_bk">
+						<div class="left_bk fl">
+							<div class="adv">
+								<a href="http://www.9928.tv/company/fnjy/" target="_blank"><img src="images/15215891.jpg"="山西丰年酒业有限公司" /></a>
+							</div>
+							<div class="pp_tj" style="background: #ff7317; height: 150px">
+								<ul>
+									<li>
+										<a href="http://www.9928.tv/company/fnjy/" target="_blank">汾酒集团老味道酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/erguotoujiuye/" target="_blank">北京二锅头</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/qihaoyuanjiu/" target="_blank">柒号原酒</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/yanzhaojiuye/" target="_blank">衡水老白干</a>
+									</li>
+									<li>
+										<a href="http://www.9928.tv/company/jqc/" target="_blank">荞鄉传奇苦荞酒</a>
+									</li>
+								</ul>
+								<div style="clear: both;">
+								</div>
+							</div>
+						</div>
+						<div class="middle_bk fl">
+							<ul>
+
+								<li>
+									<a href="http://www.9928.tv/company/zbjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/zbjy/" target="_blank">
                                             河南尊邦酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>2852</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>2852</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/haiyuan/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/haiyuan/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/haiyuan/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/haiyuan/" target="_blank">
                                             河北海源酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>24731</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>24731</strong>人</p>
+										<p>
+											<span>
                                                 中端 低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/jtjy/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/jtjy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/jtjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/jtjy/" target="_blank">
                                             北京城京泰酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>90740</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>90740</strong>人</p>
+										<p>
+											<span>
                                                 中端,低端</span>清香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/zzfssm/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/zzfssm/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/zzfssm/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/zzfssm/" target="_blank">
                                             郑州富森商贸有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>33952</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>33952</strong>人</p>
+										<p>
+											<span>
                                                 中端 低端</span>浓香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/tbjjy/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/tbjjy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/tbjjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/tbjjy/" target="_blank">
                                             河南唐本记酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>7868</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>7868</strong>人</p>
+										<p>
+											<span>
                                                 </span>清香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/zzgx/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/zzgx/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/zzgx/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/zzgx/" target="_blank">
                                             郑州贵显商贸有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>27453</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>27453</strong>人</p>
+										<p>
+											<span>
                                                 中端,低端</span>酱香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/jjsjy/" target="_blank">
-                                    <img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/jjsjy/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/jjsjy/" target="_blank">
+										<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/jjsjy/" target="_blank">
                                             北京崇门楼酒业有限公司</a></b>
-                                        <p>
-                                            意向代理:<strong>33444</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>33444</strong>人</p>
+										<p>
+											<span>
                                                 低端</span>清香型</p>
-                                    </div>
-                                </li>
-                            
-                                <li><a href="http://www.9928.tv/company/zuixianju/" target="_blank">
-                                    <<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
-                                    <div class="qy_xx">
-                                        <b><a href="http://www.9928.tv/company/zuixianju/" target="_blank">
+									</div>
+								</li>
+
+								<li>
+									<a href="http://www.9928.tv/company/zuixianju/" target="_blank">
+										<<img src="images/09024977.jpg" alt="山东云小白酒业有限公司" /></a>
+									<div class="qy_xx">
+										<b><a href="http://www.9928.tv/company/zuixianju/" target="_blank">
                                             杏花村汾酒集团珍品原系</a></b>
-                                        <p>
-                                            意向代理:<strong>78098</strong>人</p>
-                                        <p>
-                                            <span>
+										<p>
+											意向代理:<strong>78098</strong>人</p>
+										<p>
+											<span>
                                                 高端,中端,低端</span>清香型</p>
-                                    </div>
-                                </li>
-                            
-                    </ul>
-                    <div style="clear: both;">
-                    </div>
-                </div>
-                <div class="right_bk fl">
-                    <div class="rg_bk1">
-                        <h4>
+									</div>
+								</li>
+
+							</ul>
+							<div style="clear: both;">
+							</div>
+						</div>
+						<div class="right_bk fl">
+							<div class="rg_bk1">
+								<h4>
                             清香型白酒关注排行榜</h4>
-                        <ul>
-                            <li><strong>1</strong><a href="http://www.9928.tv/company/fnjy/" target="_blank">汾酒集团老味道酒</a></li><li><strong>2</strong><a href="http://www.9928.tv/vip/jdwjy/" target="_blank">北京二锅头</a></li><li><strong>3</strong><a href="http://www.9928.tv/company/zbjy/" target="_blank">汾酒集团酒之祖酒</a></li><li><strong>4</strong><a href="http://www.9928.tv/company/bjjtss/" target="_blank">老北京二锅头</a></li><li><strong>5</strong><a href="http://www.9928.tv/company/bnsj/" target="_blank">汾牌酒</a></li><li><strong>6</strong><a href="http://www.9928.tv/company/htx/" target="_blank">汾酒集团原酿福酒</a></li>
-                        </ul>
-                    </div>
-                    <div class="rg_bk2">
-                        <h4>
+								<ul>
+									<li><strong>1</strong>
+										<a href="http://www.9928.tv/company/fnjy/" target="_blank">汾酒集团老味道酒</a>
+									</li>
+									<li><strong>2</strong>
+										<a href="http://www.9928.tv/vip/jdwjy/" target="_blank">北京二锅头</a>
+									</li>
+									<li><strong>3</strong>
+										<a href="http://www.9928.tv/company/zbjy/" target="_blank">汾酒集团酒之祖酒</a>
+									</li>
+									<li><strong>4</strong>
+										<a href="http://www.9928.tv/company/bjjtss/" target="_blank">老北京二锅头</a>
+									</li>
+									<li><strong>5</strong>
+										<a href="http://www.9928.tv/company/bnsj/" target="_blank">汾牌酒</a>
+									</li>
+									<li><strong>6</strong>
+										<a href="http://www.9928.tv/company/htx/" target="_blank">汾酒集团原酿福酒</a>
+									</li>
+								</ul>
+							</div>
+							<div class="rg_bk2">
+								<h4>
                             <span><a href="http://www.9928.tv/company/type_baijiu/" target="_blank">更多>></a></span>最新白酒招商企业</h4>
-                        <p>·<a href="http://www.9928.tv/company/yyxjy/" target="_blank" title="吉林省酉源兴酒业有限公司">吉林省酉源兴酒业有限公</a></p><p>·<a href="http://www.9928.tv/company/hankai/" target="_blank" title="河北汉楷科技有限公司">河北汉楷科技有限公司</a></p><p>·<a href="http://www.9928.tv/company/dmzmy/" target="_blank" title="福建鑫大拇指贸易有限公司">福建鑫大拇指贸易有限公</a></p><p>·<a href="http://www.9928.tv/company/bjegtj/" target="_blank" title="北京二锅头酒业股份有限公司国庆纪念版">北京二锅头酒业股份有限</a></p><p>·<a href="http://www.9928.tv/company/gbqcjy/" target="_blank" title="内蒙古干杯青春酒业销售有限公司">内蒙古干杯青春酒业销售</a></p><p>·<a href="http://www.9928.tv/company/cdwxcsm/" target="_blank" title="成都万新创商贸有限公司">成都万新创商贸有限公司</a></p><p>·<a href="http://www.9928.tv/company/longxian/" target="_blank" title="四川龙涎酒业股份有限公司">四川龙涎酒业股份有限公</a></p><p>·<a href="http://www.9928.tv/company/ylyf/" target="_blank" title="贵州有鹿友福生物科技有限公司">贵州有鹿友福生物科技有</a></p>
-                    </div>
-                </div>
-                <div style="clear: both;">
-                </div>
-            </div>
-            <div class="rezt" style="margin-top: 20px">
-                <strong>·清香型白酒代理专题：</strong><a href="http://www.9928.tv/subjecttwo/shengyijing/fenjiu/"
-                    target="_blank">汾酒代理</a><a href="http://www.9928.tv/subjecthree/zuiremen/qxxbjpm/"
-                        target="_blank">清香型白酒排名</a><a href="http://www.9928.tv/subjecttwo/jiuzhishi/qxxbjynx/"
-                            target="_blank">清香型白酒有哪些</a><a href="http://www.9928.tv/subjecttwo/zuiremen/fjqxxbj/"
-                                target="_blank">汾酒清香型白酒</a><a href="http://www.9928.tv/subjecthree/zuiremen/qxxbj/"
-                                    target="_blank">清香型白酒品牌</a><a href="http://www.9928.tv/subject/zuiremen/xhcjdl/"
-                                    target="_blank">杏花村酒代理</a><a href="http://www.9928.tv/subject/zuiremen/fjyjdl/"
-                                    target="_blank">汾酒集团原浆酒代理</a></div>
-        </div>
-        <div class="bkcss">
-            <div class="newbk bkk1 fl">
-                <h4>
+								<p>·
+									<a href="http://www.9928.tv/company/yyxjy/" target="_blank" title="吉林省酉源兴酒业有限公司">吉林省酉源兴酒业有限公</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/company/hankai/" target="_blank" title="河北汉楷科技有限公司">河北汉楷科技有限公司</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/company/dmzmy/" target="_blank" title="福建鑫大拇指贸易有限公司">福建鑫大拇指贸易有限公</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/company/bjegtj/" target="_blank" title="北京二锅头酒业股份有限公司国庆纪念版">北京二锅头酒业股份有限</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/company/gbqcjy/" target="_blank" title="内蒙古干杯青春酒业销售有限公司">内蒙古干杯青春酒业销售</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/company/cdwxcsm/" target="_blank" title="成都万新创商贸有限公司">成都万新创商贸有限公司</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/company/longxian/" target="_blank" title="四川龙涎酒业股份有限公司">四川龙涎酒业股份有限公</a>
+								</p>
+								<p>·
+									<a href="http://www.9928.tv/company/ylyf/" target="_blank" title="贵州有鹿友福生物科技有限公司">贵州有鹿友福生物科技有</a>
+								</p>
+							</div>
+						</div>
+						<div style="clear: both;">
+						</div>
+					</div>
+					<div class="rezt" style="margin-top: 20px">
+						<strong>·清香型白酒代理专题：</strong>
+						<a href="http://www.9928.tv/subjecttwo/shengyijing/fenjiu/" target="_blank">汾酒代理</a>
+						<a href="http://www.9928.tv/subjecthree/zuiremen/qxxbjpm/" target="_blank">清香型白酒排名</a>
+						<a href="http://www.9928.tv/subjecttwo/jiuzhishi/qxxbjynx/" target="_blank">清香型白酒有哪些</a>
+						<a href="http://www.9928.tv/subjecttwo/zuiremen/fjqxxbj/" target="_blank">汾酒清香型白酒</a>
+						<a href="http://www.9928.tv/subjecthree/zuiremen/qxxbj/" target="_blank">清香型白酒品牌</a>
+						<a href="http://www.9928.tv/subject/zuiremen/xhcjdl/" target="_blank">杏花村酒代理</a>
+						<a href="http://www.9928.tv/subject/zuiremen/fjyjdl/" target="_blank">汾酒集团原浆酒代理</a>
+					</div>
+				</div>
+				<div class="bkcss">
+					<div class="newbk bkk1 fl">
+						<h4>
                     <span><a href="http://www.9928.tv/news/dongtai-baijiudongtai/" target="_blank">更多>></a></span>白酒动态</h4>
-                <div class="new_tp">
-                    
-                    <a href="http://www.9928.tv/news/dongtai-baijiudongtai/295472.html" target="_blank"><img src="picture/15441613.jpg" alt="江湖老铁酒怎么样?江湖老铁酒产品有哪些?" class="nespic" /></a> <b><a href="http://www.9928.tv/news/dongtai-baijiudongtai/295472.html" target="_blank">江湖老铁酒怎么样?江湖老铁酒产</a></b><p>江湖老铁酒怎么样?江湖老铁酒产品有哪些?江湖老铁酒系列主要有兄弟情、战友情、同学情三款产品，酒质醇香、理...</p>
-                    <div style="clear: both;">
-                    </div>
-                </div>
-                <ul class="new_lsit">
-                    
-                            <li>·<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295486.html"
-                                target="_blank">无忧酒河南经销商联谊会顺利举行</a></li>
-                        
-                            <li>·<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295484.html"
-                                target="_blank">国花瓷西凤酒董事长孙士淮荣获新西商企业家协会“突出贡献奖”</a></li>
-                        
-                            <li>·<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295478.html"
-                                target="_blank">茅台集团召开2019年度第四次总经理办公会</a></li>
-                        
-                            <li>·<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295476.html"
-                                target="_blank">十里香股份公司2018财年表彰大会隆重举行</a></li>
-                        
-                            <li>·<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295470.html"
-                                target="_blank">江湖老铁酒，小酒市场的又一颗新星</a></li>
-                        
-                </ul>
-            </div>
-            <div class="newbk bkk2 fl">
-                <h4>
+						<div class="new_tp">
+
+							<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295472.html" target="_blank"><img src="picture/15441613.jpg" alt="江湖老铁酒怎么样?江湖老铁酒产品有哪些?" class="nespic" /></a> <b><a href="http://www.9928.tv/news/dongtai-baijiudongtai/295472.html" target="_blank">江湖老铁酒怎么样?江湖老铁酒产</a></b>
+							<p>江湖老铁酒怎么样?江湖老铁酒产品有哪些?江湖老铁酒系列主要有兄弟情、战友情、同学情三款产品，酒质醇香、理...</p>
+							<div style="clear: both;">
+							</div>
+						</div>
+						<ul class="new_lsit">
+
+							<li>·
+								<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295486.html" target="_blank">无忧酒河南经销商联谊会顺利举行</a>
+							</li>
+
+							<li>·
+								<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295484.html" target="_blank">国花瓷西凤酒董事长孙士淮荣获新西商企业家协会“突出贡献奖”</a>
+							</li>
+
+							<li>·
+								<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295478.html" target="_blank">茅台集团召开2019年度第四次总经理办公会</a>
+							</li>
+
+							<li>·
+								<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295476.html" target="_blank">十里香股份公司2018财年表彰大会隆重举行</a>
+							</li>
+
+							<li>·
+								<a href="http://www.9928.tv/news/dongtai-baijiudongtai/295470.html" target="_blank">江湖老铁酒，小酒市场的又一颗新星</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="newbk bkk2 fl">
+						<h4>
                     <span><a href="http://www.9928.tv/news/cehua/" target="_blank">更多>></a></span>白酒招商生意经</h4>
-                
-                <div class="new_tp" style="width: 330px;"><span class="tj_ts fl">每日推荐</span><b><a href="http://www.9928.tv/news/cehua-pinpaicehua/295492.html" target="_blank">五千万以下规模的酒企都有什么共</a></b><p class="bk_syj" style="width: 330px;height:66px;">酒水行业中有一类酒企已经存在多年且数目庞大。该类酒企销售规模早已过千万，但往往徘徊在5000万/年以内再也上不去，通常这类酒企笔者统...</p><div style="clear: both;"></div></div><ul class="new_lsit"><li>·<a href="http://www.9928.tv/news/cehua-shengyijing/295480.html" target="_blank">销售有四层境界，你到了哪一层？</a></li><li>·<a href="http://www.9928.tv/news/cehua-zhaoshangcehua/295467.html" target="_blank">浅谈中国酒类IP化销售的关键点</a></li><li>·<a href="http://www.9928.tv/news/cehua-shengyijing/295464.html" target="_blank">顾客买酒前的这些信号，你知道吗?</a></li><li>·<a href="http://www.9928.tv/news/cehua-zhaoshangcehua/295461.html" target="_blank">白酒消费商模式的结构构成</a></li><li>·<a href="http://www.9928.tv/news/cehua-shengyijing/295453.html" target="_blank">销售|顾客发出的购买信号你接收到了吗？</a></li></ul>
-            </div>
-            <div class="newbk bkk3 fl">
-                <h4>
+
+						<div class="new_tp" style="width: 330px;"><span class="tj_ts fl">每日推荐</span><b><a href="http://www.9928.tv/news/cehua-pinpaicehua/295492.html" target="_blank">五千万以下规模的酒企都有什么共</a></b>
+							<p class="bk_syj" style="width: 330px;height:66px;">酒水行业中有一类酒企已经存在多年且数目庞大。该类酒企销售规模早已过千万，但往往徘徊在5000万/年以内再也上不去，通常这类酒企笔者统...</p>
+							<div style="clear: both;"></div>
+						</div>
+						<ul class="new_lsit">
+							<li>·
+								<a href="http://www.9928.tv/news/cehua-shengyijing/295480.html" target="_blank">销售有四层境界，你到了哪一层？</a>
+							</li>
+							<li>·
+								<a href="http://www.9928.tv/news/cehua-zhaoshangcehua/295467.html" target="_blank">浅谈中国酒类IP化销售的关键点</a>
+							</li>
+							<li>·
+								<a href="http://www.9928.tv/news/cehua-shengyijing/295464.html" target="_blank">顾客买酒前的这些信号，你知道吗?</a>
+							</li>
+							<li>·
+								<a href="http://www.9928.tv/news/cehua-zhaoshangcehua/295461.html" target="_blank">白酒消费商模式的结构构成</a>
+							</li>
+							<li>·
+								<a href="http://www.9928.tv/news/cehua-shengyijing/295453.html" target="_blank">销售|顾客发出的购买信号你接收到了吗？</a>
+							</li>
+						</ul>
+					</div>
+					<div class="newbk bkk3 fl">
+						<h4>
                     <span><a href="http://wenda.9928.tv/list/fenlei/baijiu_0_0_0_0_1.html" target="_blank">
                         更多>></a></span>白酒问答</h4>
-                <ul class="wd_list">
-                    
-                            <li>
-                                <p>
-                                    <a href="http://wenda.9928.tv/huida/52408.html" target="_blank">
-                                        洛阳散酒加盟电话，在洛阳开散酒...</a></p>
-                                <span>[投资金额] <font>
-                                    3</font>个回答&nbsp;状态：<font>待解决</font></span></li>
-                        
-                            <li>
-                                <p>
-                                    <a href="http://wenda.9928.tv/huida/52407.html" target="_blank">
-                                        散酒加盟费用，加盟散酒最少要多...</a></p>
-                                <span>[投资金额] <font>
-                                    5</font>个回答&nbsp;状态：<font>待解决</font></span></li>
-                        
-                            <li>
-                                <p>
-                                    <a href="http://wenda.9928.tv/huida/52406.html" target="_blank">
-                                        皇龙二锅头散酒坊山西吕梁能加盟...</a></p>
-                                <span>[项目选择] <font>
-                                    0</font>个回答&nbsp;状态：<font>待解决</font></span></li>
-                        
-                            <li>
-                                <p>
-                                    <a href="http://wenda.9928.tv/huida/52400.html" target="_blank">
-                                        茅台集团贵宾A50酒到底怎么样...</a></p>
-                                <span>[渠道] <font>
-                                    0</font>个回答&nbsp;状态：<font>待解决</font></span></li>
-                        
-                </ul>
-            </div>
-            <div style="clear: both;">
-            </div>
-        </div>
-        <div class="bkcss">
-            <div class="newbk bkk1 fl">
-                <h4>
-                    <span><a href="http://www.9928.tv/news/xinpin-baijiuxinpin/" target="_blank">更多>></a></span>白酒新品上市</h4>
-                
-                <div class="new_tp"><a href="http://www.9928.tv/news/xinpin-baijiuxinpin/295401.html" target="_blank"><img src="picture/16114763.jpg" alt="纯爷们二锅头新品隆重上市！" class="nespic" /></a> <b><a href="http://www.9928.tv/news/xinpin-baijiuxinpin/295401.html" target="_blank">纯爷们二锅头新品隆重上市！</a></b><p>近日，北京平原人家酒业有限公司重磅推出新品“纯爷们追梦”、“纯爷们百家姓”，共四产品。分别为：纯爷们二锅...</p><div style="clear: both;"></div></div><ul class="new_lsit"><li>·<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/295024.html" target="_blank">泸州秀水坊酿酒厂重磅推荐情怀光瓶酒新品四川老窖酒怀旧版！</a></li><li>·<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/294965.html" target="_blank">习酒代理怎么选?贵州习酒习酿酱酒100ml品鉴酒隆重上市招商!</a></li><li>·<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/294875.html" target="_blank">金酱囍酒新酒上市，诚邀代理商加盟！</a></li><li>·<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/294769.html" target="_blank">天佑德青稞酒红五星新品震撼上市！</a></li><li>·<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/294632.html" target="_blank">开平盛世小酒新品上市，纯粮酿造更健康！</a></li></ul>
-            </div>
-            <div class="newbk bkk2 fl">
-                <h4>
-                    <span><a href="http://pinpai.9928.tv/jiage/" target="_blank">更多>></a></span>白酒价格行情</h4>
-                
-                <div class="new_tp" style="width: 330px;"><span class="tj_ts fl">热点推荐</span><b><a href="http://pinpai.9928.tv/lcz/jiage/66970.html" target="_blank">老村长酒1.5升春夏秋冬酒价格</a></b><p class="bk_syj" style="width: 330px;height:66px;">老村长酒1.5升春夏秋冬酒价格是多少?参考价格：88元(1.5升一坛)参考价格：299元(1.5升四坛)</p><div style="clear: both;"></div></div><ul class="new_lsit"><li>·<a href="http://pinpai.9928.tv/shuijinfang/jiage/66820.html" target="_blank">水井坊臻酿號号价格，水井坊臻酿號号多少钱?</a></li><li>·<a href="http://pinpai.9928.tv/xijiu/jiage/66707.html" target="_blank">习酒大曲酒光瓶贵不贵?</a></li><li>·<a href="http://pinpai.9928.tv/sxxfj/jiage/66706.html" target="_blank">西凤酒唯炫价格，西凤酒唯炫多少钱？</a></li><li>·<a href="http://pinpai.9928.tv/xiaojiaolou/jiage/66705.html" target="_blank">小角楼酒清雅多少钱?小角楼酒清雅价格</a></li><li>·<a href="http://pinpai.9928.tv/guojiao/jiage/66662.html" target="_blank">国窖1573·定制壹号价格是多少？</a></li></ul>
-            </div>
-            <div class="newbk bkk3 fl">
-                <h4>
-                    <span><a href="http://www.9928.tv/qiugou/baijiu/" target="_blank">更多>></a></span>白酒求购信息</h4>
-                <ul class="gou_list">
-                    
-                            <li>·<font class="gren">李先生</font>我要代理<a href="http://www.9928.tv/qiugou/baijiu/4933.html"
-                                target="_blank"><font class="gwhat">老村长酒</font></a></li>
-                        
-                            <li>·<font class="gren">kxyw1515</font>我要代理<a href="http://www.9928.tv/qiugou/baijiu/4879.html"
-                                target="_blank"><font class="gwhat">白酒啤酒粮油食品</font></a></li>
-                        
-                            <li>·<font class="gren">kxyw1515</font>我要代理<a href="http://www.9928.tv/qiugou/baijiu/4878.html"
-                                target="_blank"><font class="gwhat">白酒啤酒粮油食品</font></a></li>
-                        
-                            <li>·<font class="gren">李先生</font>我要代理<a href="http://www.9928.tv/qiugou/baijiu/4877.html"
-                                target="_blank"><font class="gwhat">酒水</font></a></li>
-                        
-                            <li>·<font class="gren">姜小姐</font>我要代理<a href="http://www.9928.tv/qiugou/baijiu/4876.html"
-                                target="_blank"><font class="gwhat">白酒求购</font></a></li>
-                        
-                            <li>·<font class="gren">陶总</font>我要代理<a href="http://www.9928.tv/qiugou/baijiu/4875.html"
-                                target="_blank"><font class="gwhat">纯粮酒洞藏酒</font></a></li>
-                        
-                            <li>·<font class="gren">刘振狼</font>我要代理<a href="http://www.9928.tv/qiugou/baijiu/4874.html"
-                                target="_blank"><font class="gwhat">白酒</font></a></li>
-                        
-                            <li>·<font class="gren">何先生</font>我要代理<a href="http://www.9928.tv/qiugou/baijiu/4873.html"
-                                target="_blank"><font class="gwhat">白酒养生酒</font></a></li>
-                        
-                </ul>
-            </div>
-            <div style="clear: both;">
-            </div>
-        </div>
-    </div>
-    <div class="bj_bottom">
-        
-<div class="footdiv1">
-    <div class="zslxdiv">
-        <div class="fwbk">
-            <div class="ftit">
-                我们的服务</div>
-            <div style="margin:15px 0 10px 0">
-                <img src="images/whpic.jpg"></div>
-            <ul>
-                <li>找产品 招代理<br>
-                    有效才是硬道理</li>
-                <li style="background: #00c4d4; padding: 14px 0">因为专一 所以更专业</li>
-                <li style="background: #b16ef9; padding: 14px 0">让招商变得更简单</li>
-            </ul>
-        </div>
-        <div class="zsbk">
-            <div class="ftit" style="padding: 0 30px">
-                招商合作中心（0371-63359928）</div>
-            <div class="ywlist">
-                <ul>
-                    <li>
-                            <p>
-                                张经理 手机：17719809928</p>
-                            <!--<span>负责区域：上海 新疆 西藏 甘肃</span> -->
-                            <div class="ywma">
-                                <img src="images/ywma.png" />
-                                <div class="mdiv">
-                                    <i>
-                                        <img src="picture/jt.png" /></i>
-                                    <img src="picture/zhangrui.jpg" /></div>
-                            </div>
-                        </li>
-                       
-                        <li>
-                            <p>
-                                孙经理 手机：19913859928</p>
-                            <!--<span>负责区域：安徽 河南 河北 江西</span> -->
-                            <div class="ywma">
-                                <img src="images/ywma.png" />
-                                <div class="mdiv">
-                                    <i>
-                                        <img src="picture/jt.png" /></i>
-                                    <img src="picture/yw2.jpg" /></div>
-                            </div>
-                        </li>
-                        <li>
-                            <p>
-                                黄经理 手机：15333829928</p>
-                            <!--<span>负责区域：四川 陕西 山西 广西</span> -->
-                            <div class="ywma">
-                                <img src="images/ywma.png"/>
-                                <div class="mdiv">
-                                    <i>
-                                        <img src="picture/jt.png" /></i>
-                                    <img src="picture/huangyan.jpg" /></div>
-                            </div>
-                        </li>
-                         <li>
-                            <p>
-                                刘经理 手机：15617511928</p>
-                            <!--<span>负责区域：辽宁 内蒙 天津 湖北 青海</span> -->
-                            <div class="ywma">
-                                <img src="images/ywma.png" />
-                                <div class="mdiv">
-                                    <i>
-                                        <img src="picture/jt.png" /></i>
-                                    <img src="picture/xiaoliu.jpg" /></div>
-                            </div>
-                        </li>
-                        
-                       <li>
-                            <p>
-                                冯经理 手机：18937109733</p>
-                            <!-- <span>负责区域：江苏 黑龙江 福建 宁夏</span> -->
-                            <div class="ywma">
-                                <img src="images/ywma.png">
-                                <div class="mdiv">
-                                    <i>
-                                        <img src="picture/jt.png"></i>
-                                    <img src="picture/yw4.jpg"></div>
-                            </div>
-                        </li>
-                         <li>
-                            <p>
-                                刘经理 手机：18037689928</p>
-                            <!--<span>负责区域：贵州 山东 北京 广东</span> -->
-                            <div class="ywma">
-                                <img src="images/ywma.png" />
-                                <div class="mdiv">
-                                    <i>
-                                        <img src="picture/jt.png" /></i>
-                                    <img src="picture/xiaofu.jpg" /></div>
-                            </div>
-                        </li>
-                </ul>
-            </div>
-        </div>
-        <div class="kfbk">
-            <div class="ftit">
-                代理商咨询中心</div>
-			<div style="font-size:14px; color:#b30000; line-height:32px;">代理商咨询电话：0371-63379928</div>
-            <ul>
-				    <li>
-                        <p>
-                            咨询顾问一</p>
-                        <span>手机/微信号：15537189928</span>
-                        <div class="kfma">
-                            <img src="images/kfma.png" />
-                            <div class="mdiv">
-                                <i>
-                                    <img src="picture/jt.png" /></i>
-                                <img src="picture/kf4.jpg" /></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>
-                            咨询顾问二</p>
-                        <span>手机/微信号：17319718428</span>
-                        <div class="kfma">
-                            <img src="images/kfma.png" />
-                            <div class="mdiv">
-                                <i>
-                                    <img src="picture/jt.png" /></i>
-                                <img src="picture/kf2.jpg" /></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>
-                            咨询顾问三</p>
-                        <span>手机/微信号：17335728428</span>
-                        <div class="kfma">
-                            <img src="images/kfma.png" />
-                            <div class="mdiv">
-                                <i>
-                                    <img src="picture/jt.png" /></i>
-                                <img src="picture/kf1.jpg" /></div>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <p>
-                            咨询顾问四</p>
-                        <span>手机/微信号：13140113928</span>
-                        <div class="kfma">
-                            <img src="images/kfma.png" />
-                            <div class="mdiv">
-                                <i>
-                                    <img src="picture/jt.png" /></i>
-                                <img src="picture/kf3.jpg" /></div>
-                        </div>
-                    </li>
-					<li>
-                        <p>
-                            咨询顾问五</p>
-                        <span>手机/微信号：13140021708</span>
-                        <div class="kfma">
-                            <img src="images/kfma.png"/>
-                            <div class="mdiv">
-                                <i>
-                                    <img src="images/kfma.png"/></i>
-                                <img src="images/ywma.png" /></div>
-                        </div>
-                    </li>
-                </ul>
-            <!--<div>
-                <img src="picture/kfpic.jpg"></div> -->
-        </div>
-        <div style="clear: both">
-        </div>
-    </div>
-    
-</div>
+						<ul class="wd_list">
 
-       
-        <div class="bj_link">
-            <h3>
+							<li>
+								<p>
+									<a href="http://wenda.9928.tv/huida/52408.html" target="_blank">
+										洛阳散酒加盟电话，在洛阳开散酒...</a>
+								</p>
+								<span>[投资金额] <font>
+                                    3</font>个回答&nbsp;状态：<font>待解决</font></span></li>
+
+							<li>
+								<p>
+									<a href="http://wenda.9928.tv/huida/52407.html" target="_blank">
+										散酒加盟费用，加盟散酒最少要多...</a>
+								</p>
+								<span>[投资金额] <font>
+                                    5</font>个回答&nbsp;状态：<font>待解决</font></span></li>
+
+							<li>
+								<p>
+									<a href="http://wenda.9928.tv/huida/52406.html" target="_blank">
+										皇龙二锅头散酒坊山西吕梁能加盟...</a>
+								</p>
+								<span>[项目选择] <font>
+                                    0</font>个回答&nbsp;状态：<font>待解决</font></span></li>
+
+							<li>
+								<p>
+									<a href="http://wenda.9928.tv/huida/52400.html" target="_blank">
+										茅台集团贵宾A50酒到底怎么样...</a>
+								</p>
+								<span>[渠道] <font>
+                                    0</font>个回答&nbsp;状态：<font>待解决</font></span></li>
+
+						</ul>
+					</div>
+					<div style="clear: both;">
+					</div>
+				</div>
+				<div class="bkcss">
+					<div class="newbk bkk1 fl">
+						<h4>
+                    <span><a href="http://www.9928.tv/news/xinpin-baijiuxinpin/" target="_blank">更多>></a></span>白酒新品上市</h4>
+
+						<div class="new_tp">
+							<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/295401.html" target="_blank"><img src="picture/16114763.jpg" alt="纯爷们二锅头新品隆重上市！" class="nespic" /></a> <b><a href="http://www.9928.tv/news/xinpin-baijiuxinpin/295401.html" target="_blank">纯爷们二锅头新品隆重上市！</a></b>
+							<p>近日，北京平原人家酒业有限公司重磅推出新品“纯爷们追梦”、“纯爷们百家姓”，共四产品。分别为：纯爷们二锅...</p>
+							<div style="clear: both;"></div>
+						</div>
+						<ul class="new_lsit">
+							<li>·
+								<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/295024.html" target="_blank">泸州秀水坊酿酒厂重磅推荐情怀光瓶酒新品四川老窖酒怀旧版！</a>
+							</li>
+							<li>·
+								<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/294965.html" target="_blank">习酒代理怎么选?贵州习酒习酿酱酒100ml品鉴酒隆重上市招商!</a>
+							</li>
+							<li>·
+								<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/294875.html" target="_blank">金酱囍酒新酒上市，诚邀代理商加盟！</a>
+							</li>
+							<li>·
+								<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/294769.html" target="_blank">天佑德青稞酒红五星新品震撼上市！</a>
+							</li>
+							<li>·
+								<a href="http://www.9928.tv/news/xinpin-baijiuxinpin/294632.html" target="_blank">开平盛世小酒新品上市，纯粮酿造更健康！</a>
+							</li>
+						</ul>
+					</div>
+					<div class="newbk bkk2 fl">
+						<h4>
+                    <span><a href="http://pinpai.9928.tv/jiage/" target="_blank">更多>></a></span>白酒价格行情</h4>
+
+						<div class="new_tp" style="width: 330px;"><span class="tj_ts fl">热点推荐</span><b><a href="http://pinpai.9928.tv/lcz/jiage/66970.html" target="_blank">老村长酒1.5升春夏秋冬酒价格</a></b>
+							<p class="bk_syj" style="width: 330px;height:66px;">老村长酒1.5升春夏秋冬酒价格是多少?参考价格：88元(1.5升一坛)参考价格：299元(1.5升四坛)</p>
+							<div style="clear: both;"></div>
+						</div>
+						<ul class="new_lsit">
+							<li>·
+								<a href="http://pinpai.9928.tv/shuijinfang/jiage/66820.html" target="_blank">水井坊臻酿號号价格，水井坊臻酿號号多少钱?</a>
+							</li>
+							<li>·
+								<a href="http://pinpai.9928.tv/xijiu/jiage/66707.html" target="_blank">习酒大曲酒光瓶贵不贵?</a>
+							</li>
+							<li>·
+								<a href="http://pinpai.9928.tv/sxxfj/jiage/66706.html" target="_blank">西凤酒唯炫价格，西凤酒唯炫多少钱？</a>
+							</li>
+							<li>·
+								<a href="http://pinpai.9928.tv/xiaojiaolou/jiage/66705.html" target="_blank">小角楼酒清雅多少钱?小角楼酒清雅价格</a>
+							</li>
+							<li>·
+								<a href="http://pinpai.9928.tv/guojiao/jiage/66662.html" target="_blank">国窖1573·定制壹号价格是多少？</a>
+							</li>
+						</ul>
+					</div>
+					<div class="newbk bkk3 fl">
+						<h4>
+                    <span><a href="http://www.9928.tv/qiugou/baijiu/" target="_blank">更多>></a></span>白酒求购信息</h4>
+						<ul class="gou_list">
+
+							<li>·
+								<font class="gren">李先生</font>我要代理
+								<a href="http://www.9928.tv/qiugou/baijiu/4933.html" target="_blank">
+									<font class="gwhat">老村长酒</font>
+								</a>
+							</li>
+
+							<li>·
+								<font class="gren">kxyw1515</font>我要代理
+								<a href="http://www.9928.tv/qiugou/baijiu/4879.html" target="_blank">
+									<font class="gwhat">白酒啤酒粮油食品</font>
+								</a>
+							</li>
+
+							<li>·
+								<font class="gren">kxyw1515</font>我要代理
+								<a href="http://www.9928.tv/qiugou/baijiu/4878.html" target="_blank">
+									<font class="gwhat">白酒啤酒粮油食品</font>
+								</a>
+							</li>
+
+							<li>·
+								<font class="gren">李先生</font>我要代理
+								<a href="http://www.9928.tv/qiugou/baijiu/4877.html" target="_blank">
+									<font class="gwhat">酒水</font>
+								</a>
+							</li>
+
+							<li>·
+								<font class="gren">姜小姐</font>我要代理
+								<a href="http://www.9928.tv/qiugou/baijiu/4876.html" target="_blank">
+									<font class="gwhat">白酒求购</font>
+								</a>
+							</li>
+
+							<li>·
+								<font class="gren">陶总</font>我要代理
+								<a href="http://www.9928.tv/qiugou/baijiu/4875.html" target="_blank">
+									<font class="gwhat">纯粮酒洞藏酒</font>
+								</a>
+							</li>
+
+							<li>·
+								<font class="gren">刘振狼</font>我要代理
+								<a href="http://www.9928.tv/qiugou/baijiu/4874.html" target="_blank">
+									<font class="gwhat">白酒</font>
+								</a>
+							</li>
+
+							<li>·
+								<font class="gren">何先生</font>我要代理
+								<a href="http://www.9928.tv/qiugou/baijiu/4873.html" target="_blank">
+									<font class="gwhat">白酒养生酒</font>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+					<div style="clear: both;">
+					</div>
+				</div>
+			</div>
+			<div class="bj_bottom">
+
+				<div class="footdiv1">
+					<div class="zslxdiv">
+						<div class="fwbk">
+							<div class="ftit">
+								我们的服务</div>
+							<div style="margin:15px 0 10px 0">
+								<img src="images/whpic.jpg"></div>
+							<ul>
+								<li>找产品 招代理<br> 有效才是硬道理
+								</li>
+								<li style="background: #00c4d4; padding: 14px 0">因为专一 所以更专业</li>
+								<li style="background: #b16ef9; padding: 14px 0">让招商变得更简单</li>
+							</ul>
+						</div>
+						<div class="zsbk">
+							<div class="ftit" style="padding: 0 30px">
+								招商合作中心（0371-63359928）</div>
+							<div class="ywlist">
+								<ul>
+									<li>
+										<p>
+											张经理 手机：17719809928</p>
+										<!--<span>负责区域：上海 新疆 西藏 甘肃</span> -->
+										<div class="ywma">
+											<img src="images/ywma.png" />
+											<div class="mdiv">
+												<i>
+                                        <img src="picture/jt.png" /></i>
+												<img src="picture/zhangrui.jpg" /></div>
+										</div>
+									</li>
+
+									<li>
+										<p>
+											孙经理 手机：19913859928</p>
+										<!--<span>负责区域：安徽 河南 河北 江西</span> -->
+										<div class="ywma">
+											<img src="images/ywma.png" />
+											<div class="mdiv">
+												<i>
+                                        <img src="picture/jt.png" /></i>
+												<img src="picture/yw2.jpg" /></div>
+										</div>
+									</li>
+									<li>
+										<p>
+											黄经理 手机：15333829928</p>
+										<!--<span>负责区域：四川 陕西 山西 广西</span> -->
+										<div class="ywma">
+											<img src="images/ywma.png" />
+											<div class="mdiv">
+												<i>
+                                        <img src="picture/jt.png" /></i>
+												<img src="picture/huangyan.jpg" /></div>
+										</div>
+									</li>
+									<li>
+										<p>
+											刘经理 手机：15617511928</p>
+										<!--<span>负责区域：辽宁 内蒙 天津 湖北 青海</span> -->
+										<div class="ywma">
+											<img src="images/ywma.png" />
+											<div class="mdiv">
+												<i>
+                                        <img src="picture/jt.png" /></i>
+												<img src="picture/xiaoliu.jpg" /></div>
+										</div>
+									</li>
+
+									<li>
+										<p>
+											冯经理 手机：18937109733</p>
+										<!-- <span>负责区域：江苏 黑龙江 福建 宁夏</span> -->
+										<div class="ywma">
+											<img src="images/ywma.png">
+											<div class="mdiv">
+												<i>
+                                        <img src="picture/jt.png"></i>
+												<img src="picture/yw4.jpg"></div>
+										</div>
+									</li>
+									<li>
+										<p>
+											刘经理 手机：18037689928</p>
+										<!--<span>负责区域：贵州 山东 北京 广东</span> -->
+										<div class="ywma">
+											<img src="images/ywma.png" />
+											<div class="mdiv">
+												<i>
+                                        <img src="picture/jt.png" /></i>
+												<img src="picture/xiaofu.jpg" /></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="kfbk">
+							<div class="ftit">
+								代理商咨询中心</div>
+							<div style="font-size:14px; color:#b30000; line-height:32px;">代理商咨询电话：0371-63379928</div>
+							<ul>
+								<li>
+									<p>
+										咨询顾问一</p>
+									<span>手机/微信号：15537189928</span>
+									<div class="kfma">
+										<img src="images/kfma.png" />
+										<div class="mdiv">
+											<i>
+                                    <img src="picture/jt.png" /></i>
+											<img src="picture/kf4.jpg" /></div>
+									</div>
+								</li>
+								<li>
+									<p>
+										咨询顾问二</p>
+									<span>手机/微信号：17319718428</span>
+									<div class="kfma">
+										<img src="images/kfma.png" />
+										<div class="mdiv">
+											<i>
+                                    <img src="picture/jt.png" /></i>
+											<img src="picture/kf2.jpg" /></div>
+									</div>
+								</li>
+								<li>
+									<p>
+										咨询顾问三</p>
+									<span>手机/微信号：17335728428</span>
+									<div class="kfma">
+										<img src="images/kfma.png" />
+										<div class="mdiv">
+											<i>
+                                    <img src="picture/jt.png" /></i>
+											<img src="picture/kf1.jpg" /></div>
+									</div>
+								</li>
+
+								<li>
+									<p>
+										咨询顾问四</p>
+									<span>手机/微信号：13140113928</span>
+									<div class="kfma">
+										<img src="images/kfma.png" />
+										<div class="mdiv">
+											<i>
+                                    <img src="picture/jt.png" /></i>
+											<img src="picture/kf3.jpg" /></div>
+									</div>
+								</li>
+								<li>
+									<p>
+										咨询顾问五</p>
+									<span>手机/微信号：13140021708</span>
+									<div class="kfma">
+										<img src="images/kfma.png" />
+										<div class="mdiv">
+											<i>
+                                    <img src="images/kfma.png"/></i>
+											<img src="images/ywma.png" /></div>
+									</div>
+								</li>
+							</ul>
+							<!--<div>
+                <img src="picture/kfpic.jpg"></div> -->
+						</div>
+						<div style="clear: both">
+						</div>
+					</div>
+
+				</div>
+
+				<div class="bj_link">
+					<h3>
                 友情链接<span style="color: #454545; padding-left: 10px;">( 欢迎交换链接与美酒网共赢天下！ QQ：2234426535/1151952746
                     )</span></h3>
-            <p>
-                
-                        <a href="http://bbs.mu25.com/" target="_blank">
-                            红酒论坛</a>
-                    
-                        <a href="http://www.dami518.com/" target="_blank">
-                            大米</a>
-                    
-                        <a href="http://www.jiutea.com/jiameng/" target="_blank">
-                            茶叶店加盟</a>
-                    
-                        <a href="http://www.spdl.com/yinliao/" target="_blank">
-                            饮料代理</a>
-                    
-                        <a href="http://www.9928.tv/" target="_blank">
-                            酒水代理</a>
-                    
-                        <a href="http://www.qj.com.cn/c_jiushui/" target="_blank">
-                            酒水加盟网</a>
-                    
-                        <a href="http://www.henanfood.net/" target="_blank">
-                            河南食品网</a>
-                    
-                        <a href="http://www.hxlyjx.com/" target="_blank">
-                            粮油机械</a>
-                    
-                        <a href="http://www.jiuzhensheng.com/" target="_blank">
-                            酒真省</a>
-                    
-                        <a href="http://tangjiuhui.9928.tv/" target="_blank">
-                            全国秋季糖酒会</a>
-                    
-                        <a href="http://www.9928.tv/company/xsnj/	" target="_blank">
-                            小神女酒</a>
-                    
-                        <a href="http://food.9939.com/" target="_blank">
-                             饮食加盟</a>
-                    
-                        <a href="http://tangjiuhui.9928.tv/2019cdtjh/" target="_blank">
-                            2019成都春季糖酒会</a>
-                    
-                        <a href="http://www.yinshiweb.com/" target="_blank">
-                            食谱家常菜</a>
-                    
-                        <a href="http://www.9928.tv/company/maotaizhenpinchang/" target="_blank">
-                            茅台镇珍品酒厂</a>
-                    
-            </p>
-        </div>
-    </div>
-<div class="footdiv2">
-        <div class="footbk">
-            <div class="nav">
-                <a href="http://www.9928.tv/Article_9928/about.html" target="_blank">关于我们</a><a href="http://www.9928.tv/links/" target="_blank">友情链接</a><a href="http://www.9928.tv/Article_9928/job.html" target="_blank">招贤纳士</a><a href="http://www.9928.tv/Article_9928/copyright.html" target="_blank">法律声明</a><a href="http://www.9928.tv/Article_9928/contact.html" target="_blank">联系我们</a><a href="http://www.9928.tv/Article_9928/sitemap.html" target="_blank">网站地图</a>
-            </div>
-            <div class="bqdiv">
-                版权所有 郑州索维尔科技有限公司 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020<br>
-                备案：<a href="http://www.miitbeian.gov.cn/" rel="nofollow" style="color: #cccaca">豫ICP备10209129号-1</a>
-                增值电信业务经营许可证：豫B2-20160332
-                <img src="images/ghs.png" style="position: relative; top: -2px;
-                    width: 16px; margin: 0 2px">豫公网安备 41010502003153号<br>
-                免责声明：本站只起到信息平台作用，不为交易经过负任何责任,请双方谨慎交易,以确保您的权益。<br>
-                内容的真实性、准确性和合法性由发布企业或个人负责。如有信息、图片侵权，请及时联系我们处理。</div>
-            <div class="footpic">
-                <ul>
-                    <li>
-                        <img src="images/rz1.jpg"></li>
-                    <li>
-                        <img src="images/rz2.jpg"></li>
-                    <li><a href="http://www.9928.tv/Article_9928/dzswrz.html" target="_blank">
-                        <img src="images/rz3.jpg" alt="美酒招商网河南省电子商务企业认证"></a></li>
-                    <li><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41010502003153" target="_blank" rel="nofollow">
-                        <img src="images/rz4.jpg" </a></li>
-                    <li><a href="http://www.9928.tv/Article_9928/dxxkz.html" target="_blank">
-                        <img src="images/rz5.jpg" alt="美酒招商网增值电信业务经营许可证"></a></li>
-                </ul>
-                <div style="clear: both">
-                </div>
-            </div>
-            <div class="wxdiv">
-                <ul>
-                    <li>
-                        <img src="images/wxhao.jpg" width="150"><p>
-                            美酒招商网官方微信</p>
-                    </li>
-                    <li>
-                        <img src="images/phonema.jpg" ="150"><p>
-                            美酒招商网移动版</p>
-                    </li>
-                </ul>
-                <div style="clear: both">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="display: none;">
-        
-</body>
+					<p>
+
+						<a href="http://bbs.mu25.com/" target="_blank">
+							红酒论坛</a>
+
+						<a href="http://www.dami518.com/" target="_blank">
+							大米</a>
+
+						<a href="http://www.jiutea.com/jiameng/" target="_blank">
+							茶叶店加盟</a>
+
+						<a href="http://www.spdl.com/yinliao/" target="_blank">
+							饮料代理</a>
+
+						<a href="http://www.9928.tv/" target="_blank">
+							酒水代理</a>
+
+						<a href="http://www.qj.com.cn/c_jiushui/" target="_blank">
+							酒水加盟网</a>
+
+						<a href="http://www.henanfood.net/" target="_blank">
+							河南食品网</a>
+
+						<a href="http://www.hxlyjx.com/" target="_blank">
+							粮油机械</a>
+
+						<a href="http://www.jiuzhensheng.com/" target="_blank">
+							酒真省</a>
+
+						<a href="http://tangjiuhui.9928.tv/" target="_blank">
+							全国秋季糖酒会</a>
+
+						<a href="http://www.9928.tv/company/xsnj/	" target="_blank">
+							小神女酒</a>
+
+						<a href="http://food.9939.com/" target="_blank">
+							饮食加盟</a>
+
+						<a href="http://tangjiuhui.9928.tv/2019cdtjh/" target="_blank">
+							2019成都春季糖酒会</a>
+
+						<a href="http://www.yinshiweb.com/" target="_blank">
+							食谱家常菜</a>
+
+						<a href="http://www.9928.tv/company/maotaizhenpinchang/" target="_blank">
+							茅台镇珍品酒厂</a>
+
+					</p>
+				</div>
+			</div>
+			<div class="footdiv2">
+				<div class="footbk">
+					<div class="nav">
+						<a href="http://www.9928.tv/Article_9928/about.html" target="_blank">关于我们</a>
+						<a href="http://www.9928.tv/links/" target="_blank">友情链接</a>
+						<a href="http://www.9928.tv/Article_9928/job.html" target="_blank">招贤纳士</a>
+						<a href="http://www.9928.tv/Article_9928/copyright.html" target="_blank">法律声明</a>
+						<a href="http://www.9928.tv/Article_9928/contact.html" target="_blank">联系我们</a>
+						<a href="http://www.9928.tv/Article_9928/sitemap.html" target="_blank">网站地图</a>
+					</div>
+					<div class="bqdiv">
+						版权所有 郑州索维尔科技有限公司 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020<br> 备案：
+						<a href="http://www.miitbeian.gov.cn/" rel="nofollow" style="color: #cccaca">豫ICP备10209129号-1</a>
+						增值电信业务经营许可证：豫B2-20160332
+						<img src="images/ghs.png" style="position: relative; top: -2px;
+                    width: 16px; margin: 0 2px">豫公网安备 41010502003153号<br> 免责声明：本站只起到信息平台作用，不为交易经过负任何责任,请双方谨慎交易,以确保您的权益。
+						<br> 内容的真实性、准确性和合法性由发布企业或个人负责。如有信息、图片侵权，请及时联系我们处理。
+					</div>
+					<div class="footpic">
+						<ul>
+							<li>
+								<img src="images/rz1.jpg"></li>
+							<li>
+								<img src="images/rz2.jpg"></li>
+							<li>
+								<a href="http://www.9928.tv/Article_9928/dzswrz.html" target="_blank">
+									<img src="images/rz3.jpg" alt="美酒招商网河南省电子商务企业认证"></a>
+							</li>
+							<li>
+								<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41010502003153" target="_blank" rel="nofollow">
+									<img src="images/rz4.jpg" </a></li>
+							<li>
+								<a href="http://www.9928.tv/Article_9928/dxxkz.html" target="_blank">
+									<img src="images/rz5.jpg" alt="美酒招商网增值电信业务经营许可证"></a>
+							</li>
+						</ul>
+						<div style="clear: both">
+						</div>
+					</div>
+					<div class="wxdiv">
+						<ul>
+							<li>
+								<img src="images/wxhao.jpg" width="150">
+								<p>
+									美酒招商网官方微信</p>
+							</li>
+							<li>
+								<img src="images/phonema.jpg"="150">
+								<p>
+									美酒招商网移动版</p>
+							</li>
+						</ul>
+						<div style="clear: both">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="display: none;">
+
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$('#y_type').mouseover(function() {
+				$('.typelist').css({
+					display: 'block'
+				})
+			})
+			$('.search_left').mouseleave(function() {
+				$('.typelist').css({
+					display: 'none'
+				})
+			})
+			$(".typelist").children().click(function() {
+				$('.typelist').css({
+					display: 'none'
+				})
+				$('#y_type').html($(this).html())
+			})
+		})
+	</script>
+
 </html>

@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/zhuce_chanpinku.css"/>
 		<link rel="stylesheet" type="text/css" href="css/chanpinku_fenye.css"/>
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/chanpinku_fenye.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body style="background: #fff;">
@@ -25,15 +26,15 @@
 			<div class="cpk_logo"><a href=""><img style="width: 200px;height: 70px;" src="img/index-logo_zc.png"/></a></div>
 			<div class="cpk_search">
 				<div class="search_body">
-					<div class="search_left">
-						<p class="type">产品</p>
+					<div class="search_left" onmouseover="hover()" onmouseout="out()">
+						<p class="type" id="y_type">产品</p>
 						<ul class="typelist" >
-							<li>产品</li>
-							<li>企业</li>
-							<li>品牌</li>
-							<li>百科</li>
-							<li>糖酒会</li>
-							<li>咨询</li>
+							<li id="y_pro" onclick="dianjiXL()">产品</li>
+							<li id="y_com" onclick="dianjiXL()">企业</li>
+							<li id="y_pinpai" onclick="dianjiXL()">品牌</li>
+							<li id="y_baike" onclick="dianjiXL()">百科</li>
+							<li id="y_tjh" onclick="dianjiXL()">糖酒会</li>
+							<li id="y_news" onclick="dianjiXL()">咨询</li>
 						</ul>
 					</div>
 					<input class="search_txt" id="search" type="text" value="实诚人家"/>
@@ -63,16 +64,16 @@
 //					$('.type').html($(this).html())
 //				})
 //			})
-			$('.search_left').mouseleave(function(){
-				$('.typelist').css({display:'none'})
-			})
-			$('.type').mouseover(function(){
-				$('.typelist').css({display:'block'})
-			})
-			$(".typelist").children().click(function(){
-				$('.typelist').css({display:'none'})
-				$('.type').html($(this).html())
-			})
+//			function hover(){
+//				$('.typelist').css({display:'block'})
+//			}
+//			function out(){
+//				$('.typelist').css({display:'none'})
+//			}
+//			function dianji(){
+//				$('.typelist').css({display:'none'})
+//				$('.type').html($(this).html())
+//			}
 		</script>
 		<div class="cpkbody">
 			<h3>当前位置：<a href="">中国美酒招商网</a>-<a href="">酒水产品库</a></h3>
