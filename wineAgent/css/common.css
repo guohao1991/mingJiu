@@ -1,0 +1,158 @@
+/*头部样式*/
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+img,li{
+	cursor: pointer;
+}
+body{
+	background:#F9F9F9;
+}
+.upper{
+	width: 1190px;
+	margin: 0 auto;
+	height:110px;
+	font-size:12px;
+	color:#333;
+	line-height:30px;
+	position: relative;
+}
+.upper img{
+	height:80px;
+	width:1190px;
+	margin: 0 auto;
+	border: none;
+	cursor: pointer;
+}
+.upper-lf{
+	height: 20px;
+	float: left;
+	cursor: pointer;
+}
+.upper-lf span{
+	margin:5px 0;
+}
+.upper-rt{
+	float: right;
+}
+
+.upper-nav{
+	display: none;
+	position: absolute;
+	right:0;
+	top:102px;
+	z-index: 2;	
+}
+.upper-rt span{	
+	cursor: pointer;
+	margin: 0 5px;
+}
+.upper-rt span:hover{
+	color:#CD8472;
+}
+.upper-lf span{
+	margin:0 5px;
+}
+
+.upper-lf .upper-lf-one{
+	margin: 0;
+}
+.upper-lf .upper-lf-two:hover{
+	color:#FC5300;
+	cursor: pointer;
+}
+.upper-lf .upper-lf-noe:hover{
+	color:#FC5300;
+	cursor: pointer;
+}
+.upper-nav{
+	background: #F9F9F9;
+	width: 475px;
+}
+.upper-nav li{
+	padding:10px 10px;
+	height: 40px;
+}
+.upper-nav-lf{
+	float: left;
+	width:50px;
+}
+.upper-nav-rt{
+	float:right;
+	width:400px;
+}
+.upper-nav-rt a{
+	display:block;
+	float: left;
+	margin-left: 10px;
+}
+.upper-nav .li-li{
+	height: 15px;
+	margin-top:-23px
+}
+
+/*尾部样式*/
+
+.bottom{
+	height:220px;
+	width:100%;
+	background:#434343;	
+}
+
+.footer{
+	height:220px;
+	width:1190px;
+	margin: 0 auto;
+	font-size:12px;
+	color:#F6F6F6;
+}
+.footer p a:hover {
+	text-decoration: underline;
+	
+}
+.footer-nav{
+	height:15px;
+	width:1190px;	
+	line-height: 15px;
+	padding: 10px 0;
+	margin-right: 25px;
+}
+.footer-nav a {
+	color:#F6F6F6;
+}
+.footer-nav li{
+	float: left;
+	width:70px;	
+}
+.footer-lt{
+	float: left;
+	width:62%;
+	margin: 15px 0;
+}
+.footer-rt{
+	float: right;
+	height:220px;
+	margin-left: 50px;
+}
+.footer-lt-b a{
+	float: left;
+	margin:36px 20px 0 0;
+}
+.footer-lt-b img{
+	width: 120px;
+	height:47px;
+	display: block;
+}
+.footer-rt p{
+	float: left;
+	width:150px;	
+	margin-top: 30px;	
+	text-align: center;
+	margin-left: 50px;
+}
+.footer-rt img{
+	height: 150px;
+	width: 150px;
+	margin-bottom: 8px;
+}

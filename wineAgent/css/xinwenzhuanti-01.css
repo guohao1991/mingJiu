@@ -1,0 +1,356 @@
+body{ font-size:12px; background:#f9f9f9}
+.imgSelected{
+	background: #00FFFF;
+}
+#main .pic {
+	position: relative;
+}
+#main .pic  a{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top:250px;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 5px;
+}
+#main .pic  a:first-of-type{
+	left:200px
+}
+#main .pic  a:nth-of-type(2){
+	left:220px
+}
+#main .pic  a:last-of-type{
+	left:240px
+}
+
+
+#header {
+	width: 100%;
+	height: 40px;
+	border-top: 3px solid red;
+	background: aliceblue;
+	box-sizing: border-box;
+}
+#wrapper{
+	height: 125px;
+}
+#header1 {
+	height: 40px;
+	width: auto;
+	position: absolute;
+	left: 50px;
+}
+
+#header1 a {
+	font-size: 15px;
+	color: black;
+	line-height: 37px;
+	color: aqua;
+}
+
+#header2 {
+	width: 380px;
+	height: 40px;
+	position: absolute;
+	right: 50px;
+	line-height: 40px;
+}
+
+#header2 li {
+	float: left;
+	margin-left: 10px;
+}
+
+#header2 li a {
+	color: black;
+	height: 37px;
+	display: block;
+}
+
+#header2 .r {
+	background: red;
+	color: yellow
+}
+
+#header2 .g {
+	color: red
+}
+
+#content {
+	width: 1190px;
+	height: 80px;
+	margin: 0px auto;
+	background: red;
+	/**/
+	position: relative;
+}
+
+#content>div {
+	position: absolute;
+	top: 10px;
+}
+
+#content .content-l {
+	width: 340px;
+	height: 62px;
+	left: 30px;
+}
+#content .content-l img{
+	width: 185px;
+	height: 62px;
+	display: block;
+	border: none;
+	float: left;
+}
+#content .content-l .content-l-1 {
+	float: right;
+	font-size: 25px;
+	margin-right: 20px;
+	margin-top: 15px
+}
+
+#content .content-c {
+	width: 400px;
+	height: 80px;
+	top: 0px;
+	left: 400px;
+}
+
+#content .content-c1 {
+	border: 2px solid #ccc;
+	position: relative;
+	top: 10px;
+	height: 36px
+}
+
+#content .content-c1 span {
+	display: block;
+	width: 67px;
+	height: 36px;
+	float: left;
+	line-height: 36px;
+	text-align: center;
+}
+
+#content .content-c1 input {
+	display: block;
+	width: 261px;
+	height: 36px;
+	float: left;
+	border: none;
+	font-size: 25px;
+	text-align: center;
+	outline: none;
+}
+
+#content .content-c1 button {
+	display: block;
+	width: 63px;
+	height: 36px;
+	float: left;
+	outline: none;
+}
+
+.content-c2 {
+	width: 400px;
+	height: 20px;
+	position: relative;
+	top: 15px
+}
+
+.content-c2 a:last-child {
+	width: 83px;
+	height: 20px;
+	float: right;
+	border: none;
+	display: block;
+}
+
+.content-c2 a {
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+
+#content .content-r {
+	width: 340px;
+	height: 62px;
+	right: 30px;
+}
+
+#content .content-r img {
+	width: 100%;
+	height: 100%
+}
+
+#nav {
+	width: 1190px;
+	height: 40px;
+	background: aqua;
+	margin: 0 auto;
+}
+
+#nav ul {
+	margin-left: 80px;
+}
+
+#nav ul li {
+	float: left;
+	height: 40px;
+	width: 94px;
+	line-height: 40px;
+	text-align: center
+}
+
+
+#show{
+	width:1190px;
+	height:290px;
+	background:red;
+	margin:0 auto
+}
+#main{
+	width:490px;
+	height:260px;
+	position:absolute;	
+	/*overflow:hidden*/
+}
+#main .pic ul{
+	position: relative;
+	left:20px;
+	top:20px
+}
+#main .pic ul li{
+	position:absolute;
+	display: none;
+}
+/*#main .pic ul img{
+	float:left;
+	display: block;
+	width:100%;
+	height:100%;
+	border:none;
+	
+}*/
+.hot{
+	position: absolute;
+	right:50px;
+	width:650px;
+	height:290px;
+	background:blue;
+	
+}
+.hot h2{
+	width:650px;
+	height:42px;
+	line-height:42px;
+	
+}
+.hot p{
+	width:650px;
+	height:40px;
+	line-height:20px;
+	background: aqua;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display:-webkit-box ;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	
+}
+.hot ul li{
+	height:28px;
+	width:110px;
+	margin-left:10px;
+	/*background: #FF0000;*/
+	float:left;
+	margin-top:10px
+}
+#warpper{
+	width:1190px;
+	height:160px;
+	margin: 0 auto;
+	margin-top:10px;
+}
+#warpper .warpper1{
+	width: 175px;
+	height:160px;
+	position: relative;
+	background:red;
+	float:left;
+}
+#warpper .warpper1 h1{
+	width:145px;
+	height:74px;
+	font-size:30px;
+	margin-left:20px;
+	margin-top:20px;
+}
+#warpper .warpper1 span{
+	border: 16px solid;
+	border-color:  transparent white transparent transparent  ; 
+	position: absolute;
+	left:143px;
+	top:70px;
+	
+}
+#warpper .warpper1 p{
+	width:80px;
+	height:20px;
+	margin-left:20px;
+	position: relative;
+	text-indent: 2em;
+	margin-top:5px;
+	background:yellow;
+	border-radius:5px;
+}
+#warpper .warpper1  p span{
+	border: 5px solid;
+	border-color:  transparent transparent transparent black ; 
+	position: absolute;
+	top:5px;
+	left:10px;
+}
+#warpper .warpper2{
+	float:left;
+}
+#warpper .warpper2 ul{
+	width:1000px;
+	height:160px;
+	margin-left:15px;
+	
+	background:#ccc
+}
+#warpper .warpper2 ul li{
+	width:132px;
+	height:28px;
+	line-height:28px;
+	margin-right:10px;
+	/*background:red;*/
+	margin-top:5px;
+	float:left;
+}
+#footer1{
+	height:30px;
+	background: black;
+	
+}
+#footer1 #box{
+	margin:0 auto;
+	width: 500px;
+	height:30px
+	margin-left:230px;
+	
+}
+#footer1 #box li{
+	width:50px;
+	height:30px;
+	line-height:30px;
+	text-align: center;
+	float:left;
+	margin-left:20px
+}
+#footer1 ul li a{
+	color:white
+}

@@ -1,0 +1,269 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;color: #333;}
+
+.top{width: 1349px;height: 28px;background: #eee;margin: 0 auto;font-size: 12px;}
+.top{
+	width: 1349px;
+	height: 30px;
+	background: #f9f9f9;
+	border-bottom: #ececec 1px  solid;
+}
+
+.upper{
+	width: 1000px;
+	height: 30px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.upper-lf{
+	height: 30px;
+	float: left;
+	line-height: 30px;
+}
+.upper-lf span{
+	margin:5px 0;
+}
+.upper-rt{
+	float: right;
+	line-height: 30px;
+}
+
+.upper-rt span:first-child{
+	color: #d20f13;
+}
+
+.upper-rt span{	
+	cursor: pointer;
+	margin: 0 5px;
+}
+.upper-rt span:hover{
+	color:#d20f13;
+}
+.upper-lf span{
+	margin:0 5px;
+}
+
+.upper-lf .upper-lf-one{
+	margin: 0;
+}
+.upper-lf .upper-lf-two:hover{
+	color:#FC5300;
+	cursor: pointer;
+}
+
+
+.header{width: 1349px;height: 152px;overflow: hidden;margin: 0 auto;}
+._header{width: 1190px;height: 82px;margin: 0 auto;margin-top: 35px;}
+.logo{width: 320px;height: 120px;float: left;margin-top: -20px;}
+.logo img{width: 320px;height: 120px;}
+.table{width: 600px;height: 82px;float: left;}
+.wechat{width: 180px;height: 76px;float: right;}
+.table form{width: 600px;height: 50px;position: relative;}
+.table ul{width: 600px;height: 30px;}
+.table .form1{width: 414px;height: 34px;border: 2px solid indianred;position: absolute;bottom: 0;}
+.table .form2{width: 86px;height: 38px;background: indianred;color: white;line-height: 38px;text-align: center;font-size: 16px;position: absolute;bottom: 0;left:416px ;border: 2px solid indianred;}
+.table ul li{float: left;line-height: 30px;font-size: 12px;width: 60px;text-align: center;}
+.special a:hover{color: indianred;text-decoration: underline;}
+.nav{width: 1349px;height: 42px;margin: 0 auto;border-bottom: 3px solid indianred;}
+._nav{width: 1190px;height: 42px;margin: 0 auto;}
+._nav .nav-l{width:215px ;height: 42px;float: left;background: indianred;}
+._nav .nav-l h2{width: 170px;height: 42px;font-weight: normal;font-size: 18px;color: white;line-height: 42px;padding-left: 25px;float: left;}
+._nav .nav-l h3{font-size: 16px;float: right;height: 42px;width: 30px;line-height: 42px;color: white;}
+._nav ul{float: left;width: 880px;height: 42px;margin-left: 30px;}
+._nav ul li{float: left;width: 114px;height: 42px;text-align: center;line-height: 42px;font-size: 15px;}
+._nav ul li:hover{background: indianred;color: white;}
+._nav ul li:hover a{color: white;}
+#banner{width: 1349px;height: 470px;margin: 0 auto;position: relative;overflow: hidden;}
+#banner .banner-ul{width: 215px;height: 470px;position: absolute;left: 80px;background: #fefee9;z-index: 1;}
+
+.banner-ul .banner-li1{width: 215px;height: 163px;}
+.banner-ul .banner-li2{width: 215px;height: 93px;}
+.banner-ul .banner-li3{width: 215px;height: 142px;}
+.banner-ul .banner-li4{width: 215px;height: 72px;}
+.banner-ul #banner-li h3{width: 215px;height: 32px;background: lightgrey;font-size: 14px;position: relative;}
+.banner-ul #banner-li h3 .span2{display: block;position: absolute;right: 20px;top:4px;font-size: 16px;}
+.banner-ul #banner-li h3 #span1{display: block;position: absolute;left: 10px;top: 8px;font-size: 16px;}
+.banner-ul #banner-li h3 a{display: block;position: absolute;left: 30px;line-height: 32px;font-size: 14px;}
+.banner-ul #banner-li p{padding: 15px;font-size: 14px;}
+.banner-ul #banner-li p a:hover{text-decoration: underline;}
+.banner-ul #banner-li p a{padding: 3px;}
+.banner-li11{position: absolute;left: 200px;top: 0;width: 500px;padding: 0 0 20px 20px;color: #333;}
+.banner-li1 .banner-li11 ul{float: left;display: none;}
+.banner-li1:hover .banner-li11 ul{display: block;background: #fefee9;}
+.banner-li1 .banner-li11 ul li{  position: relative; padding: 8px 0 8px 50px;
+border-bottom: #d1d1d1 1px dotted;margin-right: 20px;}
+.banner-li1 .banner-li11 ul li a{font-size: 12px;padding: 0 5px;}
+.banner-li1 .banner-li11 ul li .title{position: absolute;left: 10px;top: 10px;font-size: 14px;color: indianred;}
+.banner-li22{position: absolute;left: 200px;top: 165px;width: 500px;padding: 0 0 20px 20px;color: #333;}
+.banner-li2 .banner-li22 ul{float: left;overflow: hidden;padding: 10px 0;display: none;}
+.banner-li2:hover .banner-li22 ul{display: block;background: #fefee9;}
+.banner-li2 .banner-li22 ul li{  position: relative; padding: 8px 0 8px 50px;
+border-bottom: #d1d1d1 1px dotted;margin-right: 20px;}
+.banner-li2 .banner-li22 ul li a{font-size: 12px;padding: 0 5px;}
+.banner-li2 .banner-li22 ul li .title{position: absolute;left: 10px;top: 10px;font-size: 14px;color: indianred;}
+.banner-li33{position: absolute;left: 200px;top: 255px;width: 500px;padding: 0 0 20px 20px;color: #333;}
+.banner-li3 .banner-li33 ul{float: left;overflow: hidden;padding: 10px 0;icon: auto;display: none;}
+.banner-li3:hover .banner-li33 ul{display: block;background: #fefee9;}
+.banner-li3 .banner-li33 ul li{  position: relative; padding: 8px 0 8px 50px;
+border-bottom: #d1d1d1 1px dotted;margin-right: 20px;}
+.banner-li3 .banner-li33 ul li a{font-size: 12px;padding: 0 5px;}
+.banner-li3 .banner-li33 ul li .title{position: absolute;left: 10px;top: 10px;font-size: 14px;color: indianred;}
+img{display: block;border: none;}
+#bannerList{position: absolute;height: 470px;}
+#bannerList li{float: left;width: 1349px;height: 470px;}
+#bannerList img{width: 1349px;height: 470px;}
+#nums{position: absolute;right: 300px;bottom: 20px;}
+#nums li{float: left;margin: 10px;width: 20px;height: 20px;border-radius: 50%;background: white;color: indianred;text-align: center;line-height: 20px;cursor: pointer;}
+#nums li:hover,#nums li.hover{background: indianred;color: white;}
+#banner-r{position: absolute;top: 0;right: 75px;width: 195px;}
+.recommend{width: 1190px;height: 326px;margin: 0 auto;margin-top: 20px;}
+.recommend h3{width: 1190;height: 50px;line-height: 50px;font-size: 22px;}
+.recommend ul{width: 1190px;height: 274px;border: 1px solid indianred;}
+.recommend ul li{float: left;width: 237px;height: 274px;}
+.recommend ul li p{font-size: 14px;text-align: center;margin-top: 10px;}
+.local{width: 1190px;height: 118px;margin: 0 auto;margin-top: 20px;}
+.recommend ul li p:hover{color: indianred;text-decoration: underline;}
+.local ul li{float: left;}
+.import h3{width: 1190px;height: 52px;margin: 0 auto;margin-top: 15px;}
+.import h3 span:first-child{display: block;float: left;height: 52px;line-height: 52px;font-size: 22px;}
+.import h3 span:last-child{display: block;float: right;height: 42;line-height: 52px;font-size: 12px;}
+.import h3 span:last-child a{padding: 0 15px;}
+.import h3 span:last-child a:hover{text-decoration: underline;}
+._import{width: 1190px;height: 560px;margin: 0 auto;}
+._import .import-l{width: 235px;height: 530px;float: left;}
+.import-ll{width: 235px;height:110px;background:blanchedalmond;}
+.import-ll p{width: 235px;font-size: 14px;height: 20px;padding: 5px 10px;margin-left: 10px;}
+.import-ll p a{color: black;}
+._import .import-r{width: 953px;height: 570px;float: left;}
+._import .import-t{width: 953px;height: 300px;background: blanchedalmond;}
+._import .import-t li{float: left;}
+._import .import-t li p{padding: 8px;}
+._import .import-t li p:hover{color: indianred;text-decoration: underline;}
+._import .import-b{width: 953px;height: 259px;}
+._import .import-b li{width: 189px;height: 258px;float: left;}
+._import .import-b li p{width: 189px;height: 50px;padding: 5px;font-size: 14px;background: blanchedalmond;color: black;}
+._import .import-b li p:hover{color: indianred;text-decoration: underline;}
+.wine{height: 612px;width: 1190px;margin: 0 auto;}
+.wine h3{width: 1190px;height: 52px;margin: 0 auto;margin-top: 15px;}
+.wine h3 span:first-child{display: block;float: left;height: 52px;line-height: 52px;font-size: 22px;}
+.wine h3 span:last-child{display: block;float: right;height: 42;line-height: 52px;font-size: 12px;}
+.wine h3 span:last-child a{padding: 0 15px;}
+.wine h3 span:last-child a:hover{text-decoration: underline;}
+._wine{height: 560px;width: 1190px;margin: 0 auto;}
+.wine-l{width: 235px;height: 560px;float: left;}
+.wine-r{width: 953px;height: 560px;float: left;}
+.wine-lt{height: 300px;width: 235px;border-right: 1px solid darkgray;}
+.wine-lt li{float: left;border-left: 1px solid indianred;border-bottom: 1px solid indianred;}
+.wine-lb{height: 250px;width: 235px;}
+.wine-lb h4{width: 234px;height: 37px;background: #cecece;line-height: 37px;font-size: 14px;padding: 0 10px;}
+.wine-lb ul{width: 234px;height: 223px;border: 1px solid darkgray;overflow: hidden;border-right: 1px solid darkgray;}
+.wine-lb ul li{height: 34px;width: 234px;line-height: 34px;font-size: 12px;padding: 0 10px;border-bottom: 1px dashed darkgrey;position: relative;}
+.wine-lb ul li p{position: absolute;left: 26px;top: 0px;}
+.wine-lb ul li p .spec1 a{color: darkred;}
+.wine-lb ul li p a{color: black;}
+.wine-lb ul li .spec1{color: darkred;font-size: 14px;font-weight: 1000;}
+.wine-lb ul li .spec2{color:palevioletred ;font-size: 14px;}
+.wine-lb ul li .spec3{color: indianred;font-size: 14px;}
+.wine-t{width: 953px;height: 300px;}
+.wine-b{width: 953px;height: 258px;background: blanchedalmond;}
+.wine-t ul li{float: left;}
+.wine-t ul li:nth-child(1){width: 233px;height: 300px;}
+.wine-t ul li p{padding-left: 10px;}
+.wine-t ul li:nth-child(2){width: 486px;height: 300px;}
+.wine-t ul li:nth-child(3){width: 232px;height: 300px;}
+
+.wine-b ul li{float: left;width: 189px;}
+.wine-b ul li a{width: 189px;padding: 10px 5px;font-size: 14px;color: black;}
+.wine-b ul li p{font-size: 14px;padding-left: 10px;}
+.wine-b ul li p:hover{color: indianred;text-decoration: underline;}
+.beer{width: 1190px;height: 570px;margin: 0 auto;}
+.beer h3{width: 1190px;height: 52px;margin: 0 auto;margin-top: 15px;}
+.beer h3 span:first-child{display: block;float: left;height: 52px;line-height: 52px;font-size: 22px;}
+.beer h3 span:last-child{display: block;float: right;height: 42;line-height: 52px;font-size: 12px;}
+.beer h3 span:last-child a{padding: 0 15px;}
+.beer h3 span:last-child a:hover{text-decoration: underline;}
+.beer-l{width: 235px;height: 518px;float: left;}
+.beer-r{width: 953px;height: 518px;float: right;}
+.beer-r ul li{width: 189px;height: 259px;float: left;}
+.beer-r ul li p{padding-left: 10px;font-size: 14px;padding-top: 10px;color: black;}
+.beer-r ul li p:hover{color: indianred;text-decoration:underline ;}
+.beer-lb a:hover{color: indianred;text-decoration:underline ;}
+.beer-lb{font-size: 14px;padding: 20px 10px;}
+.beer-lb a{color: black;}
+.grape{height: 530px;width: 1190px;margin: 0 auto;}
+.grape h3{width: 1190px;height: 52px;margin: 0 auto;margin-top: 15px;}
+.grape h3 span:first-child{display: block;float: left;height: 52px;line-height: 52px;font-size: 22px;}
+.grape h3 span:last-child{display: block;float: right;height: 42;line-height: 52px;font-size: 12px;}
+.grape h3 span:last-child a{padding: 0 15px;}
+.grape h3 span:last-child a:hover{text-decoration: underline;}
+.grape-t{width: 190px;height: 115px;padding: 10px 20px;font-size: 14px;}
+.grape-t a{display: block;color: black;}
+.grape-t a:hover{color: indianred;text-decoration: underline;}
+.B_left{float: left;width: 190px;height: 475px;}
+.B_mid{float: left;width: 290px;height: 475px;}
+.B_right{float: left;width: 708px;height: 475px;}
+.B_right ul li{float: left;width: 176px;height: 238px;}
+.B_right ul li p{font-size: 14px;padding: 6px 10px;color: black;}
+.B_right ul li p:hover{color: indianred;text-decoration: underline;}
+.footer{
+	height:220px;
+	width:1190px;
+	margin: 0 auto;
+	font-size:12px;
+	color:#F6F6F6;
+}
+.footer p a:hover {
+	text-decoration: underline;
+	
+}
+.footer li a:hover{text-decoration: underline;}
+.footer-nav{
+	height:15px;
+	width:1190px;	
+	line-height: 15px;
+	padding: 10px 0;
+	margin-right: 25px;
+}
+.footer-nav a {
+	color:#F6F6F6;
+}
+.footer-nav li{
+	float: left;
+	width:70px;	
+}
+.footer-lt p{color: darkgrey;}
+.footer-lt{
+	float: left;
+	width:62%;
+	margin: 15px 0;
+}
+.footer-rt{
+	float: right;
+	height:220px;
+	margin-left: 50px;
+}
+.footer-lt-b a{
+	float: left;
+	margin:36px 20px 0 0;
+	
+}
+.footer-rt p{
+	float: left;
+	width:150px;	
+	margin-top: 30px;	
+	text-align: center;
+	margin-left: 50px;
+}
+.footer-lt p a{color: darkgray;}
+.footer-rt img{
+	height: 150px;
+	width: 150px;
+	margin-bottom: 8px;
+}
+.bottom{
+	height:220px;
+	width:1349px;
+	background:#434343;	
+}
