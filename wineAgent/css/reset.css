@@ -59,6 +59,7 @@ ol {
 a {
 	text-decoration: none;
 	cursor: pointer;
+	color:black;
 }
 
 sup {
@@ -86,4 +87,7 @@ select,
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+li{
+	list-style-type: none;
 }

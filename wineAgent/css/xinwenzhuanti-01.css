@@ -96,7 +96,13 @@ body{ font-size:12px; background:#f9f9f9}
 	height: 62px;
 	left: 30px;
 }
-
+#content .content-l img{
+	width: 185px;
+	height: 62px;
+	display: block;
+	border: none;
+	float: left;
+}
 #content .content-l .content-l-1 {
 	float: right;
 	font-size: 25px;
