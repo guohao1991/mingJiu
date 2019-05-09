@@ -174,7 +174,7 @@ h2 a:hover{
 
 .footer{
 	height:220px;
-	width:1190px;
+	width:1160px;
 	margin: 0 auto;
 	font-size:12px;
 	color:#F6F6F6;
@@ -203,7 +203,8 @@ h2 a:hover{
 	margin: 15px 0;
 }
 .footer-rt{
-	float: right;
+	width: 380px;
+	float: left;
 	height:220px;
 	margin-left: 50px;
 }
@@ -213,10 +214,15 @@ h2 a:hover{
 }
 .footer-rt p{
 	float: left;
-	width:150px;	
+	width:140px;	
 	margin-top: 30px;	
 	text-align: center;
 	margin-left: 50px;
+}
+.footer-lt-b img{
+	display: block;
+	height:47px ;
+	width: 120px;
 }
 .footer-rt img{
 	height: 150px;
