@@ -17,3 +17,20 @@ function clickXL(y_id,y_type){
 		document.getElementById(arr[i]).style="none";
 	}
 }
+
+
+//公共顶部网站导航样式。
+$(function() {
+	$(".upper-rt-ho").mousemove(function() {
+		$(".upper-nav").css("display", "block");
+	})	
+	$(".upper-rt-ho").mouseout(function(){
+		$(".upper-nav").css("display", "none");
+	})
+	$(".upper-nav").mousemove(function() {
+		$(".upper-nav").css("display", "block");
+	})
+	$(".upper-nav").mouseout(function() {
+		$(".upper-nav").css("display", "none");
+	})
+})
