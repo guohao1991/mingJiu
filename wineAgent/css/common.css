@@ -6,9 +6,9 @@ a:hover {
 img,li{
 	cursor: pointer;
 }
-body{
+/*body{
 	background:#F9F9F9;
-}
+}*/
 .upper{
 	width: 1190px;
 	margin: 0 auto;
