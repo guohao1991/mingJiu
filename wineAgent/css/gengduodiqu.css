@@ -1,0 +1,759 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	background: #f8f8f8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+ul,
+li,
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+font {
+	font-size: 12px;
+}
+
+img,
+input {
+	border: 0;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #2d4c75;
+}
+
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+#jiu_nav {
+	width: 1349px;
+	height: 271px;
+	margin: 0 auto;
+}
+
+#jiu_nav01 {
+	width: 1349px;
+	height: 30px;
+	background: #fff;
+}
+
+#jiuy_nav02 {
+	width: 1000px;
+	height: 30px;
+	margin: 0 auto;
+	position: relative margin: 0 174.5px;
+}
+
+#jiu_left {
+	width: 422px;
+	height: 30px;
+	float: left;
+}
+
+#jiu_left font {
+	width: 97.72px height:30px;
+	float: left;
+	line-height: 30px;
+	font-size: 12px;
+	color: #666;
+}
+
+#jiu_left a {
+	color: red;
+}
+
+#jiu_left img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+#jiu_right {
+	width: 350px;
+	height: 30px;
+	float: right;
+	line-height: 30px;
+}
+
+#jiu_right a {
+	font-size: 12px;
+	color: #666;
+	padding: 0 5px;
+}
+
+#jiu_right img {
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+}
+
+#jiu_right a:hover {
+	color: red;
+}
+
+#jiu_mei {
+	width: 1000px;
+	height: 235px;
+	background: #fff;
+	margin: 0 174.5px;
+}
+
+#jiu_mei01 {
+	width: 1000px;
+	height: 80px;
+	background: #fff;
+	margin: 5px 0 10px 0;
+}
+
+#jiu_mei02 {
+	width: 205px;
+	height: 74px;
+	float: left;
+}
+
+#jiu_chan {
+	width: 300px;
+	height: 79px;
+	margin: 0 7px 0 3px;
+	float: left;
+}
+
+#jiu_chan01 {
+	width: 300px;
+	height: 40px;
+	margin-top: 12px;
+}
+
+#jiu_chan02 {
+	width: 227px;
+	height: 34px;
+	border: 2px solid red;
+	border-right: none;
+	float: left;
+}
+
+#jiu_chan03 {
+	width: 64px;
+	height: 34px;
+	color: #4a402f;
+	text-align: center;
+	z-index: 99;
+	position: absolute;
+	float: left;
+}
+
+#jiu_chan03 ul {
+	width: 60px;
+	height: 34px;
+	display: block;
+	list-style-type: none;
+}
+
+#jiu_chan03 li {
+	line-height: 34px;
+	font-size: 12px;
+	border-right: 1px solid #efeae0;
+	position: relative;
+	padding-right: 4px;
+}
+
+.yin {
+	background: #fbf9f7!important;
+}
+
+#jiu_chan03 li a {
+	display: inline-block;
+	position: absolute;
+	top: 16px;
+	background: url(../img/i_jwg.png) no-repeat;
+	width: 8px;
+	height: 4px;
+	margin: 0 6px 0 5px;
+}
+
+#shu {
+	width: 167px;
+	height: 32px;
+	line-height: 32px;
+	border: 0;
+	float: right;
+	font-size: 12px;
+	text-indent: 4px;
+}
+
+#jiu_sou {
+	width: 68px;
+	height: 40px;
+	float: left;
+}
+
+#jiu_sou01 {
+	width: 70px;
+	height: 38px;
+	background: #cc0000;
+	color: #fff;
+	border: 0;
+	cursor: pointer;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+
+#jiu_rei {
+	width: 300px;
+	height: 22px;
+	margin-top: 5px;
+	line-height: 22px;
+	color: #929292;
+	font-size: 12px;
+	text-align: left;
+}
+
+#jiu_rei01 a {
+	color: #000;
+	margin: 0 5px;
+}
+
+#jiu_rei01 a:hover {
+	color: red;
+}
+
+#jiu_xiaolun {
+	width: 485px;
+	height: 75px;
+	margin-top: 5px;
+	float: right;
+}
+
+#jiu_shou {
+	width: 1000px;
+	height: 145px;
+}
+
+#jiu_shou01 {
+	width: 1000px;
+	height: 38px;
+	background: url(../img/mnbg_jwg.jpg)no-repeat;
+}
+
+#jiu_shou01 li {
+	float: left;
+	line-height: 40px;
+	font-size: 15px;
+	margin-left: 18px;
+	font-weight: bold;
+	font-family: "宋体";
+}
+
+#jiu_shou01 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#jiu_shou01 a:hover {
+	color: yellow;
+}
+
+#jiu_qi {
+	width: 998px;
+	height: 28px;
+	border: 1px solid #ededed;
+	background: #f6f6f6;
+	margin-top: 6px;
+}
+
+#jiu_qi li {
+	height: 28px;
+	margin-left: 18px;
+	line-height: 28px;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#jiu_qi a {
+	color: #000;
+	float: left;
+	padding-right: 12px;
+}
+
+#jiu_qi img {
+	float: left;
+	margin-top: 5px;
+	margin-right: 4px;
+}
+
+#jiu_qi a:hover {
+	color: red;
+}
+
+#jiu_di {
+	width: 848px;
+	height: 20px;
+	font-size: 12px;
+	border: #ececec 1px solid;
+	border-top: 0;
+	padding: 8px 75px;
+	position: relative;
+}
+
+#jiu_di01 {
+	width: 57px;
+	height: 19px;
+	background: url(../img/dqbg_jwh.png)no-repeat;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 18px;
+	position: absolute;
+	left: 8px;
+	padding-left: 5px;
+}
+
+#jiu_di02 {
+	width: 812px;
+	height: 20px;
+	float: left;
+}
+
+#jiu_di02 font {
+	height: 20px;
+	line-height: 20px;
+	background: #f4f3f3;
+	float: left;
+	padding: 0 10px;
+	margin-right: 6px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#jiu_di02 a {
+	color: #000;
+}
+
+#jiu_di02 a:hover {
+	color: red;
+}
+
+#jiu_di03 {
+	width: 76px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	position: absolute;
+	right: 8px;
+	background: #fc5300;
+}
+
+#jiu_di03 a {
+	color: #fff;
+}
+
+#jiu_di03 a:hover {
+	color: #fff;
+}
+
+#jiu_zhuan {
+	width: 1000px;
+	height: 28px;
+	margin: 6px auto 10px auto;
+	position: relative;
+}
+
+#jiu_zhuan01 {
+	position: absolute;
+	width: 64px;
+	text-align: center;
+	color: #fff;
+	background: #14a487;
+	line-height: 28px;
+	font-size: 12px;
+}
+
+#jiu_zhuan02 {
+	float: left;
+	width: 470px;
+	position: relative;
+	border: #ececec 1px solid;
+	line-height: 26px;
+	font-size: 12px;
+	padding: 0 10px 0 70px;
+}
+
+#jiu_zhuan02 a {
+	padding: 0 10px 0 0;
+	color: #000;
+	text-decoration: none;
+}
+
+#jiu_zhuan02 a:hover {
+	color: red;
+}
+
+#jiu_zhuan03 {
+	float: right;
+	width: 422px;
+	font-size: 12px;
+	line-height: 28px;
+}
+
+#jiu_yong {
+	width: 100px;
+	line-height: 22px;
+	height: 22px;
+	border: #ececec 1px solid;
+	margin: 0 4px;
+}
+
+#jiu_mi {
+	width: 100px;
+	line-height: 22px;
+	height: 22px;
+	border: #ececec 1px solid;
+	margin: 0 4px;
+}
+
+#jiu_zhuan03 span {
+	width: 129.563px;
+	height: 28px;
+	float: right;
+}
+
+#jiu_zhuan03 span a {
+	background: #0d69f2;
+	padding: 7px 9px;
+	position: relative;
+	top: -10px;
+	color: #fff;
+}
+
+
+/*以上是头部导航部分，以下是中间内容部分*/
+
+.diqu_body {
+	width: 1000px;
+	height: 2652px;
+	margin: 0 auto;
+}
+
+
+/*以下是中间部分的第一部分地区列表部分*/
+
+.diqu_hz {
+	width: 1000px;
+	margin: 8px auto;
+}
+
+.diqu_hz ul {
+	width: 1000px;
+	height: 184px;
+	background: url(../img/diqufen_gddq.jpg) no-repeat left;
+	overflow: hidden;
+}
+
+.diqu_hz li {
+	display: inline;
+	margin-left: 94px;
+	padding-left: 12px;
+	float: left;
+	width: 894px;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+.diqu_hz li a {
+	width: 50px;
+	text-align: left;
+	float: left;
+}
+
+
+/*以下是内容部分的第一个小块*/
+
+.diqu_all {
+	width: 1000px;
+	height: 340px;
+	margin: 0;
+	background: #fff;
+	padding-bottom: 25px;
+}
+
+.diqu_all h3 {
+	padding-left: 10px;
+	line-height: 36px;
+	color: #760000;
+	font-size: 16px;
+	background: #f6f4f5;
+	border: #dfdfdf 1px solid;
+}
+
+.diqu_all h3 span {
+	float: right;
+	padding: 0 10px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #999;
+}
+
+.diqu_all h3 span a {
+	color: #760000;
+	padding: 0 3px;
+}
+
+.diqu_cont {
+	width: 998px;
+	margin: 0 0 8px 0;
+	padding-top: 12px;
+	border-left: #dfdfdf 1px solid;
+	border-right: #dfdfdf 1px solid;
+	border-bottom: #dfdfdf 1px solid;
+}
+
+.diqu_cont li {
+	width: 188px;
+	height: 134px;
+	display: inline;
+	margin: 0 0 10px 10px;
+	float: left;
+	background: #f0f0f0;
+	line-height: 24px;
+	text-align: center;
+}
+
+.diqu_cont li a:hover {
+	color: orangered;
+	text-decoration: underline;
+}
+
+.diqu_cont li img {
+	width: 188px;
+	height: 101px;
+}
+
+
+/*以下是中间部分的最后一部分  最后额目录部分*/
+
+.diqu_other {
+	width: 1000px;
+	height: 283px;
+	margin: 0 auto;
+}
+
+.diqu_xiao {
+	width: 242px;
+	float: left;
+}
+
+.diqu_xiao h3 {
+	width: 230px;
+	height: 30px;
+	padding-left: 10px;
+	line-height: 30px;
+	color: #760000;
+	font-size: 14px;
+	background: url(../img/navbg_gddq.jpg) repeat-x;
+	border: #dfdfdf 1px solid;
+}
+
+.diqu_xiao h3 span {
+	float: right;
+	padding: 0 10px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.diqu_xiao h3 span a {
+	color: #760000;
+}
+
+.diqu_xiao ul {
+	width: 240px;
+	height: 230.4px;
+	border-left: #dfdfdf 1px solid;
+	border-right: #dfdfdf 1px solid;
+	border-bottom: #dfdfdf 1px solid;
+	overflow: hidden;
+	background: #FFFFFF;
+	padding: 6px 0;
+}
+
+.diqu_xiao ul li {
+	width: 220px;
+	margin-left: 10px;
+	line-height: 28px;
+	font-size: 14px;
+	height: 28px;
+	overflow: hidden;
+	border-bottom: #e7e7e7 1px dashed;
+}
+
+
+/*以下是尾部倒数第二部分*/
+
+.bottom_css {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 0px;
+	margin-top: 10px;
+}
+
+.bottom_css01 {
+	height: 152px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.blog_bottom {
+	width: 1000px;
+	height: 122px;
+	margin: 0 auto;
+	padding: 20px 0 10px 0;
+}
+
+.newbottom_left {
+	float: left;
+	width: 500px;
+}
+
+.kf_tit {
+	font-size: 18px;
+	text-shadow: 1px 0px 0px #fff;
+	color: #333;
+	padding-bottom: 8px;
+	font-family: Microsoft Yahei;
+}
+
+.ywsmdiv {
+	width: 480px;
+	height: 48px;
+	padding: 8px 10px;
+}
+
+.ywsmdiv li {
+	float: left;
+	width: 150px;
+	margin-right: 8px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 26px;
+	font-size: 16px;
+	background: #5b95f9;
+	text-align: center;
+	padding: 8px 0;
+}
+
+.newbottom_right {
+	float: left;
+	width: 500px;
+	height: 122px;
+}
+
+.fwlist li {
+	float: left;
+	width: 78px;
+	height: 82px;
+	text-align: center;
+	margin: 8px 5px 0 0;
+	line-height: 26px;
+	position: relative;
+}
+
+
+/*以下是最底部部分*/
+
+.bottom {
+	height: 284px;
+	width: 100%;
+	background: #434343;
+}
+
+.footer {
+	height: 220px;
+	width: 1000px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #F6F6F6;
+}
+
+.footer p {
+	font-size: 12px;
+}
+
+.footer p a {
+	color: white;
+	font-size: 12px;
+}
+
+.footer p a:hover {
+	text-decoration: underline;
+}
+
+.footer-nav {
+	height: 15px;
+	width: 1000px;
+	line-height: 15px;
+	padding: 10px 0;
+	margin-right: 25px;
+}
+
+.footer-nav a {
+	color: #F6F6F6;
+	font-size: 14px;
+}
+
+.footer-nav li {
+	float: left;
+	width: 70px;
+}
+
+.footer-lt {
+	float: left;
+	width: 65%;
+	margin: 15px 0;
+}
+
+.footer-rt {
+	float: right;
+	height: 220px;
+	margin-left: 50px;
+}
+
+.footer-lt-b a {
+	float: left;
+	margin: 20px 10px 0 0;
+}
+
+.footer-rt p {
+	float: left;
+	width: 100px;
+	margin-top: 30px;
+	text-align: center;
+	margin-left: 50px;
+	font-size: 14px;
+}
+
+.footer-rt img {
+	height: 100px;
+	width: 100px;
+	margin-bottom: 8px;
+}

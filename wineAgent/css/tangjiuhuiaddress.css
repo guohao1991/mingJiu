@@ -1,0 +1,389 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+}
+
+body,html{
+	width:100%;
+	height:100%;
+}
+
+#top{
+	width: 100%;
+}
+#t_TOP{
+	width: 100%;background:#f9f9f9;
+}
+#tTop{
+	width:1190px;
+	height:30px;
+	background:#f9f9f9;
+	margin:0 auto;
+	
+}
+#left_top{
+	float: left;
+	font-size:12px;
+	line-height:30px;
+}
+#left_top a{
+	color: #275895;
+    font-size: 12px;
+}
+#right_top {
+	float: right;
+	font-size: 12px;
+	line-height:30px;
+}
+#right_top li{
+	float: left;
+	margin:0 10px;
+}
+#right_top a{
+	color: black;
+}
+
+#logodiv{
+	width:1190px;
+	height:74px;
+	margin:15px auto;
+
+}
+#Tlogo{
+	float: left;
+	width:400px;
+	height:74px;
+}
+#logo{
+	width:205px;
+	height:74px;
+	background: aqua;
+	float: left;
+}
+#zong{
+	width:138px;
+	height:52px;
+	float:left;
+}
+#zong b{
+	font-size: 25px;
+	color:#025091;
+}
+#zong span{
+	font-size:14px;
+	color: #5b5c5c;
+}
+
+#seach{
+	float: left;
+    width: 500px;
+    margin: 5px 5px 0 5px;
+	
+}
+#sou{
+	width: 380px;
+    height: 34px;
+    float: left;
+    border: #d03232 2px solid;
+    border-right: 0;
+}
+#sousuo input{
+	outline: none;
+}
+#txt{
+	width: 275px;
+    padding-left: 5px;
+    height: 34px;
+    line-height: 34px;
+    border: 0;
+    border-left: #e0e0e0 1px solid;
+    float: right;
+}	
+#chanpin{
+	width: 100px;
+	height:34px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+}
+#chanpin li{
+	line-height: 34px;
+    font-size: 12px;
+    background: #fff;
+    cursor: pointer;
+    padding-right: 4px;
+    background:#cecece;
+}
+#dianji{
+	float: left;
+    width: 108px;
+    height: 40px;
+}
+#dianji #btn{
+	width: 108px;
+    height: 38px;
+    background: #cc0000;
+    color: #fff;
+    border: 0;
+    border: #d03232 1px solid;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+#T_navdiv{
+	border-bottom: #1c78c5 2px solid;
+}
+#T_nav{
+	width:1190px;
+	height:44px;
+	margin:0 auto;
+	
+}
+
+#T_nav li{
+	float: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 25px;
+    line-height: 44px;
+	color:black;
+}
+#T_nav a{
+	color: black;
+}
+#T_nav div{
+	float: right;
+    font-size: 16px;
+    line-height: 32px;
+    background: #d03232;
+    padding: 0 13px;
+}
+#T_nav div a{
+	color:white;
+}
+
+#T_local{
+	font-size: 14px;
+    padding: 0 0 15px 0;
+    color: #666;
+    width: 1190px;
+    margin: 0 auto;
+}
+#T_local a{
+	padding: 0 5px;
+    color: #126db3;
+}
+#min{
+	width: 1190px;
+    margin: 15px auto 0 auto;
+}
+
+#Tp_left{
+	float: left;
+    width: 880px;
+}
+#Tp_lmtit{
+	background: #e7f5ff;
+    height: 40px;
+    line-height: 40px;
+}
+#Tp_lmtit1{
+	background: #1c78c5;
+}
+#Tp_lmtit a{
+	color: #fff;
+}
+#Tp_lmtit span{
+	line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 25px;
+    cursor: pointer;
+}
+/* 旅游信息列表 */
+#TJ_list li{
+	width: 850px;
+	height:150px;
+    padding: 15px;
+    margin-top: 12px;
+    position: relative;
+    border:1px solid #CECECE;
+}
+#TJ_list #tupian{
+	width:146px;
+	height:157px;
+	float: left;
+	background:red;
+}
+#TJ_cont{
+	float: left;
+    width: 670px;
+    margin-left: 25px;
+}
+#TJ_cont b{
+	display: block;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 3px;
+    text-shadow: 0px 1px 0px #fff;
+}
+#TJ_cont p{
+	font-size: 15px;
+    color: #555555;
+    line-height: 26px;
+    text-shadow: 0px 1px 0px #fff;
+}
+#TJ_btn{
+	border-radius: 3px;
+    background: #1762a0;
+    text-align: center;
+    width: 140px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 10px;
+}
+#TJ_btn a{
+	color: #FFFFFF;
+}
+#T_djs{
+	position: absolute;
+    top: 45px;
+    right: 45px;
+    border: #333 1px solid;
+    padding: 10px;
+    font-size: 24px;
+    text-shadow: 0px 1px 0px #fff;
+    font-weight: bold;
+}
+#us_fanye{
+	font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 35px 0;
+    line-height: 30px;
+    
+}
+#us_fanye a{
+	padding: 6px 11px;
+    border: #e0e0e0 1px solid;
+    border-radius: 4px;
+    color: #000;
+}
+#us_fanye span{
+	color: #fff;
+    padding: 6px 12px;
+    background: #1c78c5;
+    border: #1c78c5 1px solid;
+    border-radius: 4px;
+}
+
+
+#Tp_right{
+	float: right;
+}
+#ntit{
+	
+	width:300px;
+	font-size: 18px;
+    color: #111;
+    line-height: 40px;
+    border-bottom: #e9e9e9 1px solid;
+    margin-bottom: 10px;
+}
+#ntit span{
+	float: right;
+	font-weight: normal;
+    font-size: 12px;
+}
+#ntit label{
+	border-bottom: #027cb6 2px solid;
+    padding: 7px 0;
+}
+#T_newlist li{
+	padding-left: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    border:1px solod #cecece;
+}
+#T_newlist a{
+	color: #666;
+}
+#box{
+	position: relative;
+    width: 255px;
+    height: 220px;
+    background: #00FFFF;
+    padding: 0px 0 10px 0;
+    border-bottom: #e8e6e8 1px solid;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* min结束  */
+
+#footdiv{
+	background: #3f3e3e;
+    padding: 25px 0 40px 0;
+}
+#footbk{
+	width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+#nav{
+	font-size: 14px;
+    margin-bottom: 12px;
+}
+#nav a{
+	color: #f1f1f1;
+    padding-right: 12px;
+}
+#banquan{
+	font-size: 12px;
+    color: #cccaca;
+    line-height: 20px;
+}
+#footpic{
+	margin-top: 16px;
+}
+#footpic img{
+	width:120px;
+	height:47px;
+}
+#footpic li{
+	width:120px;
+	height:47px;
+	background:red;
+	float: left;
+    margin-right: 8px;
+}
+#wxdiv{
+	position: absolute;
+    right: 0;
+    top: 10px;
+}
+#wxdiv li{
+	float: left;
+    width: 130px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #cccaca;
+    text-align: center;
+    line-height: 30px;
+}
+#wxdiv span{
+	display: block;
+	width:100px;
+	height:100px;
+	background: red;
+	margin-left: 15px;
+}
