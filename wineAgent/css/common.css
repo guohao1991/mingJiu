@@ -6,9 +6,9 @@ a:hover {
 img,li{
 	cursor: pointer;
 }
-/*body{
+body{
 	background:#F9F9F9;
-}*/
+}
 .upper{
 	width: 1190px;
 	margin: 0 auto;
@@ -41,11 +41,8 @@ img,li{
 	display: none;
 	position: absolute;
 	right:0;
-	top:105px;
-	z-index: 2;
-	height:100px;
-	width:220px;
-	background:#ff0
+	top:102px;
+	z-index: 2;	
 }
 .upper-rt span{	
 	cursor: pointer;
@@ -64,6 +61,31 @@ img,li{
 .upper-lf .upper-lf-two:hover{
 	color:#FC5300;
 	cursor: pointer;
+}
+.upper-nav{
+	background: #F9F9F9;
+	width: 475px;
+}
+.upper-nav li{
+	padding:10px 10px;
+	height: 40px;
+}
+.upper-nav-lf{
+	float: left;
+	width:50px;
+}
+.upper-nav-rt{
+	float:right;
+	width:400px;
+}
+.upper-nav-rt a{
+	display:block;
+	float: left;
+	margin-left: 10px;
+}
+.upper-nav .li-li{
+	height: 15px;
+	margin-top:-23px
 }
 
 /*尾部样式*/
@@ -112,6 +134,11 @@ img,li{
 .footer-lt-b a{
 	float: left;
 	margin:36px 20px 0 0;
+}
+.footer-lt-b img{
+	width: 120px;
+	height:47px;
+	display: block;
 }
 .footer-rt p{
 	float: left;

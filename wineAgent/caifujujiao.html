@@ -9,7 +9,7 @@
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
-	<body>
+	<body> 
 		<div class="head-box" style="width: 100%;overflow: hidden;"></div>
 		<script type="text/javascript">
 			$(function() {
@@ -20,7 +20,7 @@
 			<span>
 	    		<table width="380" border="0" cellspacing="0" cellpadding="0">
 		  			<tr>
-						<td width="15%">资讯查询:</td>
+						<td width="18%">资讯查询:</td>
 						<td width="42%" align="center"><input name="txtKey" type="text" id="txtKey"  class="td-1" name="textfield" /></td>
 						<td width="21%" align="center" >
 			 			<select name="ddlSort" id="ddlSort">
@@ -36,15 +36,11 @@
 		 			 </tr>
 				</table>
 			</span> 您的位置：
-<<<<<<< HEAD
-			<a href="#">中国名酒招商网</a> >
-			<a href="#">资讯</a> >
-			<a href='#'>财富聚焦列表</a>
-=======
 			<a href="index.html">中国名酒招商网</a> >
-			<a href="/news/">资讯</a> >
-			<a href='/news/caifu/'>财富聚焦列表</a>
->>>>>>> e100cff29cd74b072f3e7d526f28199e2bed2498
+			<a href="xinwenzhixun-02.htmln">资讯</a> >
+			<a href='caifujujiao.html'>财富聚焦列表</a>
+
+			
 		</div>
 
 		<div class="sy_css04">
@@ -156,7 +152,7 @@
 					<li>尾页</li>
 				</ul>
 				<script type="text/javascript">
-					ajax({
+					$.ajax({
 						type: "get",
 						url: "data.json",
 						success: showList
