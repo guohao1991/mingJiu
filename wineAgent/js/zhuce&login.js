@@ -106,11 +106,11 @@ $(function() {
 		$("#div_company").show();
 	})
 	//同意协议
-	
+
 	//点击 注册 按钮
 	$("#zcbtn").click(function() {
-		if($("#xieyi").checked()){
-			
+		if($("#xieyi").checked()) {
+
 		}
 		var flag = flag1 + flag2 + flag3 + flag4 + flag5 + flag6;
 		if(flag == 6) {
@@ -124,13 +124,13 @@ $(function() {
 					"password": $("#txtpwd").val(),
 					"phone": $("#txtphone").val(),
 					"email": $("#txtemail").val(),
-					"userType": flag7
+					"user_type": flag7
 				}),
 				success: function(data) {
-					if(data.msg="注册成功"){
+					if(data.msg = "注册成功") {
 						alert("注册成功！")
 					}
-					if(data.msg="注册失败，该用户名已存在，请更换用户名"){
+					if(data.msg = "注册失败，该用户名已存在，请更换用户名") {
 						alert("注册失败，该用户名已存在，请更换用户名！")
 					}
 				}
@@ -183,25 +183,30 @@ $(function() {
 
 	//登录页面代码↓
 	$("#deng2").click(function() {
-		$.ajax({
-			type:"post",
-			url: "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/login.do",
-			async: true,
-			contentType: "application/json",
-			data: JSON.stringify({
-				"userName": $("#txtusername").val(),
-				"password": $("#txtpwd").val(),
-			}),
-			success: function(data) {
-				if(data.msg=="用户名或密码不正确"){
-					alert("用户名或密码不正确");
+		if($("#txtcode").val() == $("#ewm").html()) {
+			$.ajax({
+				type: "post",
+				url: "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/login.do",
+				async: true,
+				contentType: "application/json",
+				data: JSON.stringify({
+					"userName": $("#txtusername").val(),
+					"password": $("#txtpwd").val(),
+				}),
+				success: function(data) {
+					if(data.msg == "用户名或密码不正确") {
+						alert("用户名或密码不正确");
+					}
+					if(data.msg == "登录成功") {
+						alert("登录成功！");
+						location.href = "index.html";
+					}
 				}
-				if(data.msg=="登录成功"){
-					alert("登录成功！");
-					location.href="index.html";
-				}
-			}
-		});
+			});
+		}
+		else{
+			alert("请输入正确的验证码!")
+		}
 	})
 })
 
