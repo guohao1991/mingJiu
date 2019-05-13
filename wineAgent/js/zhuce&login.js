@@ -109,9 +109,6 @@ $(function() {
 
 	//点击 注册 按钮
 	$("#zcbtn").click(function() {
-		if($("#xieyi").checked()) {
-
-		}
 		var flag = flag1 + flag2 + flag3 + flag4 + flag5 + flag6;
 		if(flag == 6) {
 			$.ajax({
@@ -127,10 +124,11 @@ $(function() {
 					"user_type": flag7
 				}),
 				success: function(data) {
-					if(data.msg = "注册成功") {
+					console.log(data)
+					if(data.msg =="注册成功") {
 						alert("注册成功！")
 					}
-					if(data.msg = "注册失败，该用户名已存在，请更换用户名") {
+					if(data.msg == "注册失败，该用户名已存在，请更换用户名") {
 						alert("注册失败，该用户名已存在，请更换用户名！")
 					}
 				}
