@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>fabushangji</title>
-		<link rel="stylesheet" type="text/css" href="css/denglu.css"/>
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zhuce&login.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
 		<div class="zc_top">
 			<div class="usertopnei">
@@ -25,87 +29,91 @@
 					</li>
 				</ul>
 			</div>
-		</div>	
-				<div id="userbody">
-					<div id="me">
-						<div id="me1">
-							<a href="#">
-								<img src="img/lg-logo_fbsj.jpg">
-							</a>
-						</div>
-					</div>	
-					<div id="pin">
-							<div id="pin_left">
-								<div id="pai">
-									<a href="#">
-										<img src="img/adv_fbsj.jpg">
-									</a>
-								</div>
-							</div>
-							<div id="pin_right">
-								<div id="yong">
-									<h3>用户登录</h3>
-									<form id="hu">
-										<table id="hu1">
-											<tr id="hu2">
-												<td>
-													<span></span>
-												</td>
-											</tr>
-											<tr id="hu3">
-												<td>
-													<input type="text" id="yh" placeholder="用户名"/>
-												</td>
-											</tr>
-											<tr id="hu4">
-												<td>
-													<input type="password" id="yh1" placeholder="密码"/>
-													<span id="yh2">
+		</div>
+		<div id="userbody">
+			<div id="me">
+				<div id="me1">
+					<a href="#">
+						<img src="img/lg-logo_fbsj.jpg">
+					</a>
+				</div>
+			</div>
+			<div id="pin">
+				<div id="pin_left">
+					<div id="pai">
+						<a href="#">
+							<img src="img/adv_fbsj.jpg">
+						</a>
+					</div>
+				</div>
+				<div id="pin_right">
+					<div id="yong">
+						<h3>用户登录</h3>
+						<form id="hu">
+							<table id="hu1">
+								<tr id="hu2">
+									<td>
+										<span></span>
+									</td>
+								</tr>
+								<tr id="hu3">
+									<td>
+										<input type="text" id="txtusername" placeholder="用户名" />
+									</td>
+								</tr>
+								<tr id="hu4">
+									<td>
+										<input type="password" id="txtpwd" placeholder="密码" />
+										<span id="yh2">
 														<a href="#">忘记密码？</a>
 													</span>
-												</td>
-											</tr>
-											<tr id="yzm">
-												<td>
-												验证码：<input id="yzm1"  type="text"  value="点击显示验证码" onfocus="if(value=='点击显示验证码'){value=''}" onblur="if(value==''){value='点击显示验证码'}" />
-												<span id="sj">
-													<img src="#" alt="点击更换验证码" style="float: left;" onclick="this.str=this.src+'1'">
+									</td>
+								</tr>
+								<tr id="yzm">
+									<td>
+										验证码：<input id="txtcode" type="text" value="点击显示验证码" onfocus="if(value=='点击显示验证码'){value=''}" onblur="if(value==''){value='点击显示验证码'}" onclick="createRandCode();" />
+										<span id="ewm" onclick="createRandCode();">
 												</span>
-												</td>
-											</tr>
-											<tr id="deng">
-												<td>
-													<input type="submit" id="deng2" value="登     录" />
-												</td>
-												<td id="zhu">
-													<a href="#">
-														<img src="img/zc_fbsj.jpg">
-													</a>
-												</td>
-											</tr>
-										</table>
-									</form>
-									<div id="san">
-										<img src="img/lg_shuo_fbsj.jpg">
-									</div>
-								</div>
-							</div>
+										<span>
+											<div id="txtcodeTip">
+											</div>
+										</span>
+									</td>
+								</tr>
+								<tr id="deng">
+									<td>
+										<input type="button" id="deng2" value="登     录" />
+									</td>
+									<td id="zhu">
+										<a href="zhuce.html">
+											<img src="img/zc_fbsj.jpg">
+										</a>
+									</td>
+								</tr>
+							</table>
+						</form>
+						<div id="san">
+							<img src="img/lg_shuo_fbsj.jpg">
 						</div>
-						<div id="gao">
-								高速安全、随时随地找产品/找经销商、看酒业新闻，关注美酒招商网官方微信一应俱全，
-								<a href="#">去看看>></a>
-						</div>
-						<div id="guan">
-							<div id="guan1">
-								<a href="#">关于我们</a>|
-								<a href="#">友情链接</a>|
-								<a href="#">意见投诉</a>|
-								<a href="#">联系我们</a>
-							</div>
-							<div id="ban">
-								<p>版权所有 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020 电信与信息服务业务经营许可证：豫ICP备10209129号></p>
-							</div>
-						</div>
+					</div>
 				</div>
+			</div>
+			<div id="gao">
+				高速安全、随时随地找产品/找经销商、看酒业新闻，关注美酒招商网官方微信一应俱全，
+				<a href="#">去看看>></a>
+			</div>
+			<div id="guan">
+				<div id="guan1">
+					<a href="#">关于我们</a>|
+					<a href="#">友情链接</a>|
+					<a href="#">意见投诉</a>|
+					<a href="#">联系我们</a>
+				</div>
+				<div id="ban">
+					<p>版权所有 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020 电信与信息服务业务经营许可证：豫ICP备10209129号></p>
+				</div>
+			</div>
+		</div>
 	</body>
+
 </html>

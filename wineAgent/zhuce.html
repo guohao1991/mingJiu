@@ -5,6 +5,9 @@
 		<meta charset="UTF-8">
 		<title>zhuce</title>
 		<link rel="stylesheet" type="text/css" href="css/zc&cpk.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zhuce&login.js" type="text/javascript" charset="utf-8"></script>
+		
 	</head>
 
 	<body style="background: white;">
@@ -126,8 +129,8 @@
 					<div class="zc_xiang">
 						<label class="lbltxt">
 							<font class="dian" style="color: red;">*</font>验证码：</label>
-						<input id="txtcode" type="text" class="zctxt" value="点击显示" style="width:60px;" onfocus="if(value=='点击显示'){value=''}" onblur="if(value==''){value='点击显示'}" />
-						<span id="ewm" class="yzm" style="float: left; "></span>
+						<input id="txtcode" type="text" class="zctxt" value="点击显示" style="width:60px;" onfocus="if(value=='点击显示'){value=''}" onblur="if(value==''){value='点击显示'}" onclick="createRandCode();"/>
+						<span id="ewm" class="yzm" style="float: left;line-height:24px;border:1px solid #ccc;display:none;padding:3px 10px;margin-left:20px;" onclick="createRandCode();"></span>
 						<span style="float: left;margin-left:30px;padding-top:3px;">
 							<div id="txtcodeTip"></div>
 						</span>
@@ -145,7 +148,7 @@
 					<div class="zc_xiang">
 						<table border="0" cellspacing="0" cellpadding="0" style="margin-left: 90px;">
 							<tr>
-								<td><input type="checkbox"></td>
+								<td><input id="xieyi" type="checkbox" checked="checked"></td>
 								<td>我已经阅读并同意遵守
 									<a href="">《名酒网用户服务协议》</a>
 								</td>
@@ -153,13 +156,8 @@
 						</table>
 					</div>
 					<div class="zc_xiang">
-<<<<<<< HEAD
 						<input id="zcbtn" type="button" value="立即注册" style="margin-left: 90px;width:120px;height: 30px;background: deepskyblue;border-radius:5px;cursor: pointer;color: #fff;font-weight: bold;" />&nbsp;&nbsp; 已有名酒网账号？
-						<a>点击登录</a>
-=======
-						<input type="button" value="立即注册" style="margin-left: 90px;width:120px;height: 30px;background: deepskyblue;border-radius:5px;cursor: pointer;color: #fff;font-weight: bold;"/>&nbsp;&nbsp;
-						已有名酒网账号？<a href="denglu.html">点击登录</a>
->>>>>>> 8c4bdede1870e20eb520746ee51f4dd0520172ff
+						<a href="denglu.html">点击登录</a>
 					</div>
 				</div>
 				<div class="zc_right">
@@ -183,154 +181,5 @@
 			<p>版权所有 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020 电信与信息服务业务经营许可证：豫ICP备10209129号</p>
 		</div>
 	</body>
-	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		var flag1 = 0;
-		var flag2 = 0;
-		var flag3 = 0;
-		var flag4 = 0;
-		var flag5 = 0;
-		var flag6 = 0;
-		$(function() {
-			$(window).load(function() {
-				$("<div>用户名不能少于4个字符</div>").appendTo("#txtusernameTip")
-					.addClass("onLoad")
-				$("<div>密码由6-16位字符组成，请使用数字加字母组合密码</div>").appendTo("#txtpwdTip")
-					.addClass("onLoad")
-				$("<div>请再次输入新设密码！</div>").appendTo("#txtpwd2Tip")
-					.addClass("onLoad")
-				$("<div>请填写真实手机号，避免错失商机。若找回密码需提供手机号！</div>").appendTo("#txtphoneTip")
-					.addClass("onLoad")
-				$("<div>通过邮箱可以找回密码</div>").appendTo("#txtemailTip")
-					.addClass("onLoad")
-				$("<div>请输入正确的答案</div>").appendTo("#txtcodeTip")
-					.addClass("onLoad")
-			})
-			$("#txtusername").focus(function() {
-				$(this).next().children().children().removeClass().addClass("onFocus").html("用户名不能少于4个字符");
-			})
-			$("#txtpwd").focus(function() {
-				$(this).next().children().children().removeClass().addClass("onFocus").html("密码由6-16位字符组成，请使用数字加字母组合密码");
-			})
-			$("#txtpwd2").focus(function() {
-				$(this).next().children().children().removeClass().addClass("onFocus").html("请再次输入新设密码！");
-			})
-			$("#txtphone").focus(function() {
-				$(this).next().children().children().removeClass().addClass("onFocus").html("请填写真实手机号，避免错失商机。若找回密码需提供手机号！");
-			})
-			$("#txtemail").focus(function() {
-				$(this).next().children().children().removeClass().addClass("onFocus").html("通过邮箱可以找回密码");
-			})
-			$("#txtusername").blur(function() {
-				var reg1 = /^.{4,20}$/;
-				if(reg1.test(this.value)) {
-					flag1 = 1;
-					$(this).next().children().children().removeClass().addClass("onCorrect").html("该用户名可以注册");
-				} else {
-					$(this).next().children().children().removeClass().addClass("onError").html("用户名在4到20个字符,请确认！");
-				}
-			})
-			$("#txtpwd").blur(function() {
-				var reg2 = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
-				if(reg2.test(this.value)) {
-					flag2 = 1;
-					$(this).next().children().children().removeClass().addClass("onCorrect").html("新密码合法");
-				} else {
-					$(this).next().children().children().removeClass().addClass("onError").html("新密码由6-16个字符组成，请确认");
-				}
-			})
-			$("#txtpwd2").blur(function() {
-				//				console.log(this.value,$("#txtpwd").val())
-				if(this.value == $("#txtpwd").val()) {
-					flag3 = 1;
-					$(this).next().children().children().removeClass().addClass("onCorrect").html("两次密码输入一致");
-				}
-				if(this.value == "") {
-					$(this).next().children().children().removeClass().addClass("onError").html("密码不能为空");
-				}
-				if(this.value != $("#txtpwd").val()) {
-					$(this).next().children().children().removeClass().addClass("onError").html("2次密码不一致,请确认");
-				}
-			})
-			$("#txtphone").blur(function() {
-				var reg3 = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
-				if(reg3.test(this.value)) {
-					flag4 = 1;
-					$(this).next().children().children().removeClass().addClass("onCorrect").html("手机号输入正确");
-				} else {
-					$(this).next().children().children().removeClass().addClass("onError").html("你输入的手机格式不正确");
-				}
-			})
-			$("#txtemail").blur(function() {
-				var reg4 = /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/;
-				if(reg4.test(this.value)) {
-					flag5 = 1;
-					$(this).next().children().children().removeClass().addClass("onCorrect").html("电子邮箱输入正确");
-				} else {
-					$(this).next().children().children().removeClass().addClass("onError").html("你输入的邮箱格式不正确");
-				}
-			})
-			$("#rbusertype").click(function() {
-				flag6 = 0;
-				$("#div_chk").css({
-					"display": "block"
-				})
-				$("#div_company").css({
-					"display": "none"
-				})
-			})
-			$("#rbusertype1").click(function() {
-				flag6 = 1;
-				$("#div_chk").css({
-					"display": "none"
-				})
-				$("#div_company").css({
-					"display": "block"
-				})
-			})
-			$("#zcbtn").click(function() {
-				var flag = flag1 + flag2 + flag3 + flag4 + flag5;
-				if(flag == 5) {
-					$.ajax({
-						type: "post",
-						url: "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",
-						async: true,
-						data: {
-							"email": $("#txtemail").val(),
-							"password": $("#txtpwd").val(),
-							"phone": $("#txtphone").val(),
-							"userName": $("#txtusername").val(),
-							"userType": flag6
-						},
-						success: function(data) {
-							console.log(data)
-						}
-					});
-				}
-			})
-
-			$("#getcode").click(function() {
-				var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0-9]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/
-				if($("#txtphone").val()==""){
-					alert("请输入手机号");
-					return false;
-				}
-				if(!myreg.test($("#txtphone").val())){
-					alert("手机号码格式不正确");
-					return false;//return 停止执行
-				}
-					$.ajax({
-						type: "get",
-						url: "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/sendCode.do",
-						async: true,
-						success: function success(data) {
-							console.log(data);
-
-						}
-					});
-			})
-
-		})
-	</script>
 
 </html>

@@ -39,7 +39,7 @@ function Page(opt){
 									ele = clickpages.elem.children('li.active');
 								}
 								break;
-							case '«':
+							case '第一页':
 								if (page1 == '1') {
 									return;
 								}
@@ -48,7 +48,7 @@ function Page(opt){
 								}
 								ele = clickpages.elem.children('li[page=1]');
 								break;
-							case '»':
+							case '最后一页':
 								if (page1 == clickpages.num) {
 									return;
 								}
