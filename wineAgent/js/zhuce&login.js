@@ -236,27 +236,45 @@ $(function() {
         alert("请阅读服务协议并同意！");
         return false;
       }
+      if ($("#phonecode").val() == "") {
+        alert("请输入手机验证码！");
+        return false;
+      }
       $.ajax({
-        type: "post",
+        type: "get",
         url:
-          "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",
-        async: true,
-        contentType: "application/json",
-        data: JSON.stringify({
-          userName: $("#txtusername").val(),
-          password: $("#txtpwd").val(),
-          phone: $("#txtphone").val(),
-          email: $("#txtemail").val(),
-          user_type: flag7
-        }),
-        success: function(data) {
-          console.log(data);
-          if (data.code == 1) {
-            alert(data.msg + "!");
-            location.href = "denglu.html";
+          "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkCode.do",
+        data: { code: $("#phonecode").val() },
+        success: function(res) {
+          console.log(res);
+          if (res.code == 0) {
+            alert("手机验证码错误或者已经失效");
           }
-          if (data.code == 0) {
-            alert(data.msg + "！");
+          if (res.code == 1) {
+            $.ajax({
+              type: "post",
+              url:
+                "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/register.do",
+              async: true,
+              contentType: "application/json",
+              data: JSON.stringify({
+                userName: $("#txtusername").val(),
+                password: $("#txtpwd").val(),
+                phone: $("#txtphone").val(),
+                email: $("#txtemail").val(),
+                user_type: flag7
+              }),
+              success: function(data) {
+                console.log(data);
+                if (data.code == 1) {
+                  alert(data.msg + "!");
+                  location.href = "denglu.html";
+                }
+                if (data.code == 0) {
+                  alert(data.msg + "！");
+                }
+              }
+            });
           }
         }
       });
@@ -281,10 +299,11 @@ $(function() {
       type: "get",
       url:
         "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/sendCode.do",
+      data: { phone: $("#txtphone").val() },
       async: true,
       success: function success(data) {
         console.log(data);
-        if (data.code == "0") {
+        if (data.code == "1") {
           //验证码发送成功，设置计时60s输入有效
           $("#getcode").attr("disabled", "true"); //此行代码表示将禁用该键
           var timer = setInterval(function() {
@@ -298,12 +317,13 @@ $(function() {
               $("#getcode").removeAttr("disabled", "true"); //移除禁用
             }
           }, 1000);
-        } else if (data == "sendError") {
+        } else if (data.code == "0") {
           alert("发送失败，请重新获取");
           $("#getcode").val("重新获取");
-        } else if (data == "phoneError") {
-          alert("手机号码错误，请检查");
         }
+        // else if (data == "phoneError") {
+        //   alert("手机号码错误，请检查");
+        // }
       }
     });
   });
