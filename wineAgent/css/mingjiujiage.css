@@ -120,15 +120,67 @@ select {
 .sy_css {
 	width: 1000px;
 	margin: 0 auto;
-	position: relative;
+
 	text-align: left;
+}
+
+.sy_css03 span table tbody {
+	width: 1000px;
+	height: 127px;
+	text-align: left;
+}
+
+.sy_css03 span table tbody tr {
+	width: 1000px;
+	height: 31px;
+	text-align: center;
+}
+
+.sy_css03 span {
+	display: none;
+}
+
+.dis {
+	display: block;
+}
+
+.sy_css03 table td a {
+	color: #e90303;
+	font-weight: bolder;
+	font-size: 14px;
+}
+
+.sy_css03 table td a:hover {
+	color: blue;
+}
+
+.sy_css03 span img {
+	border: 1px #f37e0d solid;
+	margin: 10px 0 0 6px;
+}
+
+.sy_css03 {
+	width: 1000px;
+	height: 127px;
+	background: url(../img/pinpai_30.gif) no-repeat;
+	/* padding-left: 10px; */
+	position: relative;
+}
+
+.sy_css03 .sy_css03_1 {
+	width: 1000px;
+	height: 128px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 .sy_css table {
 	margin: 0 auto;
 	width: 1000px;
-	height: 259px;
-	display: table;
+	height: 128px;
+	/* display: table; */
 	/*border-collapse: separate;*/
 	box-sizing: border-box;
 	text-indent: 0;
@@ -266,56 +318,7 @@ select {
 	text-align: left;
 }
 
-.sy_css03 {
-	width: 990px;
-	height: 127px;
-	background: url(../img/pinpai_30.gif) no-repeat;
-	padding-left: 10px;
-}
-
-.sy_css03 span {
-	width: 1000px;
-	height: 127px;
-	text-align: left;
-}
-
-.sy_css03 span table {
-	width: 1000px;
-	height: 127px;
-	text-align: left;
-	margin-left: -10px;
-}
-
-.sy_css03 span table tbody {
-	width: 1000px;
-	height: 127px;
-	text-align: left;
-}
-
-.sy_css03 span table tbody tr {
-	width: 1000px;
-	height: 31px;
-	text-align: center;
-}
-
-.dis {
-	display: block;
-}
-
-.sy_css03 table td a {
-	color: #e90303;
-	font-weight: bolder;
-	font-size: 14px;
-}
-
-.sy_css03 table td a:hover {
-	color: blue;
-}
-
-.sy_css03 span img {
-	border: 1px #f37e0d solid;
-	margin: 10px 0 0 6px;
-}
+/* niantie */
 
 .undis {
 	display: none;
@@ -510,6 +513,7 @@ select {
 	font-size: 14px;
 	text-align: center;
 }
+
 #pages li {
 	float: left;
 	margin: 10px;
@@ -541,102 +545,131 @@ select {
 	border: none;
 	padding: 0;
 }
+
 /*以上引入分页部分*/
 .sy_css25 {
-    width: 260px;
-    float: right;
+	width: 260px;
+	float: right;
 }
-.sy_css26, .sy_css28 {
-    width: 260px;
-    margin-top: 10px;
+
+.sy_css26,
+.sy_css28 {
+	width: 260px;
+	margin-top: 10px;
 }
-.sy_css26 h3, .sy_css28 h3 {
-    height: 28px;
-    line-height: 28px;
-    font-size: 14px;
-    border-bottom: #db0909 2px solid;
-    position: relative;
-    font-weight: bold !important;
+
+.sy_css26 h3,
+.sy_css28 h3 {
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	border-bottom: #db0909 2px solid;
+	position: relative;
+	font-weight: bold !important;
 }
-.sy_css26 h3 span, .sy_css28 h3 span {
-    float: right;
-    padding-right: 10px;
+
+.sy_css26 h3 span,
+.sy_css28 h3 span {
+	float: right;
+	padding-right: 10px;
 }
-.sy_css26 h3 span a, .sy_css28 h3 span a {
-    font-size: 12px;
-    font-weight: normal;
+
+.sy_css26 h3 span a,
+.sy_css28 h3 span a {
+	font-size: 12px;
+	font-weight: normal;
 }
-.sy_css26 h3 img, .sy_css28 h3 img, .sy_css23 h3 img {
-    position: relative;
-    top: -2px;
-    margin-right: 5px;
+
+.sy_css26 h3 img,
+.sy_css28 h3 img,
+.sy_css23 h3 img {
+	position: relative;
+	top: -2px;
+	margin-right: 5px;
 }
+
 .sy_css27 {
 	width: 248.4px;
 	height: 260px;
-    border: 1px #f0f0f0 solid;
-    border-top-color: rgb(240, 240, 240);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top: none;
-    padding: 5px;
+	border: 1px #f0f0f0 solid;
+	border-top-color: rgb(240, 240, 240);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top: none;
+	padding: 5px;
 }
+
 .sy_css27 li {
 	width: 248.4px;
 	height: 26px;
 	border-bottom: 1px dashed #CECECE;
-    line-height: 26px;
-    font-size: 14px;
-    height: 26px;
-    overflow: hidden;
+	line-height: 26px;
+	font-size: 14px;
+	height: 26px;
+	overflow: hidden;
 }
+
 .sy_css27 li a {
-    color: #555;
+	color: #555;
 }
+
 .sy_css27 li a:hover {
-    color: orangered;
+	color: orangered;
 }
-.sy_css26, .sy_css28 {
-    width: 260px;
-    margin-top: 10px;
+
+.sy_css26,
+.sy_css28 {
+	width: 260px;
+	margin-top: 10px;
 }
-.sy_css26 h3, .sy_css28 h3 {
-    height: 28px;
-    line-height: 28px;
-    font-size: 14px;
-    border-bottom: #db0909 2px solid;
-    position: relative;
-    font-weight: bold !important;
+
+.sy_css26 h3,
+.sy_css28 h3 {
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	border-bottom: #db0909 2px solid;
+	position: relative;
+	font-weight: bold !important;
 }
-.sy_css26 h3 span, .sy_css28 h3 span {
-    float: right;
-    padding-right: 10px;
+
+.sy_css26 h3 span,
+.sy_css28 h3 span {
+	float: right;
+	padding-right: 10px;
 }
-.sy_css26 h3 span a, .sy_css28 h3 span a {
-    font-size: 12px;
-    font-weight: normal;
+
+.sy_css26 h3 span a,
+.sy_css28 h3 span a {
+	font-size: 12px;
+	font-weight: normal;
 }
+
 .sy_css32 {
-    border: 1px #f0f0f0 solid;
-    border-top-color: rgb(240, 240, 240);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top: none;
-    padding: 10px 0 10px 0;
+	border: 1px #f0f0f0 solid;
+	border-top-color: rgb(240, 240, 240);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top: none;
+	padding: 10px 0 10px 0;
 }
+
 .sy_css32 li {
-    width: 72px;
-    float: left;
-    margin: 0 0 0 10px;
-    display: inline;
-    text-align: center;
+	width: 72px;
+	float: left;
+	margin: 0 0 0 10px;
+	display: inline;
+	text-align: center;
 }
+
 .sy_css32 li img {
-    border: 1px #f0f0f0 solid;
+	border: 1px #f0f0f0 solid;
 }
+
 .sy_css32 li span {
-    line-height: 24px;
+	line-height: 24px;
 }
+
 .sy_css32 li span a {
-    font-size: 12px;
+	font-size: 12px;
 }

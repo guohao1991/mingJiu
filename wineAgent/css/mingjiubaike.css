@@ -34,35 +34,35 @@ span,
 em,
 a,
 form {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 img {
-	display: block;
-	border: 0;
-	vertical-align: middle
+    display: block;
+    border: 0;
+    vertical-align: middle
 }
 
 a {
-	text-decoration: none;
-	color: #333333;
+    text-decoration: none;
+    color: #333333;
 }
 
 a:hover {
-	color: #de0303;
-	text-decoration: underline;
+    color: #de0303;
+    text-decoration: underline;
 }
 
 li {
-	list-style: none;
+    list-style: none;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	font-size: 12px;
-	color: #333333;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #333333;
 }
 
 form,
@@ -75,72 +75,85 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 input,
 select {
-	padding: 0px;
-	margin: 0px;
+    padding: 0px;
+    margin: 0px;
 }
+
 .bk_top_dh {
     width: 100%;
     height: 30px;
     line-height: 30px;
     background: url(../img/bktopbg.gif) repeat-x;
 }
-#loginDiv{
-	display: block;
-	float: right;
-	width: ;
-	height: 30px;
+
+#loginDiv {
+    display: block;
+    float: right;
+    width: ;
+    height: 30px;
 }
+
 .bk_top_dhxq {
     margin: 0 auto;
     width: 1000px;
 }
-.yul{
-	float: right;
-	width: 210px;
-	height: 30px;
+
+.yul {
+    float: right;
+    width: 210px;
+    height: 30px;
 }
- .yul li {
+
+.yul li {
     float: left;
     font-size: 12px;
 }
- .yul li a{
-	color: #666;
-	 float: left;
+
+.yul li a {
+    color: #666;
+    float: left;
 }
- .yul li a:hover{
-	color: orangered;
-	text-decoration: underline;
+
+.yul li a:hover {
+    color: orangered;
+    text-decoration: underline;
 }
- .yul .ya {
+
+.yul .ya {
     float: left;
     display: block;
 }
- .yul .ya1 {
+
+.yul .ya1 {
     display: block;
     float: left;
     margin-left: 10px;
     margin-left: 9px;
     display: inline;
 }
- .yul .ya2 {
+
+.yul .ya2 {
     display: block;
     margin-left: 10px;
 }
+
 .bk_top_center {
     width: 100%;
     height: 133px;
     background: url(../img/centerbg.jpg) repeat-x;
 }
+
 .bk_top_dhxq {
     margin: 0 auto;
     width: 1000px;
     height: 83px;
 }
+
 .bk_logo {
     display: inline;
     float: left;
@@ -148,6 +161,7 @@ select {
     width: 175px;
     height: 70px;
 }
+
 .bk_search {
     display: inline;
     margin-top: 18px;
@@ -155,6 +169,7 @@ select {
     width: 419px;
     height: 33px;
 }
+
 .bk_input {
     width: 338px;
     padding-left: 5px;
@@ -163,8 +178,9 @@ select {
     background: url(../img/shbg.jpg) no-repeat;
     border: #000000 0px solid;
     border: 0;
-    outline: none; 
+    outline: none;
 }
+
 .bk_search h3 {
     float: left;
     width: 400px;
@@ -173,18 +189,22 @@ select {
     font-weight: normal;
     color: #707070;
 }
+
 .bk_search h3 a {
     padding: 0 5px;
     cursor: pointer;
 }
+
 .bk_menu {
     width: 1000px;
     height: 50px;
     margin: 0 auto;
 }
+
 .bk_menu ul {
     margin-left: 80px;
 }
+
 .bk_menu li {
     float: left;
     width: 87px;
@@ -195,101 +215,158 @@ select {
     font-size: 14px;
     font-weight: bold;
 }
+
 .bk_menu li .navbiao {
     color: #fff554;
 }
+
 .bk_menu li a {
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .bk_menu li img {
     float: left;
     width: 138px;
     display: block;
 }
+
 /*以下是中间内容部分*/
 .baike_css {
     width: 1000px;
     height: 1394px;
     margin: 0 auto;
 }
+
 .baike_css22 {
     width: 750px;
     float: left;
     margin-top: 10px;
 }
+
 .baike_css21 {
     width: 732px;
     float: left;
     border: 4px #77B709 solid;
 }
+
 .baike_css23 {
     width: 434px;
     float: left;
     padding: 0 0 0 10px;
     border-right: 1px #e2e3e3 dashed;
 }
+
 .baike_css23 h3 {
     font-size: 14px;
     line-height: 30px;
 }
+
 .baike_css24 {
     float: left;
+    width: 180px;
+    height: 128px;
+    background: #de0303;
+    overflow: hidden;
+    position: relative
 }
+
+.baike_css24 a {
+    display: block;
+}
+
+.currImg {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 .baike_css25 {
     width: 220px;
     float: right;
     line-height: 20px;
     color: #666666;
-    height: 128px;
+    height: 126px;
     font-size: 12px;
     padding-right: 10px;
+    overflow: hidden;
+    position: relative;
 }
+
+.baike_css25 .baike_css25_text {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.baike_css25 div {
+    display: none;
+}
+
+
+
 .baike_css25 h4 {
     font-size: 14px;
     line-height: 24px;
 }
+
 .baike_css25 a {
     color: #026acb;
 }
+
 .baike_css25 a {
     color: #026acb;
 }
+
 .baike_css40 {
     width: 434px;
     height: 46.6px;
     float: left;
     padding: 10px 0 0 0;
 }
-.baike_css40 a{
-	display: block;
+
+.baike_css40 .baike_css40_text {
+    border: 1px solid blue;
 }
+
+.baike_css40 a {
+    display: block;
+}
+
 .baike_css40 img {
     padding: 1px;
     border: 1px #e2e3e3 solid;
     float: left;
     margin-right: 10px;
 }
+
 .baike_css26 {
     width: 280px;
     float: right;
 }
+
 .baike_css26 h3 {
     line-height: 30px;
 }
+
 .baike_css27 {
     width: 280px;
     float: left;
     margin-bottom: 10px;
 }
+
 .baike_css28 {
     width: 67px;
     float: left;
 }
+
 .baike_css28 {
     padding: 1px;
     border: 1px #e2e3e3 solid;
 }
+
 .baike_css29 {
     width: 188px;
     float: left;
@@ -298,17 +375,21 @@ select {
     font-size: 12px;
     line-height: 18px;
 }
+
 .baike_css29 h4 {
     font-size: 12px;
 }
+
 .baike_css29 a {
     color: #026acb;
 }
+
 /*以下是各种小块部分*/
 .baike_css30 {
     width: 740px;
     float: left;
 }
+
 .baike_css38 {
     width: 740px;
     float: left;
@@ -316,11 +397,13 @@ select {
     background: #CECECE;
     height: 80px;
 }
+
 .baike_css37 {
     width: 750px;
     float: left;
     margin-top: 10px;
 }
+
 .baike_css31 {
     width: 365px;
     height: 328.2px;
@@ -329,6 +412,7 @@ select {
     margin-right: 7px;
     margin-bottom: 10px;
 }
+
 .baike_css31 h3 {
     width: 355px;
     height: 28px;
@@ -337,12 +421,14 @@ select {
     line-height: 28px;
     padding-left: 10px;
 }
+
 .baike_css31 h3 span {
     float: right;
     padding-right: 10px;
     font-size: 12px;
     font-weight: normal;
 }
+
 .baike_css32 {
     width: 343px;
     float: left;
@@ -350,22 +436,26 @@ select {
     border: 1px #e2e3e3 solid;
     border-top: 0px;
 }
+
 .baike_css35 {
     width: 343px;
     float: left;
     border-bottom: 1px #e2e3e3 dashed;
     padding-bottom: 10px;
 }
+
 .baike_css33 {
     width: 94px;
     float: left;
 }
+
 .baike_css33 img {
     border: 1px #e2e3e3 solid;
     padding: 1px;
     width: 94px;
     height: 69px;
 }
+
 .baike_css34 {
     width: 235px;
     float: right;
@@ -373,28 +463,35 @@ select {
     color: #666;
     font-size: 12px;
 }
+
 .baike_css34 h4 {
     font-size: 12px;
 }
+
 .baike_css34 a {
     color: #026acb;
 }
+
 .baike_css34 a {
     color: #026acb;
 }
+
 .baike_css32 ul {
     width: 100%;
     clear: both;
     padding-top: 4px;
 }
+
 .baike_css32 li {
     line-height: 24px;
     height: 24px;
     overflow: hidden;
 }
+
 .baike_css32 li span a {
     color: #026acb;
 }
+
 .baike_css31 {
     width: 365px;
     float: left;
@@ -402,6 +499,7 @@ select {
     margin-right: 7px;
     margin-bottom: 10px;
 }
+
 .baike_css31 h3 {
     width: 355px;
     height: 28px;
@@ -410,12 +508,14 @@ select {
     line-height: 28px;
     padding-left: 10px;
 }
+
 .baike_css31 h3 span {
     float: right;
     padding-right: 10px;
     font-size: 12px;
     font-weight: normal;
 }
+
 .baike_css32 {
     width: 343px;
     float: left;
@@ -423,6 +523,7 @@ select {
     border: 1px #e2e3e3 solid;
     border-top: 0px;
 }
+
 .baike_css35 {
     width: 343px;
     float: left;
@@ -439,6 +540,7 @@ select {
     padding: 0 6px 6px 6px;
     overflow: hidden;
 }
+
 .baike_css16 {
     width: 235px;
     float: left;
@@ -446,27 +548,32 @@ select {
     background: #FFFFFF;
     margin-top: 8px;
 }
+
 .baike_css16 h3 {
     line-height: 32px;
     padding-left: 10px;
 }
+
 .baike_css17 {
     width: 235px;
     float: left;
     background: url(../img/baike_10.gif) no-repeat;
     padding-bottom: 7px;
 }
+
 .baike_css16 h3 span {
     font-size: 12px;
     font-weight: normal;
     float: right;
     padding-right: 10px;
 }
+
 .baike_css18 {
     width: 235px;
     float: left;
     padding-bottom: 5px;
 }
+
 .baike_css18 li {
     padding-left: 5px;
     font-size: 12px;
@@ -478,6 +585,7 @@ select {
     margin: 2px 0 0 3px;
     background: url(../img/baike_02.jpg) no-repeat;
 }
+
 .baike_css19 {
     width: 237px;
     float: left;
@@ -485,6 +593,7 @@ select {
     background: #CECECE;
     height: 70px;
 }
+
 /*以下是尾部照片部分*/
 .rollphotos {
     WIDTH: 1000px;
@@ -493,6 +602,7 @@ select {
     float: left;
     border: 1px solid #CECECE;
 }
+
 .FixTitle {
     background: url(../img/baike_32.gif) repeat-x;
     OVERFLOW: hidden;
@@ -500,16 +610,19 @@ select {
     BORDER: #e2e3e3 1px solid;
     HEIGHT: 30px;
 }
+
 .FixTitle h3 {
     PADDING-LEFT: 10px;
     FONT-SIZE: 14px;
 }
-.rollphotos #box{
-	position: relative;
-	width: 1000px;
-	height: 150px;
-	overflow: hidden;
+
+.rollphotos #box {
+    position: relative;
+    width: 1000px;
+    height: 150px;
+    overflow: hidden;
 }
+
 .jcarousel-skin-tango {
     overflow: hidden;
     position: relative;
@@ -519,21 +632,24 @@ select {
     left: -1008px;
     width: 3460px;
 }
-.jcarousel-skin-tango li{
-	float: left;
-	list-style: outside none none;
-	margin-left: 0;
-	margin-right: 10px;
-	width: 158px;
-	height: 140px;
-	text-align: center;
-	display: list-item;
-	margin-top: 15px;
+
+.jcarousel-skin-tango li {
+    float: left;
+    list-style: outside none none;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 158px;
+    height: 140px;
+    text-align: center;
+    display: list-item;
+    margin-top: 15px;
 }
-.jcarousel-skin-tango li p{
-	font-size: 12px;
-	margin-top: 10px;
+
+.jcarousel-skin-tango li p {
+    font-size: 12px;
+    margin-top: 10px;
 }
+
 /*.jcarousel-skin-tango .jcarousel-container {
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
@@ -579,6 +695,7 @@ select {
     margin-top: 10px;
     font-size: 12px;
 }
+
 .baike_yl {
     background: url(../img/bk_youlian_03.gif) no-repeat scroll 0 0 transparent;
     height: 30px;
@@ -586,9 +703,11 @@ select {
     text-align: right;
     width: 100%;
 }
+
 .baike_yl span {
     padding-right: 10px;
 }
+
 .yl_allabove {
     padding: 10px;
     width: 978px;
@@ -598,15 +717,18 @@ select {
     border-top: none;
     line-height: 22px;
 }
+
 .yl_allabove a {
     display: inline;
     padding: 0 4px;
 }
+
 .bk_bottom {
     width: 100%;
     /*margin-top: 10px;*/
     font-size: 12px;
 }
+
 .bk_btm_dh {
     width: 100%;
     height: 24px;
@@ -615,10 +737,12 @@ select {
     background: #f1f1f1;
     text-align: center;
 }
+
 .bk_btm_dh a {
     padding: 0 5px;
     color: #666;
 }
+
 .bk_btm_cont {
     width: 1000px;
     margin: 10px auto 20px auto;
@@ -626,6 +750,7 @@ select {
     text-align: center;
     color: #666;
 }
-.bk_btm_cont img{
-	display: inline-block;
+
+.bk_btm_cont img {
+    display: inline-block;
 }

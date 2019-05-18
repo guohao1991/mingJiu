@@ -41,8 +41,11 @@ body{
 	display: none;
 	position: absolute;
 	right:0;
-	top:102px;
-	z-index: 2;	
+	top:105px;
+	z-index: 2;
+	height:100px;
+	width:220px;
+	background:#ff0
 }
 .upper-rt span{	
 	cursor: pointer;
@@ -61,31 +64,6 @@ body{
 .upper-lf .upper-lf-two:hover{
 	color:#FC5300;
 	cursor: pointer;
-}
-.upper-nav{
-	background: #F9F9F9;
-	width: 475px;
-}
-.upper-nav li{
-	padding:10px 10px;
-	height: 40px;
-}
-.upper-nav-lf{
-	float: left;
-	width:50px;
-}
-.upper-nav-rt{
-	float:right;
-	width:400px;
-}
-.upper-nav-rt a{
-	display:block;
-	float: left;
-	margin-left: 10px;
-}
-.upper-nav .li-li{
-	height: 15px;
-	margin-top:-23px
 }
 
 /*尾部样式*/
@@ -134,11 +112,6 @@ body{
 .footer-lt-b a{
 	float: left;
 	margin:36px 20px 0 0;
-}
-.footer-lt-b img{
-	width: 120px;
-	height:47px;
-	display: block;
 }
 .footer-rt p{
 	float: left;
