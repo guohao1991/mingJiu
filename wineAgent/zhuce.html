@@ -1,185 +1,324 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>zhuce</title>
+    <link rel="stylesheet" type="text/css" href="css/zc&cpk.css" />
+    <script
+      src="js/jquery-1.11.0.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="js/zhuce&login.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </head>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>zhuce</title>
-		<link rel="stylesheet" type="text/css" href="css/zc&cpk.css" />
-		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/zhuce&login.js" type="text/javascript" charset="utf-8"></script>
-		
-	</head>
+  <body style="background:lightbrown;">
+    <div class="zc_top">
+      <div class="usertopnei">
+        <p class="lg_info">
+          您好，欢迎来到名酒网！请
+          <a href="denglu.html">登录</a>
+          <a href="zhuce.html">注册</a>
+        </p>
+        <ul>
+          <li>
+            <a href="index.html" target="_blank" style="color: red;"
+              >美酒首页</a
+            >
+          </li>
+          <li style="background:url(img/weibo_zc.jpg) no-repeat 0 4px;">
+            <a href="" target="_blank" style="text-align:right;">官方微博</a>
+          </li>
+          <li style="background:url(img/weixin_zc.jpg) no-repeat 0 4px;">
+            <a href="" target="_blank">官方微信</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="userbody">
+      <div class="usertopnei">
+        <a href="" target="_blank"><img src="img/index-logo_zc.png"/></a>
+        <img src="img/reg-required.jpg" />
+      </div>
+      <div class="zc_body">
+        <div class="zc_left">
+          <div class="zc_xiang">
+            <label class="lbltxt">
+              <font class="dian" style="color: red;">*</font>用户名：</label
+            >
+            <input type="text" class="zctxt" id="txtusername" />
+            <span class="tishi">
+              <div id="txtusernameTip"></div>
+            </span>
+          </div>
+          <div class="zc_xiang">
+            <label class="lbltxt">
+              <font class="dian" style="color: red;">*</font>用户密码：</label
+            >
+            <input type="password" class="zctxt" id="txtpwd" />
+            <span class="tishi">
+              <div id="txtpwdTip"></div>
+            </span>
+          </div>
+          <div class="zc_xiang">
+            <label class="lbltxt">
+              <font class="dian" style="color: red;">*</font>确认密码：</label
+            >
+            <input type="password" class="zctxt" id="txtpwd2" />
+            <span class="tishi">
+              <div id="txtpwd2Tip"></div>
+            </span>
+          </div>
+          <div class="zc_xiang">
+            <label class="lbltxt">
+              <font class="dian" style="color: red;">*</font>联系电话：</label
+            >
+            <input type="text" class="zctxt" id="txtphone" />
+            <span class="tishi">
+              <div id="txtphoneTip"></div>
+            </span>
+          </div>
+          <div class="zc_xiang">
+            <label class="lbltxt">
+              <font class="dian" style="color: red;">*</font>电子邮箱：</label
+            >
+            <input type="text" class="zctxt" id="txtemail" />
+            <span class="tishi">
+              <div id="txtemailTip"></div>
+            </span>
+          </div>
+          <div class="zc_xiang">
+            <label class="lbltxt" style="float: left;">
+              <font class="dian" style="color: red;">*</font>用户类型：</label
+            >
+            <span style="float:left;margin-left: 15px;">
+              <table>
+                <tr>
+                  <td>
+                    <input
+                      id="rbusertype"
+                      type="radio"
+                      name="rbusertype"
+                      value="0"
+                    />
+                  </td>
+                  <td>经销商：我是创业者，我来找项目</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      id="rbusertype1"
+                      type="radio"
+                      name="rbusertype"
+                      value="1"
+                    />
+                  </td>
+                  <td>厂家：我是招商企业，来推广项目</td>
+                </tr>
+              </table>
 
-	<body style="background: white;">
-		<div class="zc_top">
-			<div class="usertopnei">
-				<p class="lg_info">
-					您好，欢迎来到名酒网！请
-					<a href="denglu.html">登录</a>
-					<a href="zhuce.html">注册</a>
-				</p>
-				<ul>
-					<li>
-						<a href="index.html" target="_blank" style="color: red;">美酒首页</a>
-					</li>
-					<li style="background:url(img/weibo_zc.jpg) no-repeat 0 4px;">
-						<a href="" target="_blank" style="text-align:right;">官方微博</a>
-					</li>
-					<li style="background:url(img/weixin_zc.jpg) no-repeat 0 4px;">
-						<a href="" target="_blank">官方微信</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="userbody">
-			<div class="usertopnei">
-				<a href="" target="_blank"><img src="img/index-logo_zc.png" /></a>
-			</div>
-			<div class="zc_body">
-				<div class="zc_left">
-					<div class="zc_xiang">
-						<label class="lbltxt">
-							<font class="dian" style="color: red;">*</font>用户名：</label>
-						<input type="text" class="zctxt" id="txtusername" />
-						<span class="tishi">
-								<div id="txtusernameTip"></div>
-							</span>
-					</div>
-					<div class="zc_xiang">
-						<label class="lbltxt">
-							<font class="dian" style="color: red;">*</font>用户密码：</label>
-						<input type="text" class="zctxt" id="txtpwd" />
-						<span class="tishi">
-								<div id="txtpwdTip"></div>
-							</span>
-					</div>
-					<div class="zc_xiang">
-						<label class="lbltxt">
-							<font class="dian" style="color: red;">*</font>确认密码：</label>
-						<input type="text" class="zctxt" id="txtpwd2" />
-						<span class="tishi">
-								<div id="txtpwd2Tip"></div>
-							</span>
-					</div>
-					<div class="zc_xiang">
-						<label class="lbltxt">
-							<font class="dian" style="color: red;">*</font>联系电话：</label>
-						<input type="text" class="zctxt" id="txtphone" />
-						<span class="tishi">
-								<div id="txtphoneTip"></div>
-							</span>
-					</div>
-					<div class="zc_xiang">
-						<label class="lbltxt">
-							<font class="dian" style="color: red;">*</font>电子邮箱：</label>
-						<input type="text" class="zctxt" id="txtemail" />
-						<span class="tishi">
-								<div id="txtemailTip"></div>
-							</span>
-					</div>
-					<div class="zc_xiang">
-						<label class="lbltxt" style="float: left;">
-							<font class="dian" style="color: red;">*</font>用户类型：</label>
-						<span style="float:left;margin-left: 15px;">
-								<table>
-									<tr>
-										<td><input id="rbusertype" type="radio" name="rbusertype" value="0"></td>
-										<td>经销商：我是创业者，我来找项目</td>
-									</tr>
-									<tr>
-										<td><input id="rbusertype1" type="radio" name="rbusertype" value="1"></td>
-										<td>厂家：我是招商企业，来推广项目</td>
-									</tr>
-								</table>
-								<div id="div_chk" style="display: none;">
-									<p style="color: red;">我可能感兴趣的项目：</p>
-									<table>
-										<tr>
-											<td><input type="checkbox" id="check1" value="白酒" /><label for="check1">白酒</label></td>
-											<td><input type="checkbox" id="check2" value="啤酒" /><label for="check2">啤酒</label></td>
-											<td><input type="checkbox" id="check3" value="保健酒" /><label for="check3">保健酒</label></td>
-										</tr>
-										<tr>
-											<td><input type="checkbox" id="check4" value="葡萄酒" /><label for="check4">葡萄酒</label></td>
-											<td><input type="checkbox" id="check5" value="洋酒" /><label for="check5">洋酒</label></td>
-											<td><input type="checkbox" id="check6" value="黄果米酒" /><label for="check6">黄果米酒</label></td>
-										</tr>
-									</table>
-								</div>
-								<div id="div_company" style="display: none;">
-									<p style="color: red;">补充公司信息（可选）：<br/></p>
-									<p>招商信息：</p>
-									<table>
-										<tr>
-											<td><input type="checkbox" id="check1" value="白酒招商" /><label for="check1">白酒招商</label></td>
-											<td><input type="checkbox" id="check2" value="啤酒招商" /><label for="check2">啤酒招商</label></td>
-											<td><input type="checkbox" id="check3" value="保健酒招商" /><label for="check3">保健酒招商</label></td>
-										</tr>
-										<tr>
-											<td><input type="checkbox" id="check4" value="葡萄酒招商" /><label for="check4">葡萄酒招商</label></td>
-											<td><input type="checkbox" id="check5" value="洋酒招商" /><label for="check5">洋酒招商</label></td>
-											<td><input type="checkbox" id="check6" value="黄果米酒招商" /><label for="check6">黄果米酒招商</label></td>
-										</tr>
-									</table>
-								</div>
-							</span>
-						<span class="tishi" style="width: 240px; margin-left: 370px;"></span>
-						<div style="clear: both;"></div>
-					</div>
-					<div class="zc_xiang">
-						<label class="lbltxt">
-							<font class="dian" style="color: red;">*</font>验证码：</label>
-						<input id="txtcode" type="text" class="zctxt" value="点击显示" style="width:60px;" onfocus="if(value=='点击显示'){value=''}" onblur="if(value==''){value='点击显示'}" onclick="createRandCode();"/>
-						<span id="ewm" class="yzm" style="float: left;line-height:24px;border:1px solid #ccc;display:none;padding:3px 10px;margin-left:20px;" onclick="createRandCode();"></span>
-						<span style="float: left;margin-left:30px;padding-top:3px;">
-							<div id="txtcodeTip"></div>
-						</span>
-						<div style="clear: both;"></div>
-					</div>
-					<div class="zc_xiang">
-						<label class="lbltxt">
-							<font class="dian" style="color: red;">*</font>手机验证码：</label>
-						<input id="phonecode" type="text" class="zctxt" style="width:60px;" />
-						<input id="getcode" type="button" value="获取验证码" style="height:30px;background: red;color: #fff;margin-left: 5px;cursor: pointer;border-radius:5px;" />
-						<span class="tishi">
-								<div></div>
-							</span>
-					</div>
-					<div class="zc_xiang">
-						<table border="0" cellspacing="0" cellpadding="0" style="margin-left: 90px;">
-							<tr>
-								<td><input id="xieyi" type="checkbox" checked="checked"></td>
-								<td>我已经阅读并同意遵守
-									<a href="">《名酒网用户服务协议》</a>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<div class="zc_xiang">
-						<input id="zcbtn" type="button" value="立即注册" style="margin-left: 90px;width:120px;height: 30px;background: deepskyblue;border-radius:5px;cursor: pointer;color: #fff;font-weight: bold;" />&nbsp;&nbsp; 已有名酒网账号？
-						<a href="denglu.html">点击登录</a>
-					</div>
-				</div>
-				<div class="zc_right">
-					<img src="img/erweima_zc.jpg" />
-					<h2>名酒招商网官方微信</h2>
-					<h5 style="margin-top: 10px;">关注微信马上参加手机上的糖酒会</h5>
-				</div>
-				<div style="clear: both;"></div>
-			</div>
-			<div class="zc_bottom" style="margin-left:60px;">
-				高速安全、随时随地找产品/找经销商、看酒业资讯，请关注美酒招商网官方微信
-				<a href="" style="color: red">去看看>></a>
-			</div>
-
-		</div>
-		<div class="userfoot">
-			<a href="">关于我们|</a>
-			<a href="">友情链接|</a>
-			<a href="">意见投诉|</a>
-			<a href="">联系我们</a>
-			<p>版权所有 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020 电信与信息服务业务经营许可证：豫ICP备10209129号</p>
-		</div>
-	</body>
-
+              <div id="div_chk" style="display: none;">
+                <p style="color: red;">我可能感兴趣的项目：</p>
+                <table>
+                  <tr>
+                    <td>
+                      <input type="checkbox" id="baijiu" value="白酒" /><label
+                        for="check1"
+                        >白酒</label
+                      >
+                    </td>
+                    <td>
+                      <input type="checkbox" id="beer" value="啤酒" /><label
+                        for="check2"
+                        >啤酒</label
+                      >
+                    </td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        id="health_wine"
+                        value="保健酒"
+                      /><label for="check3">保健酒</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" id="grape" value="葡萄酒" /><label
+                        for="check4"
+                        >葡萄酒</label
+                      >
+                    </td>
+                    <td>
+                      <input type="checkbox" id="yangjiu" value="洋酒" /><label
+                        for="check5"
+                        >洋酒</label
+                      >
+                    </td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        id="from_rice_wine"
+                        value="黄果米酒"
+                      /><label for="check6">黄果米酒</label>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="div_company" style="display: none;">
+                <p style="color: red;">补充公司信息（可选）：<br /></p>
+                <p>招商信息：</p>
+                <table>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        id="white_wine_merchants"
+                        value="白酒招商"
+                      /><label for="check1">白酒招商</label>
+                    </td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        id="beer_investment"
+                        value="啤酒招商"
+                      /><label for="check2">啤酒招商</label>
+                    </td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        id="baojianjiu_investment"
+                        value="保健酒招商"
+                      /><label for="check3">保健酒招商</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        type="checkbox"
+                        id="wine_investment"
+                        value="葡萄酒招商"
+                      /><label for="check4">葡萄酒招商</label>
+                    </td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        id="foreign_wine_merchants"
+                        value="洋酒招商"
+                      /><label for="check5">洋酒招商</label>
+                    </td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        id="huangguo_investment"
+                        value="黄果米酒招商"
+                      /><label for="check6">黄果米酒招商</label>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </span>
+            <span
+              class="tishi"
+              style="width: 240px; margin-left: 370px;"
+            ></span>
+            <div style="clear: both;"></div>
+          </div>
+          <div class="zc_xiang">
+            <label class="lbltxt">
+              <font class="dian" style="color: red;">*</font>验证码：</label
+            >
+            <input
+              id="txtcode"
+              type="text"
+              class="zctxt"
+              value="点击显示"
+              style="width:60px;"
+              onfocus="if(value=='点击显示'){value=''}"
+              onblur="if(value==''){value='点击显示'}"
+              onclick="createRandCode();"
+            />
+            <span
+              id="ewm"
+              class="yzm"
+              style="float: left;line-height:24px;border:1px solid #ccc;display:none;padding:3px 10px;margin-left:20px;background:#CECECE;font-style: italic;font-size:14px;"
+              onclick="createRandCode();"
+            ></span>
+            <span style="float: left;margin-left:30px;padding-top:3px;">
+              <div id="txtcodeTip"></div>
+            </span>
+            <div style="clear: both;"></div>
+          </div>
+          <div class="zc_xiang">
+            <label class="lbltxt">
+              <font class="dian" style="color: red;">*</font>手机验证码：</label
+            >
+            <input
+              id="phonecode"
+              type="text"
+              class="zctxt"
+              style="width:60px;"
+            />
+            <input
+              id="getcode"
+              type="button"
+              value="获取验证码"
+              style="height:30px;background: red;color: #fff;margin-left: 5px;cursor: pointer;border-radius:5px;"
+            />
+            <span class="tishi">
+              <div></div>
+            </span>
+          </div>
+          <div class="zc_xiang">
+            <table
+              border="0"
+              cellspacing="0"
+              cellpadding="0"
+              style="margin-left: 90px;"
+            >
+              <tr>
+                <td><input id="xieyi" type="checkbox" checked="checked" /></td>
+                <td>
+                  我已经阅读并同意遵守
+                  <a href="">《名酒网用户服务协议》</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="zc_xiang">
+            <input
+              id="zcbtn"
+              type="button"
+              value="立即注册"
+              style="margin-left: 90px;width:120px;height: 30px;background: deepskyblue;border-radius:5px;cursor: pointer;color: #fff;font-weight: bold;"
+            />&nbsp;&nbsp; 已有名酒网账号？
+            <a href="denglu.html">点击登录</a>
+          </div>
+        </div>
+        <div class="zc_right">
+          <img src="img/erweima_zc.jpg" />
+          <h2>名酒招商网官方微信</h2>
+          <h5 style="margin-top: 10px;">关注微信马上参加手机上的糖酒会</h5>
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+      <div class="zc_bottom" style="margin-left:60px;">
+        高速安全、随时随地找产品/找经销商、看酒业资讯，请关注美酒招商网官方微信
+        <a href="" style="color: red">去看看>></a>
+      </div>
+    </div>
+    <div class="userfoot">
+      <a href="">关于我们 |</a>
+      <a href="">友情链接 |</a>
+      <a href="">意见投诉 |</a>
+      <a href="">联系我们</a>
+      <p>
+        版权所有 9928美酒招商网-WWW.9928.TV Copy Right 2010-2020
+        电信与信息服务业务经营许可证：豫ICP备10209129号
+      </p>
+    </div>
+  </body>
 </html>
