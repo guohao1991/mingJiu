@@ -244,7 +244,7 @@ $(function() {
         type: "get",
         url:
           "http://47.102.214.131:8081/jiudaili-1.0/jiudaili/userRegister/checkCode.do",
-        data: { code: $("#phonecode").val() },
+        data: { code: $("#phonecode").val(),phone: $("#txtphone").val() },
         success: function(res) {
           console.log(res);
           if (res.code == 0) {
